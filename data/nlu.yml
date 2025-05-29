@@ -1,0 +1,374 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello, I want to know about SuperWAL
+
+- intent: goodbye
+  examples: |
+    - good by
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+# Category: Key Features
+- intent: ask_superwal_components
+  examples: |
+    - What are the main components of the SuperWAL ecosystem?
+    - Tell me about the core features of SuperWAL
+    - What modules are included in SuperWAL?
+
+- intent: ask_walfinance_services
+  examples: |
+    - What services does WaLFinance offer?
+    - Tell me about DeFi features in SuperWAL
+    - What can I do with WaLFinance?
+
+- intent: ask_nft_marketplace
+  examples: |
+    - How can I mint NFTs on SuperWAL?
+    - Does SuperWAL support NFT trading?
+    - What is the NFT Marketplace like?
+
+- intent: ask_identity_ai
+  examples: |
+    - What is WaLIdentity?
+    - How does SuperWAL use AI for identity and security?
+    - Tell me about AI-powered DID in SuperWAL
+
+- intent: ask_socialfi_gamefi
+  examples: |
+    - How does SuperWAL support SocialFi and GameFi?
+    - Can I build a decentralized game on SuperWAL?
+    - Is there a social platform in the ecosystem?
+
+- intent: ask_rwa_tokenization
+  examples: |
+    - How does SuperWAL tokenize real-world assets?
+    - What is RWA in SuperWAL?
+    - Can I tokenize real estate or art?
+
+- intent: ask_multichain_bridge
+  examples: |
+    - What blockchains are supported by the Multi-Chain Bridge?
+    - Can I transfer tokens between chains?
+    - Does SuperWAL support cross-chain transfers?
+
+- intent: ask_spl_token
+  examples: |
+    - What is the SPL token?
+    - Can you explain SPL?
+    - Tell me about the SPL token in SuperWAL
+
+- intent: ask_spl_use_cases
+  examples: |
+    - What are the use cases of SPL?
+    - How is the SPL token used?
+    - What is SPL used for in Walchain?
+    - Tell me the real-world applications of SPL.
+    - How does SPL work in the ecosystem?
+
+- intent: ask_spl_payment
+  examples: |
+    - Can SPL be used for payments?
+    - How can I send money with SPL?
+    - How does SPL support peer-to-peer transactions?
+    - Is SPL suitable for microtransactions?
+
+- intent: ask_spl_governance
+  examples: |
+    - Can I use SPL for governance?
+    - How do I vote with SPL?
+    - How does the Walchain DAO work?
+    - What role does SPL play in decision-making?
+    
+- intent: ask_spl_verification
+  examples: |
+    - Can I verify documents with SPL?
+    - How does document verification work with SPL and DID?
+    - Is SPL used for identity verification?
+    - Can I authenticate files on Walchain?
+    
+- intent: ask_spl_storage
+  examples: |
+    - Can I store files using SPL?
+    - How is SPL used for decentralized storage?
+    - What's the relation between IPFS and SPL?
+    - How does Walchain support file storage?
+    
+
+- intent: ask_spl_validator_rewards
+  examples: |
+    - How do validators earn SPL?
+    - Tell me about SPL rewards for validators
+    - Validator incentives in SPL?
+
+- intent: ask_spl_staking
+  examples: |
+    - How does SPL staking work?
+    - Can I earn rewards by staking SPL?
+    - What's the benefit of staking SPL tokens?
+    - How do I become a Light Validator?
+
+- intent: ask_spl_inflation_deflation
+  examples: |
+    - Does SPL have a fixed supply?
+    - How is SPL deflation controlled?
+    - What are the inflation mechanisms for SPL?
+
+- intent: ask_staking_mining
+  examples: |
+    - How can I earn rewards from staking?
+    - Does SuperWAL support mining?
+    - What are the staking incentives?
+
+# Category: Walchain Infrastructure
+- intent: ask_tps_performance
+  examples: |
+    - How many TPS can Walchain handle?
+    - Is Walchain fast?
+    - What's the transaction speed?
+
+- intent: ask_low_fees
+  examples: |
+    - Why are SuperWAL's fees so low?
+    - Are there transaction costs?
+    - How does Walchain keep fees near zero?
+
+- intent: ask_solidity_support
+  examples: |
+    - Can I build with Solidity on Walchain?
+    - Is SuperWAL compatible with Ethereum tools?
+    - Does it support zkEVM?
+
+- intent: ask_energy_efficiency
+  examples: |
+    - Is Walchain energy-efficient?
+    - What consensus does it use?
+    - Does it use Proof-of-Work?
+
+- intent: ask_scalability
+  examples: |
+    - How scalable is SuperWAL?
+    - Can it handle a high volume of transactions?
+    - Is it suitable for large dApps?
+
+# Category: Solving Blockchain Problems
+- intent: ask_high_fee_solution
+  examples: |
+    - How does SuperWAL solve high gas fees?
+    - Are microtransactions possible?
+    - Is it affordable to use?
+
+- intent: ask_transaction_speed
+  examples: |
+    - Are transactions fast on SuperWAL?
+    - What’s the finality time?
+    - How fast are confirmations?
+
+- intent: ask_interoperability
+  examples: |
+    - Does SuperWAL support cross-chain features?
+    - Can it connect to other blockchains?
+    - What interoperability features does it have?
+
+- intent: ask_security_ai
+  examples: |
+    - How secure is SuperWAL?
+    - How does it detect fraud?
+    - Does AI protect the ecosystem?
+
+- intent: ask_rwa_challenges
+  examples: |
+    - How does SuperWAL simplify RWA tokenization?
+    - What legal framework does it use?
+    - Is RWA tokenization easy?
+
+# Category: Why SuperWAL Stands Out
+- intent: ask_why_superwal
+  examples: |
+    - What makes SuperWAL different?
+    - Why should I choose SuperWAL?
+    - How is SuperWAL better than others?
+
+- intent: ask_scalability_support
+  examples: |
+    - Can SuperWAL support large-scale dApps?
+    - Is it scalable for Web3?
+    - How does SuperWAL ensure performance?
+
+- intent: ask_fee_accessibility
+  examples: |
+    - Is SuperWAL affordable to use?
+    - Do users need to pay a lot in fees?
+    - Is it cost-effective?
+
+- intent: ask_cross_chain_integration
+  examples: |
+    - Does SuperWAL integrate with major chains?
+    - Can I use it with BNB, Solana, or Polygon?
+    - What blockchains does it support?
+
+- intent: ask_developer_support
+  examples: |
+    - What support is available for developers?
+    - Are there tools or SDKs?
+    - Can I build easily on SuperWAL?
+
+#roadmap
+- intent: ask_superwal_roadmap
+  examples: |
+    - What is the roadmap of SuperWAL?
+    - Tell me about SuperWAL's development plan.
+    - How does SuperWAL plan its ecosystem?
+
+- intent: ask_phase1
+  examples: |
+    - What is Phase 1 of SuperWAL?
+    - Tell me about the first phase of the roadmap.
+    - What happens in Q1 to Q3 2025?
+
+- intent: ask_phase2
+  examples: |
+    - What is Phase 2 about?
+    - What are the developments in Q4 2025 to Q1 2026?
+    - What DeFi features are being built?
+
+- intent: ask_phase3
+  examples: |
+    - What is Phase 3 of the roadmap?
+    - What is being planned from Q2 2026 to Q4 2026?
+    - How will SuperWAL achieve cross-chain trading?
+
+- intent: ask_phase4
+  examples: |
+    - What is Phase 4 in the roadmap?
+    - What's coming in Q1 to Q2 2027?
+    - Tell me about yield optimization and staking.
+
+- intent: ask_phase5
+  examples: |
+    - What is Phase 5 of the roadmap?
+    - What will happen after Q3 2027?
+    - How is SuperWAL using AI in Web3?
+
+#token distribution
+- intent: ask_token_distribution
+  examples: |
+    - How is the SPL token distributed?
+    - Can you tell me about SPL token allocation?
+    - What is the token distribution of SuperWAL?
+    - Tell me about the SPL token supply and allocation.
+    - How many SPL tokens are for mining?
+    - What percentage of SPL is for marketing?
+    - Explain the SPL tokenomics distribution.
+    - Who gets how much in SPL token allocation?
+    - How is the 1 billion SPL token supply divided?
+
+#WAL mobile
+- intent: ask_about_wal_mobile_node
+  examples: |
+    - What is WAL Mobile Node?
+    - Tell me about WAL Mobile Node
+    - How does WAL Mobile Node work?
+    - How can I earn SPL with my phone?
+    - What are the benefits of joining WAL Mobile Node?
+
+- intent: ask_who_can_join
+  examples: |
+    - Who can join WAL Mobile Node?
+    - Do I need to be a blockchain expert to use WAL Mobile Node?
+    - Is WAL Mobile Node beginner-friendly?
+
+- intent: ask_how_to_earn_spl
+  examples: |
+    - How do I earn SPL tokens?
+    - What do I need to do to receive airdrops?
+    - Can I earn from delegation?
+
+- intent: ask_phases_of_node
+  examples: |
+    - What are the phases of WAL Mobile Node?
+    - How does WAL Mobile Node progress over time?
+    - Tell me about the three stages of WAL Mobile Node
+
+- intent: ask_why_join
+  examples: |
+    - Why should I join WAL Mobile Node?
+    - What are the advantages of using WAL Mobile Node?
+    - Is it worth becoming a Light Node?
+    
+#WALX exchange
+- intent: ask_about_walx_exchange
+  examples: |
+    - What is the WaLX Exchange?
+    - Tell me about WaLX
+    - How does the WaLX Exchange work?
+    - Explain the WaLX platform
+    - What can I do on WaLX?
+
+- intent: ask_about_lbr
+  examples: |
+    - What is LBR?
+    - What is Liquidity Bootstrapping Round?
+    - Explain the LBR of SuperWAL
+    - How does the LBR system work?
+    - Tell me about the LBR process
+
+- intent: ask_about_superup
+  examples: |
+    - What is SuperUP?
+    - How does SuperUP relate to LBR?
+    - Why do I need to boost SuperUP?
+    - What does boosting SuperUP do?
+    - Can you explain how SuperUP works?
+
+- intent: ask_about_spl_refunds
+  examples: |
+    - How do I get SPL refunds?
+    - What are SPL refunds?
+    - What happens when I accelerate SuperUP?
+    - Will I earn tokens for participating?
+    - How are rewards distributed?
+
+- intent: ask_about_lbr_benefits
+  examples: |
+    - Why should I join LBR?
+    - What are the benefits of LBR?
+    - Is LBR a good opportunity?
+    - What makes LBR special?
+    - What's in it for me if I join LBR?
+
+- intent: ask_about_walx_vision
+  examples: |
+    - What is the future of WaLX?
+    - Will WaLX become a global exchange?
+    - What’s next for WaLX?
+    - Tell me the long-term plan for WaLX
+    - Will WaLX support other blockchains?
+
+- intent: ask_how_to_participate_in_lbr
+  examples: |
+    - How do I participate in LBR?
+    - How can I join LBR?
+    - What do I need to join WaLX or LBR?
+    - How to start with SuperWAL’s LBR?
+    - Can you guide me to join LBR?

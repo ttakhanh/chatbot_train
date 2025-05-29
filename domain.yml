@@ -1,0 +1,331 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_superwal_components
+  - ask_walfinance_services
+  - ask_nft_marketplace
+  - ask_identity_ai
+  - ask_socialfi_gamefi
+  - ask_rwa_tokenization
+  - ask_multichain_bridge
+  - ask_spl_token
+  - ask_spl_validator_rewards
+  - ask_spl_inflation_deflation
+  - ask_staking_mining
+  - ask_tps_performance
+  - ask_low_fees
+  - ask_solidity_support
+  - ask_energy_efficiency
+  - ask_scalability
+  - ask_high_fee_solution
+  - ask_transaction_speed
+  - ask_interoperability
+  - ask_security_ai
+  - ask_rwa_challenges
+  - ask_why_superwal
+  - ask_scalability_support
+  - ask_fee_accessibility
+  - ask_cross_chain_integration
+  - ask_developer_support
+  - ask_superwal_roadmap
+  - ask_phase1
+  - ask_phase2
+  - ask_phase3
+  - ask_phase4
+  - ask_phase5
+  - ask_token_distribution
+  - ask_spl_use_cases
+  - ask_spl_payment
+  - ask_spl_staking
+  - ask_spl_governance
+  - ask_spl_storage
+  - ask_spl_verification
+  - ask_about_wal_mobile_node
+  - ask_who_can_join
+  - ask_how_to_earn_spl
+  - ask_phases_of_node
+  - ask_why_join
+  - ask_about_walx_exchange
+  - ask_about_lbr
+  - ask_about_superup
+  - ask_about_spl_refunds
+  - ask_about_lbr_benefits
+  - ask_about_walx_vision
+  - ask_how_to_participate_in_lbr
+  - goodbye
+
+responses:
+  utter_greet:
+    - text: "Hi there! Are you curious about SuperWAL and how it can power the future of Web3? Let’s explore together! "
+
+  utter_goodbye:
+    - text: "Goodbye! Feel free to come back with any other questions about SuperWAL."
+
+  utter_ask_superwal_components:
+    - text: "SuperWAL includes WaLFinance (DeFi), NFT Marketplace, WaLIdentity (DID & AI), SocialFi & GameFi tools, RWA Tokenization, Multi-Chain Bridge, SPL Token, and WaLStaking & Mining."
+
+  utter_ask_walfinance_services:
+    - text: "WaLFinance offers decentralized financial services like lending, staking, and yield farming, optimized for speed and low fees."
+
+  utter_ask_nft_marketplace:
+    - text: "Yes, SuperWAL supports minting, trading, and managing NFTs on a cost-efficient and user-friendly platform."
+
+  utter_ask_identity_ai:
+    - text: "WaLIdentity uses decentralized identity and AI for secure authentication, fraud prevention, and smart contract automation."
+
+  utter_ask_socialfi_gamefi:
+    - text: "SuperWAL supports building decentralized social platforms and games that reward user engagement."
+
+  utter_ask_rwa_tokenization:
+    - text: "Real-world assets like real estate or art can be tokenized in SuperWAL through a regulatory-compliant process for global trading."
+
+  utter_ask_multichain_bridge:
+    - text: "The Multi-Chain Bridge supports major blockchains like Ethereum, BNB Chain, Polygon, Solana, and Avalanche for cross-chain asset transfers."
+
+  utter_ask_spl_token:
+    - text: "The SPL token is SuperWAL’s native token used for transactions, staking, governance, and rewards, with ultra-low fees."
+
+  utter_ask_staking_mining:
+    - text: "SPL is the native token of the Walchain ecosystem, used for transactions, staking, governance, and validator rewards with near-zero fees."
+
+  utter_ask_spl_validator_rewards:
+    - text: "Validators earn SPL for verifying transactions and generating ZK-Rollup proofs. Rewards depend on performance and contribution."
+
+
+  utter_ask_spl_inflation_deflation:
+    - text: "SPL has a fixed 1B supply with burning mechanisms, staking locks, and buyback strategies to maintain value and reduce inflation."
+
+  utter_ask_tps_performance:
+    - text: "Walchain achieves tens of thousands of transactions per second (TPS) with ~2-second finality."
+
+  utter_ask_low_fees:
+    - text: "Thanks to ZK-Rollup, transaction costs on SuperWAL are near zero, making it ideal for microtransactions."
+
+  utter_ask_solidity_support:
+    - text: "Yes, SuperWAL supports Solidity-based development through zkEVM, making it compatible with Ethereum tools."
+
+  utter_ask_energy_efficiency:
+    - text: "Walchain uses the Stellar Consensus Protocol (SCP), which is energy-efficient and avoids energy-heavy methods like PoW or PoS."
+
+  utter_ask_scalability:
+    - text: "SuperWAL can handle large transaction volumes and is ideal for scalable Web3 applications like DeFi and NFTs."
+
+  utter_ask_high_fee_solution:
+    - text: "SuperWAL removes high gas fees with its ZK-Rollup-based structure, allowing cost-effective transactions."
+
+  utter_ask_transaction_speed:
+    - text: "Transactions finalize in around 2 seconds on SuperWAL, ensuring a smooth user experience."
+
+  utter_ask_interoperability:
+    - text: "SuperWAL’s Multi-Chain Bridge enables smooth data and asset transfers across major blockchain networks."
+
+  utter_ask_security_ai:
+    - text: "SuperWAL enhances security with AI-powered fraud detection and decentralized identity verification."
+
+  utter_ask_rwa_challenges:
+    - text: "SuperWAL simplifies RWA tokenization through streamlined, legally compliant processes."
+
+  utter_ask_why_superwal:
+    - text: "SuperWAL stands out with speed, low fees, interoperability, and support for DeFi, NFTs, SocialFi, GameFi, and RWA in one ecosystem."
+
+  utter_ask_scalability_support:
+    - text: "Yes, SuperWAL is built on scalable architecture that supports large-scale decentralized applications."
+
+  utter_ask_fee_accessibility:
+    - text: "SuperWAL is highly affordable due to ultra-low transaction fees, making it accessible worldwide."
+
+  utter_ask_cross_chain_integration:
+    - text: "It supports integration with leading blockchains such as Ethereum, BNB Chain, Polygon, Solana, and Avalanche."
+
+  utter_ask_developer_support:
+    - text: "SuperWAL supports developers with Solidity compatibility, zkEVM, and user-friendly Web3 development tools."
+
+#roadmap
+  utter_ask_superwal_roadmap:
+    - text: "SuperWAL's roadmap includes five key phases from 2025 onwards, focusing on infrastructure, DeFi, interoperability, asset management, and AI-driven Web3 solutions."
+
+  utter_ask_phase1:
+    - text: "Phase 1 focuses on launching Walchain's testnet and mainnet with SCP and ZK-Rollup, building decentralized identity systems, implementing ZK-Rollup state compression, and releasing a mobile node app rewarding users with SPL Tokens."
+
+  utter_ask_phase2:
+    - text: "Phase 2 introduces a non-EVM smart contract environment, zk-SNARKs for privacy, a decentralized lending platform using SPL, and expands validator and light node participation."
+
+  utter_ask_phase3:
+    - text: "Phase 3 deploys a Multi-chain Bridge (to Ethereum, BSC, Solana, Polygon), launches a DEX on Walchain, boosts ZK-Rollup performance, and enhances the Horizon API."
+
+  utter_ask_phase4:
+    - text: "Phase 4 introduces NFT Vaults, tiered staking programs for SPL, AI-driven asset management, and a transaction-based SPL token burn mechanism."
+
+  utter_ask_phase5:
+    - text: "Phase 5 focuses on decentralized data storage (like IPFS) with ZK-Rollup, AI applications for DeFi and NFT optimization, zk-SNARKs for privacy-preserving computation, and expanded DAO governance."
+
+  utter_ask_token_distribution:
+    - text: |
+        The SPL token distribution is as follows:
+        - 8% for Ecosystem Fund (supporting project development)
+        - 15% for Web3, NFT, and DeFi project investment
+        - 15% for Marketing & Partnerships
+        - 12% for Team & Advisors
+        - 15% for Liquidity & Exchange Listings (CEX/DEX)
+        - 35% for Mining & Rewards (validators and users)
+
+  utter_ask_spl_use_cases:
+    - text: |
+        SPL token in the Walchain ecosystem supports five key use cases:
+        1. Transactions & Payments: Fast, low-fee peer-to-peer payments using ZK-Rollups and multi-chain sharding.
+        2. Staking for Rewards: Earn passive income by staking SPL and participating in validation with minimal hardware.
+        3. Decentralized Governance (DAO): Vote on ecosystem decisions by staking SPL via a DAO smart contract.
+        4. Decentralized Data Storage: Pay for and earn SPL through IPFS-based decentralized file storage.
+        5. Document Verification with DID: Use SPL to hash and verify document authenticity via Decentralized Identifiers.
+
+  utter_ask_spl_payment:
+    - text: |
+        SPL tokens are used for peer-to-peer transactions in the Walchain ecosystem.
+        Key features:
+        - Instant finality: Transactions confirm in 2–5 seconds.
+        - Low fees: Thanks to ZK-Rollups, typical transaction fees are only 0.01 SPL.
+        - Scalability: Multi-chain sharding allows up to 5,000 TPS.
+        - Example: Pay 20 SPL for coffee or send 100 SPL cross-border with negligible cost.
+        Transactions are handled by Light Validators via the Quorum Slice or SCP fallback consensus.
+
+  utter_ask_spl_staking:
+    - text: |
+        SPL staking allows users to earn passive income and help secure the network.
+        - Stake via LightValidatorContract using the Walchain Wallet.
+        - Validators are rewarded based on staked SPL and reliability metrics.
+        - Quorum Slice ensures fair, decentralized participation.
+        - SCP fallback maintains consensus in network failures.
+        - Example: Stake 100 SPL on a smartphone and earn 5–10 SPL/month.
+        - Even users with 10 SPL can participate by forming trusted Quorum Slices.
+
+  utter_ask_spl_governance:
+    - text: |
+        SPL enables decentralized governance via the Walchain DAO.
+        - Stake SPL in DAOContract to vote (1 SPL = 1 vote).
+        - Proposals include protocol upgrades, fee adjustments, and funding initiatives.
+        - Quorum Slice ensures fair voting with 66% weight required to pass proposals.
+        - ZK-Rollups lower voting fees to 0.01 SPL.
+        - IPFS PubSub delivers real-time updates of proposals and results.
+        - Example: Vote to increase TPS or fund a community DeFi integration.
+
+  utter_ask_spl_storage:
+    - text: |
+        SPL is used to pay for decentralized file storage through IPFS.
+        - Pay using StorageContract to pin files based on their CID.
+        - Light Validators with storage capacity earn SPL rewards.
+        - IPFS PubSub notifies validators in <0.5s for quick processing.
+        - ZK-Rollups reduce costs to ~0.01 SPL per transaction.
+        - Example: Store 1GB of personal files for 6 months for just 1 SPL.
+        - Small validators can earn rewards by forming Quorum Slices.
+
+  utter_ask_spl_verification:
+    - text: |
+        SPL is used to verify documents through DID-linked document hashes.
+        - Store SHA-256 hashes of documents in DocVerifyContract.
+        - Link to Decentralized Identifier (DID) created via DIDContract.
+        - Quorum Slice ensures only trusted validators verify documents.
+        - ZK-Rollups keep verification fees low (~0.01–0.05 SPL).
+        - Example: Store a degree certificate hash or verify identity for DeFi KYC.
+        - IPFS PubSub broadcasts verification requests in under 0.5s.
+
+#WAL mobile
+  utter_about_wal_mobile_node:
+    - text: |
+        WAL Mobile Node is a mobile application that allows you to earn SPL Tokens and become part of the SuperWAL blockchain network as a Light Node.
+        ✅ You’re not mining – instead, you contribute to the network’s decentralization by validating in a lightweight way and delegating to Validator Full Nodes.
+        ✅ Earn SPL through simple in-app tasks and airdrops.
+        ✅ Help build a secure, community-driven blockchain system – all from your smartphone.
+        It’s your gateway into Web3 without needing high-end hardware or technical expertise!
+      
+  utter_who_can_join:
+    - text: |
+        Anyone with a smartphone can join WAL Mobile Node! 💡
+        🎯 Beginners: No need to understand blockchain—just download the app and start earning.
+        🚀 Blockchain Enthusiasts: Get involved early in a growing Layer 1 network.
+        💼 Investors & Supporters: Earn sustainable income by delegating to validators.
+        Whether you’re a casual user or a crypto veteran, WAL Mobile Node has something for you.
+      
+  utter_how_to_earn_spl:
+    - text: |
+        You can earn SPL Tokens in 3 main ways with WAL Mobile Node:
+        🔹 **Complete in-app tasks**: Engage with the app to receive airdrops.
+        🔹 **Enable Light Node mode**: Support basic transaction validation.
+        🔹 **Delegate to Validator Nodes**: Earn a portion of transaction fees passively.
+        As you stay active and help grow the SuperWAL network, your earnings potential increases!   
+      
+  utter_phases_of_node:
+    - text: |
+        WAL Mobile Node operates in 3 progressive phases:
+        🟢 **Phase 1 – Earn SPL Tokens**
+        Download the app and earn tokens by completing simple community or validation-related tasks.
+        🟡 **Phase 2 – Activate Light Node Mode**
+        Active users can turn on Light Node mode, contributing lightweight validation and helping the blockchain without heavy computation.
+        🔵 **Phase 3 – Earn Long-Term Rewards**
+        As a Light Node, you can delegate to validators and receive a small share of transaction fees, ensuring sustainable income.
+        Each phase deepens your role in the SuperWAL ecosystem!
+
+  utter_why_join:
+    - text: |
+        Here’s why you should join WAL Mobile Node today:
+        💸 **Earn Free SPL Tokens**: Get early airdrops with growth potential.
+        🔗 **Help Decentralize SuperWAL**: Join as a Light Node—no expensive hardware needed.
+        ⚡ **Easy Onboarding**: Just a phone app—no technical setup required.
+        🛠️ **Build Your Validator Journey**: Delegation today could lead to future validator support roles.
+        🚀 **Step into Web3**: Be an early contributor to a next-gen blockchain ecosystem.
+        It’s more than earning—it’s building the future of decentralized finance with your phone.
+
+#WALX exchange
+
+  utter_about_walx_exchange:
+    - text: |
+        WaLX Exchange is the official trading platform within the SuperWAL ecosystem. Initially, it will operate as an internal exchange using an order book system where users can place buy or sell orders for SPL tokens. All trades are executed securely via smart contracts without intermediaries. 
+        In the long term, WaLX aims to become a decentralized and multi-chain exchange. This future version will connect SPL to other blockchains, offering greater liquidity, cross-chain trading, and access to millions of global users.
+
+  utter_about_lbr:
+    - text: |
+        The Liquidity Bootstrapping Round (LBR) is a smart fundraising mechanism designed to kickstart the SuperWAL ecosystem. In this round, users contribute USDT to power SuperUP—a system that boosts your mining rate. In return, you earn SPL tokens through automated refunds.
+        The LBR begins with a pool of 5 million SPL paired with USDT. When SPL is distributed, the pool is automatically replenished from reserves using a smart contract, maintaining stability and long-term growth.
+
+  utter_about_superup:
+    - text: |
+        SuperUP is your personal power booster inside the SuperWAL ecosystem. By spending USDT to accelerate SuperUP, you increase your mining speed and influence within the network. The more you boost, the more SPL tokens you’re eligible to receive.
+        It’s also your key to participating in the Liquidity Bootstrapping Round (LBR), where all contributions are handled transparently via smart contracts.
+
+  utter_about_spl_refunds:
+    - text: |
+        When you use USDT to boost SuperUP, you get rewarded with SPL token refunds. These refunds represent your contribution and are automatically credited to your Vaults spot wallet.
+        The refund rate depends on your activity and the current pool status. This system ensures that early contributors gain more tokens and have a larger impact on the development of the ecosystem.
+
+  utter_about_lbr_benefits:
+    - text: |
+        Participating in LBR offers multiple benefits:
+        ✅ Early access to SPL tokens before public exchange trading  
+        ✅ Earning opportunities through refunds into your wallet  
+        ✅ Transparent, automated process powered by smart contracts  
+        ✅ Support for long-term token value through sustainable liquidity  
+        ✅ Contribution to the decentralized SuperWAL financial system
+        By joining early, you’re not just earning tokens—you’re helping shape the future of the SuperWAL ecosystem.
+
+  utter_about_walx_vision:
+    - text: |
+        The long-term vision of WaLX Exchange is to become a decentralized, global, and multi-chain trading platform. After the initial internal launch, where users can trade SPL using an order book system, WaLX will expand to:
+        🌐 Support cross-chain trading with other Layer 1s  
+        🔄 Integrate with DeFi protocols and bridges  
+        🔒 Offer secure, smart-contract powered trading with no intermediaries  
+        📈 Provide access to liquidity pools and advanced financial tools for SPL and partner tokens  
+
+  utter_how_to_participate_in_lbr:
+    - text: |
+        Getting started with the Liquidity Bootstrapping Round (LBR) is simple:
+        1. ✅ Create a SuperWAL account.  
+        2. 💰 Use USDT to accelerate SuperUP through a smart contract.  
+        3. 🎁 Receive SPL token refunds in your Vaults spot wallet.  
+        The earlier you join, the better the refund ratio and the greater your impact in helping us reach the 20 million USDT goal to launch the WaLX Exchange.
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

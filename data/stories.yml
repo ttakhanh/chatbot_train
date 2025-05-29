@@ -1,0 +1,319 @@
+version: "3.1"
+
+#stories:
+#  - story: greet and ask about components
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: ask_superwal_components
+#      - action: utter_ask_superwal_components
+#
+#  - story: ask about staking and goodbye
+#    steps:
+#      - intent: ask_staking_mining
+#      - action: utter_ask_staking_mining
+#      - intent: goodbye
+#      - action: utter_goodbye
+#
+#  - story: ask about fee and performance
+#    steps:
+#      - intent: ask_low_fees
+#      - action: utter_ask_low_fees
+#      - intent: ask_tps_performance
+#      - action: utter_ask_tps_performance
+#
+#  - story: ask about NFT and identity
+#    steps:
+#      - intent: ask_nft_marketplace
+#      - action: utter_ask_nft_marketplace
+#      - intent: ask_identity_ai
+#      - action: utter_ask_identity_ai
+stories:
+
+- story: Greet and ask about SuperWAL components
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_superwal_components
+    - action: utter_ask_superwal_components
+
+- story: Ask about WaLFinance services
+  steps:
+    - intent: ask_walfinance_services
+    - action: utter_ask_walfinance_services
+
+- story: Ask about NFT marketplace
+  steps:
+    - intent: ask_nft_marketplace
+    - action: utter_ask_nft_marketplace
+
+- story: Ask about Identity and AI
+  steps:
+    - intent: ask_identity_ai
+    - action: utter_ask_identity_ai
+
+- story: Ask about SocialFi and GameFi
+  steps:
+    - intent: ask_socialfi_gamefi
+    - action: utter_ask_socialfi_gamefi
+
+- story: Ask about RWA tokenization
+  steps:
+    - intent: ask_rwa_tokenization
+    - action: utter_ask_rwa_tokenization
+
+- story: Ask about Multi-Chain Bridge
+  steps:
+    - intent: ask_multichain_bridge
+    - action: utter_ask_multichain_bridge
+
+- story: Ask about SPL token
+  steps:
+    - intent: ask_spl_token
+    - action: utter_ask_spl_token
+
+- story: greet and ask about SPL
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_spl_token
+  - action: utter_ask_spl_token
+
+#- story: ask use cases of SPL
+#  steps:
+#  - intent: ask_spl_token_use_cases
+#  - action: utter_ask_spl_token_usecases
+
+- story: ask SPL governance
+  steps:
+  - intent: ask_spl_governance
+  - action: utter_ask_spl_governance
+
+- story: ask SPL validator rewards
+  steps:
+  - intent: ask_spl_validator_rewards
+  - action: utter_ask_spl_validator_rewards
+
+#- story: ask SPL staking and yield farming
+#  steps:
+#  - intent: ask_spl_staking_yield
+#  - action: utter_ask_spl_staking_yield
+
+- story: ask SPL inflation and deflation
+  steps:
+  - intent: ask_spl_inflation_deflation
+  - action: utter_ask_spl_inflation_deflation
+
+- story: Ask about staking and mining
+  steps:
+    - intent: ask_staking_mining
+    - action: utter_ask_staking_mining
+
+- story: Ask about TPS performance
+  steps:
+    - intent: ask_tps_performance
+    - action: utter_ask_tps_performance
+
+- story: Ask about low fees
+  steps:
+    - intent: ask_low_fees
+    - action: utter_ask_low_fees
+
+- story: Ask about Solidity support
+  steps:
+    - intent: ask_solidity_support
+    - action: utter_ask_solidity_support
+
+- story: Ask about energy efficiency
+  steps:
+    - intent: ask_energy_efficiency
+    - action: utter_ask_energy_efficiency
+
+- story: Ask about scalability
+  steps:
+    - intent: ask_scalability
+    - action: utter_ask_scalability
+
+- story: Ask about high fee solution
+  steps:
+    - intent: ask_high_fee_solution
+    - action: utter_ask_high_fee_solution
+
+- story: Ask about transaction speed
+  steps:
+    - intent: ask_transaction_speed
+    - action: utter_ask_transaction_speed
+
+- story: Ask about interoperability
+  steps:
+    - intent: ask_interoperability
+    - action: utter_ask_interoperability
+
+- story: Ask about security with AI
+  steps:
+    - intent: ask_security_ai
+    - action: utter_ask_security_ai
+
+- story: Ask about RWA challenges
+  steps:
+    - intent: ask_rwa_challenges
+    - action: utter_ask_rwa_challenges
+
+- story: Ask why SuperWAL is unique
+  steps:
+    - intent: ask_why_superwal
+    - action: utter_ask_why_superwal
+
+- story: Ask about scalability support
+  steps:
+    - intent: ask_scalability_support
+    - action: utter_ask_scalability_support
+
+- story: Ask about fee accessibility
+  steps:
+    - intent: ask_fee_accessibility
+    - action: utter_ask_fee_accessibility
+
+- story: Ask about cross-chain integration
+  steps:
+    - intent: ask_cross_chain_integration
+    - action: utter_ask_cross_chain_integration
+
+- story: Ask about developer support
+  steps:
+    - intent: ask_developer_support
+    - action: utter_ask_developer_support
+
+#roadmap
+- story: Ask about SuperWAL roadmap
+  steps:
+    - intent: ask_superwal_roadmap
+    - action: utter_ask_superwal_roadmap
+
+- story: Ask about Phase 1
+  steps:
+    - intent: ask_phase1
+    - action: utter_ask_phase1
+
+- story: Ask about Phase 2
+  steps:
+    - intent: ask_phase2
+    - action: utter_ask_phase2
+
+- story: Ask about Phase 3
+  steps:
+    - intent: ask_phase3
+    - action: utter_ask_phase3
+
+- story: Ask about Phase 4
+  steps:
+    - intent: ask_phase4
+    - action: utter_ask_phase4
+
+- story: Ask about Phase 5
+  steps:
+    - intent: ask_phase5
+    - action: utter_ask_phase5
+
+#token distribution
+- story: token distribution story
+  steps:
+    - intent: ask_token_distribution
+    - action: utter_ask_token_distribution
+
+- story: user asks about spl use cases
+  steps:
+    - intent: ask_spl_use_cases
+    - action: utter_ask_spl_use_cases
+
+- story: user asks about spl payment
+  steps:
+    - intent: ask_spl_payment
+    - action: utter_ask_spl_payment
+
+- story: user asks about spl staking
+  steps:
+    - intent: ask_spl_staking
+    - action: utter_ask_spl_staking
+
+- story: user asks about spl governance
+  steps:
+    - intent: ask_spl_governance
+    - action: utter_ask_spl_governance
+
+- story: user asks about spl storage
+  steps:
+    - intent: ask_spl_storage
+    - action: utter_ask_spl_storage
+
+- story: user asks about spl verification
+  steps:
+    - intent: ask_spl_verification
+    - action: utter_ask_spl_verification
+
+#WAL mobile
+- story: user asks about WAL Mobile Node
+  steps:
+  - intent: ask_about_wal_mobile_node
+  - action: utter_about_wal_mobile_node
+
+- story: user asks who can join
+  steps:
+  - intent: ask_who_can_join
+  - action: utter_who_can_join
+
+- story: user asks how to earn SPL
+  steps:
+  - intent: ask_how_to_earn_spl
+  - action: utter_how_to_earn_spl
+
+- story: user asks about the phases of the node
+  steps:
+  - intent: ask_phases_of_node
+  - action: utter_phases_of_node
+
+- story: user asks why join
+  steps:
+  - intent: ask_why_join
+  - action: utter_why_join
+
+#walx exchange
+- story: user asks walx exchange
+  steps:
+  - intent: ask_about_walx_exchange
+  - action: utter_about_walx_exchange
+
+- story: user asks about lbr
+  steps:
+  - intent: ask_about_lbr
+  - action: utter_about_lbr
+
+- story: user asks about superup
+  steps:
+  - intent: ask_about_superup
+  - action: utter_about_superup
+
+- story: user asks spl refunds
+  steps:
+  - intent: ask_about_spl_refunds
+  - action: utter_about_spl_refunds
+
+- story: user asks lbr benefits
+  steps:
+  - intent: ask_about_lbr_benefits
+  - action: utter_about_lbr_benefits
+
+- story: user asks walx vision
+  steps:
+  - intent: ask_about_walx_vision
+  - action: utter_about_walx_vision
+
+- story: user asks participate in lbr
+  steps:
+  - intent: ask_how_to_participate_in_lbr
+  - action: utter_how_to_participate_in_lbr
+
+- story: Say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
