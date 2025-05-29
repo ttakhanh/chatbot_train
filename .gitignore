@@ -1,6 +1,21 @@
-"rasaenv/" 
-"__pycache__/" 
-"*.pyc" 
-"rasaenv/" 
-"rasaenv/" 
-"rasaenv/" 
+rasaenv/
+__pycache__/
+*.pyc
+*.pyo
+rasaenv/
+rasaenv/ 
+rasaenv/
+
+.idea/
+.vscode/
+
+# Bỏ các file model nặng
+*.h5
+*.pkl
+*.db
+*.tf_model
+*.ckpt
+*.weights
+
+# Bỏ log
+*.log
