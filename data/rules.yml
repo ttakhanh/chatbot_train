@@ -288,3 +288,138 @@ rules:
   - intent: ask_how_to_participate_in_lbr
   - action: utter_how_to_participate_in_lbr
 
+#defi walchain
+- rule: Respond to DeFi to Walchain Overview
+  steps:
+  - intent: ask_defi_to_walchain_overview
+  - action: utter_about_defi_to_walchain
+
+- rule: Respond to DeFi to Walchain Benefits
+  steps:
+  - intent: ask_defi_to_walchain_benefits
+  - action: utter_defi_to_walchain_benefits
+
+- rule: Respond to DeFi Workflow
+  steps:
+  - intent: ask_defi_to_walchain_how_it_works
+  - action: utter_how_defi_to_walchain_works
+
+- rule: Respond to DeFi Products
+  steps:
+  - intent: ask_defi_products_on_walchain
+  - action: utter_defi_products_on_walchain
+
+- rule: Respond to User Benefits
+  steps:
+  - intent: ask_defi_user_benefits
+  - action: utter_user_benefits_defi
+
+- rule: Respond to Getting Started
+  steps:
+  - intent: ask_how_to_get_started_defi
+  - action: utter_get_started_defi
+
+#spl mining
+- rule: Respond to SPL Mining overview
+  steps:
+  - intent: ask_spl_mining_overview
+  - action: utter_spl_mining_overview
+
+- rule: Respond to mining mechanism
+  steps:
+  - intent: ask_spl_mining_mechanism
+  - action: utter_spl_mining_mechanism
+
+- rule: Respond to SPL Mining phases
+  steps:
+  - intent: ask_spl_mining_phases
+  - action: utter_spl_mining_phases
+
+#- rule: Respond to Light Node questions
+#  steps:
+#  - intent: ask_spl_mining_light_node
+#  - action: utter_spl_mining_light_node
+
+- rule: Respond to SPL Mining benefits
+  steps:
+  - intent: ask_spl_mining_benefits
+  - action: utter_spl_mining_benefits
+
+- rule: Respond to how to join SPL Mining
+  steps:
+  - intent: ask_spl_mining_how_to_join
+  - action: utter_spl_mining_how_to_join
+
+- rule: Respond to SPL rewards and distribution
+  steps:
+  - intent: ask_spl_mining_rewards_distribution
+  - action: utter_spl_mining_rewards_distribution
+
+- rule: Respond to SPL Mining summary
+  steps:
+  - intent: ask_spl_mining_summary
+  - action: utter_spl_mining_summary
+
+#user type
+
+- rule: Respond to user types question
+  steps:
+    - intent: ask_user_types
+    - action: utter_user_types
+
+- rule: Respond to normal user question
+  steps:
+    - intent: ask_normal_user
+    - action: utter_normal_user
+
+- rule: Respond to pioneer user question
+  steps:
+    - intent: ask_pioneer_user
+    - action: utter_pioneer_user
+
+- rule: Respond to distributor user question
+  steps:
+    - intent: ask_distributor_user
+    - action: utter_distributor_user
+
+- rule: Respond to partner user question
+  steps:
+    - intent: ask_partner_user
+    - action: utter_partner_user
+
+- rule: Reactivation reminder
+  steps:
+    - intent: ask_reactivation_requirement
+    - action: utter_reactivation_requirement
+
+- rule: SpeedUp drop effect
+  steps:
+    - intent: ask_speedup_drop_effect
+    - action: utter_speedup_drop_effect
+
+#upgrade user
+- rule: Respond to Pioneer upgrade question
+  steps:
+  - intent: ask_upgrade_steps_normal_to_pioneer
+  - action: utter_upgrade_normal_to_pioneer
+
+- rule: Respond to Distributor upgrade question
+  steps:
+  - intent: ask_upgrade_steps_pioneer_to_distributor
+  - action: utter_upgrade_pioneer_to_distributor
+
+- rule: Respond to Partner upgrade question
+  steps:
+  - intent: ask_upgrade_steps_distributor_to_partner
+  - action: utter_upgrade_distributor_to_partner
+
+#mining structure
+- rule: Explain mining structure
+  steps:
+  - intent: ask_mining_structure_explained
+  - action: utter_explain_mining_structure
+
+- rule: respond to base rate question
+  steps:
+  - intent: ask_base_rate
+  - action: utter_base_rate

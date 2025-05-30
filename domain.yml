@@ -53,6 +53,31 @@ intents:
   - ask_about_lbr_benefits
   - ask_about_walx_vision
   - ask_how_to_participate_in_lbr
+  - ask_defi_to_walchain_overview
+  - ask_defi_to_walchain_benefits
+  - ask_defi_to_walchain_how_it_works
+  - ask_defi_products_on_walchain
+  - ask_defi_user_benefits
+  - ask_how_to_get_started_defi
+  - ask_spl_mining_overview
+  - ask_spl_mining_mechanism
+  - ask_spl_mining_phases
+  - ask_spl_mining_benefits
+  - ask_spl_mining_how_to_join
+  - ask_spl_mining_summary
+  - ask_spl_mining_rewards_distribution
+  - ask_user_types
+  - ask_normal_user
+  - ask_pioneer_user
+  - ask_distributor_user
+  - ask_partner_user
+  - ask_reactivation_requirement
+  - ask_speedup_drop_effect
+  - ask_upgrade_steps_normal_to_pioneer
+  - ask_upgrade_steps_pioneer_to_distributor
+  - ask_upgrade_steps_distributor_to_partner
+  - ask_mining_structure_explained
+  - ask_base_rate
   - goodbye
 
 responses:
@@ -322,6 +347,233 @@ responses:
         2. 💰 Use USDT to accelerate SuperUP through a smart contract.  
         3. 🎁 Receive SPL token refunds in your Vaults spot wallet.  
         The earlier you join, the better the refund ratio and the greater your impact in helping us reach the 20 million USDT goal to launch the WaLX Exchange.
+
+#defi walchain
+  utter_about_defi_to_walchain:
+    - text: |
+        🚀 **DeFi to Walchain** is a strategic initiative to bring assets from multiple blockchains like Ethereum, BSC, Solana, and Polygon into one unified platform – **Walchain**, the core of the SuperWAL ecosystem.
+        Powered by lightning-fast processing (~2 seconds), ultra-low fees (~0.0001 SPL), and seamless multi-chain interoperability, it allows users to transfer assets, and unlock powerful DeFi tools like swapping, staking, lending, and tokenized real-world asset (RWA) investments.
+        👉 The goal: Make Walchain a global DeFi hub for managing both digital and real-world assets in one efficient ecosystem.
+
+  utter_defi_to_walchain_benefits:
+    - text: |
+        ✅ **Why choose DeFi to Walchain?**
+        • **High-speed transactions**: Up to 100,000 TPS using ZK-Rollup and SCP (~2s confirmation).  
+        • **Ultra-low fees**: Only ~0.0001 SPL (just a few cents).  
+        • **Multi-chain asset support**: Manage ETH, BNB, SOL, and more in one place.  
+        • **Strong security**: Uses Zero-Knowledge Proof and SCP’s Quorum Slice.  
+        • **Eco-friendly**: SCP replaces energy-intensive Proof-of-Work.  
+        • **Easy integration**: SuperWAL wallet works on mobile & web, beginner-friendly.
+        💡 Save money, gain speed, and access next-gen DeFi tools in one place.
+
+  utter_how_defi_to_walchain_works:
+    - text: |
+        🔄 **How does DeFi to Walchain work?**
+        1️⃣ **Transfer assets to Walchain**:  
+        • Use the Multi-chain Asset Bridge (decentralized cross-chain bridge).  
+        • Lock-and-Mint: Lock your ETH (or others) → mint wETH on Walchain.  
+        • Burn-and-Release: Burn wETH → get back native ETH.
+        2️⃣ **Use DeFi products**:  
+        • Swap with near-zero fees on WaLX Exchange.  
+        • Stake & farm on WaLGrow (5–15% APY).  
+        • Borrow/lend with NFTs or tokens as collateral.  
+        • Invest in tokenized real-world assets like real estate or gold.
+        3️⃣ **Withdraw back to original chain**:  
+        • Fast (~5–10 seconds), cheap (~0.0001 SPL), fully automated.
+        ⚙️ Powered by ZK-Rollup for lower costs and faster execution.
+
+  utter_defi_products_on_walchain:
+    - text: |
+        🔧 **Key DeFi products on Walchain**:
+        • 🧩 **WaLX Exchange**: A hybrid DEX with AMM + order book. Supports tokens, NFTs, RWAs.
+        • 🌾 **WaLGrow**: Staking & farming platform with auto-compounding and DAO voting via SPL.
+        • 🏦 **Lending Protocol**: Cross-chain lending with token/NFT collateral and AI-powered risk management.
+        • 🏠 **WaLVault**: Invest in real-world tokenized assets like real estate or gold. Fully integrated.
+        💥 All built with speed (~2s per transaction) and low fees (~0.0001 SPL).
+
+  utter_user_benefits_defi:
+    - text: |
+        🧑‍💻 **User benefits when using DeFi on Walchain**:
+        • **Save gas fees**: Swap on WaLX for a few cents vs $10 on Ethereum.
+        • **Ultra-fast execution**: Just ~2 seconds for any action.
+        • **No complex setup**: SuperWAL wallet integrates bridge and DeFi tools for mobile & web.
+        • **Wide investment access**: Tokens, stablecoins, NFTs, and RWAs for short & long-term gains.
+        • **Green & sustainable**: SCP-based consensus consumes far less energy.
+        👉 One SuperWAL wallet = access to the full world of decentralized finance.
+
+  utter_get_started_defi:
+    - text: |
+        🚀 **Getting started with DeFi to Walchain is easy**:
+        1. **Create a SuperWAL wallet**: Download the app (iOS/Android) or go to [superwal.io](https://superwal.io).
+        2. **Deposit assets**: Connect your wallet (Metamask, Phantom), and transfer funds (e.g., 100 USDT from BSC to Walchain in ~5 seconds, ~0.01 SPL fee).
+        3. **Explore DeFi tools**:  
+        • Swap instantly on WaLX  
+        • Stake with WaLGrow  
+        • Lend, borrow, or invest in tokenized assets
+        ⏱ In less than 5 minutes, you’re onboarded into a fast, affordable, next-gen Web3 ecosystem.
+
+#spl mining
+  utter_spl_mining_overview:
+    - text: >
+        SPL Mining on SuperWAL is a new way to earn SPL Tokens by contributing to the Walchain ecosystem. 
+        Unlike traditional mining methods that require powerful hardware and consume large amounts of energy, 
+        SPL Mining runs entirely in the cloud. It doesn’t drain your device’s CPU, GPU, or battery. 
+        The system is built on a Proof of Participation (PoP) model, where you earn rewards by completing 
+        simple in-app tasks, helping secure the network, or inviting new users—creating a sustainable, 
+        decentralized, and eco-friendly ecosystem.
+
+  utter_spl_mining_mechanism:
+    - text: >
+        SPL Mining operates in multiple phases and rewards users based on their participation:
+        1️⃣ Perform in-app activities such as daily logins, tasks, and user referrals.
+        2️⃣ Stake SPL Tokens to delegate to Validator Full Nodes and earn a share of transaction fees.
+        3️⃣ Become a Light Node and support the network with lightweight validation.
+        Rewards are calculated using the PoP formula: Mining Rate = Min(x, √x), 
+        where x = Base × Participation × Community Bonus.
+
+  utter_spl_mining_phases:
+    - text: >
+        SPL Mining consists of three key phases:
+        🔹 Phase 1 – Earn SPL by completing daily tasks and inviting friends on SuperWAL.
+        🔹 Phase 2 – Become a Light Node to assist with validation and delegate processing to Full Nodes.
+        🔹 Phase 3 – Receive ongoing rewards from the SuperWAL Mainnet for helping secure the network.
+        Each phase is designed to maximize user participation while promoting a healthy and scalable ecosystem.
+
+  utter_spl_mining_benefits:
+    - text: >
+         By participating in SPL Mining, you can enjoy:
+         ✅ Free SPL earnings from daily activities and referrals.
+         ✅ No need for expensive mining hardware—just a mobile device or PC.
+         ✅ Support validators by staking SPL and earn passive income from fees.
+         ✅ Early access to the SuperWAL ecosystem and potential SPL token value growth.
+         ✅ Contribute to decentralization, security, and ecosystem adoption across DeFi, GameFi, and NFTs.
+
+  utter_spl_mining_how_to_join:
+    - text: >
+         It's simple to start earning SPL with SuperWAL:
+         1️⃣ Download the SuperWAL app from Google Play or App Store.
+         2️⃣ Create an account and complete basic verification.
+         3️⃣ Complete daily tasks and invite friends to earn rewards.
+         4️⃣ Stake SPL tokens to delegate to Validator Nodes.
+         5️⃣ Stake at least 500 SPL to activate Light Node mode and earn delegation rewards from transaction fees.
+         No advanced KYC or mining rig required—just your participation!
+
+  utter_spl_mining_rewards_distribution:
+    - text: >
+        SPL rewards are distributed as follows:
+         - 🟢 Light Node users: Earn SPL through tasks and delegation rewards.
+         - 🔵 Validator Full Nodes: Receive transaction fees and validation rewards.
+         - 🟣 DAO community: Get rewarded for participating in governance and upgrades.
+         Inflation is controlled through:
+         🔁 Gradual reward reduction (e.g., halving after every 1 million SPL distributed).
+        🔥 Token burn: A portion of transaction fees is burned to maintain long-term value.
+
+  utter_spl_mining_summary:
+    - text: >
+         SPL Mining is more than just earning tokens—it's your gateway into SuperWAL’s decentralized Layer 1 blockchain.
+         You can:
+         🔹 Earn free SPL by participating in the platform.
+         🔹 Become a Light Node and support network validation.
+         🔹 Enjoy sustainable, long-term earnings through transaction fee rewards.
+         Join early and contribute to the future of Web3 infrastructure with SuperWAL!
+
+#user type
+  utter_user_types:
+    - text: |
+        There are four user types in SPL Mining:
+        1. **Normal User**: Basic access after registration.
+        2. **Pioneer**: Requires 3 verified referrals & SuperUP ≥ 1.25.
+        3. **Distributor**: Needs 5 referrals & SuperUP ≥ 3.
+        4. **Partner**: Must be a distributor with SuperUP ≥ 10.
+
+  utter_normal_user:
+    - text: |
+        A **Normal User** is someone who registers on SuperWAL. You earn 1 account point and can start mining immediately. 
+        Just make sure to reactivate mining every 24 hours to continue receiving rewards.
+
+  utter_pioneer_user:
+    - text: |
+        To become a **Pioneer**, you need at least 3 verified referral members and a SuperUP rate of 1.25 or higher. 
+        You earn 3 account points and receive a special Pioneer badge. Daily reactivation is still required.
+
+  utter_distributor_user:
+    - text: |
+        As a **Distributor**, you gain 5 account points and access active auto-mining. 
+        Requirements include ≥5 verified referrals and SuperUP ≥3. You also receive a distributor badge visible in the app.
+
+  utter_partner_user:
+    - text: |
+        The **Partner** level gives you 7 account points and maximum benefits, including exclusive rewards and incentives. 
+        You must already be a Distributor and have SuperUP ≥10. A Partner badge highlights your elite role on the platform.
+
+  utter_reactivation_requirement:
+    - text: |
+        To keep your mining active and rewards ongoing, you must reactivate the mining process every 24 hours regardless of user type.
+
+  utter_speedup_drop_effect:
+    - text: |
+        If your SuperUP (SpeedUP) drops below 3 after becoming a Distributor or Partner, you’ll retain your status but:
+        - You might be removed from contributor rankings.
+        - You may lose access to special airdrops.
+
+#upgrade user
+  utter_upgrade_normal_to_pioneer:
+    - text: |
+        To upgrade from **Normal User** to **Pioneer**: 
+        1. Invite **at least 3 verified referral members** to join SuperWAL.
+        2. Ensure your **SuperUP score is ≥ 1.25**.
+        3. Once these conditions are met, your account is **automatically upgraded** to Pioneer.
+        4. You must **reactivate mining every 24 hours** to maintain your status.
+        ✅ You'll also receive a **Pioneer badge** on your profile.
+
+  utter_upgrade_pioneer_to_distributor:
+    - text: |
+        To upgrade from **Pioneer** to **Distributor**:
+        1. Have **5 or more verified referral members**.
+        2. Reach a **SuperUP score of at least 3**.
+        3. You'll be **promoted to Distributor** and receive a **special badge**.
+        4. Distributors enjoy **Auto Mining** capabilities.
+        5. You must still **reactivate mining daily** to stay active.
+
+  utter_upgrade_distributor_to_partner:
+    - text: |
+        To become a **Partner** from **Distributor**:
+        1. Your account must be a **Distributor** already.
+        2. Achieve a **SuperUP score of at least 10**.
+        3. Once done, you’re upgraded to **Partner** and get a **Partner badge**.
+        4. You gain access to **exclusive incentives** and business growth tools.
+        5. **Auto mining** is available, and **daily reactivation is still required**.
+        ⚠️ *Note: If your SuperUP drops below 3 later, you keep Partner status but lose ranking visibility and some airdrops.*
+
+#Mining structure
+  utter_explain_mining_structure:
+    - text: |
+        The **Mining Speed (SPL/h)** in SPL Mining is calculated using the following advanced formula:
+
+        \[
+        \text{Mining Speed (SPL/h)} = \sqrt{x} - 0.15 \cdot \int_{-\infty}^{20(\sqrt{x} - 1)} \frac{e^t}{(1 + e^t)^2} dt
+        \]
+
+        Where:
+        - **x = Base rate × SuperUP × Boosters × Rewards**
+        - `Base rate`: system's minimum mining output
+        - `SuperUP`: your dynamic multiplier based on activity
+        - `Boosters`: tasks, referral bonuses, etc.
+        - `Rewards`: platform incentives and achievements
+
+        🧠 This structure is designed to **encourage team collaboration and community growth**, ensuring that active users earn more fairly.
+
+        ⚡ The integral component introduces a progressive difficulty model, making mining **more sustainable** over time.
+
+  utter_base_rate:
+    - text: |
+        The Base Rate is the fundamental mining value, calculated as:
+
+        **Base Rate** = AP × Base Score  
+        Default Base Score = 0.0005 SPL/h
+
+        **AP (Activity Points)** are earned through task completions and will be unlocked soon. By default, each user starts with AP = 1. This rate ensures everyone can participate in mining regardless of hardware.
+
 
 
 

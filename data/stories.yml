@@ -313,6 +313,145 @@ stories:
   - intent: ask_how_to_participate_in_lbr
   - action: utter_how_to_participate_in_lbr
 
+#defi walchain
+- story: DeFi to Walchain Overview Story
+  steps:
+  - intent: ask_defi_to_walchain_overview
+  - action: utter_about_defi_to_walchain
+
+- story: Benefits of DeFi to Walchain Story
+  steps:
+  - intent: ask_defi_to_walchain_benefits
+  - action: utter_defi_to_walchain_benefits
+
+- story: How DeFi to Walchain Works
+  steps:
+  - intent: ask_defi_to_walchain_how_it_works
+  - action: utter_how_defi_to_walchain_works
+
+- story: DeFi Products on Walchain
+  steps:
+  - intent: ask_defi_products_on_walchain
+  - action: utter_defi_products_on_walchain
+
+- story: User Benefits on Walchain
+  steps:
+  - intent: ask_defi_user_benefits
+  - action: utter_user_benefits_defi
+
+- story: Getting Started with DeFi to Walchain
+  steps:
+  - intent: ask_how_to_get_started_defi
+  - action: utter_get_started_defi
+
+#spl mining
+- story: User asks about SPL Mining overview
+  steps:
+  - intent: ask_spl_mining_overview
+  - action: utter_spl_mining_overview
+
+- story: User asks how SPL Mining works
+  steps:
+  - intent: ask_spl_mining_mechanism
+  - action: utter_spl_mining_mechanism
+
+- story: User asks about SPL Mining phases
+  steps:
+  - intent: ask_spl_mining_phases
+  - action: utter_spl_mining_phases
+
+#- story: User asks about Light Node
+#  steps:
+#  - intent: ask_spl_mining_light_node
+#  - action: utter_spl_mining_light_node
+
+- story: User asks benefits of SPL Mining
+  steps:
+  - intent: ask_spl_mining_benefits
+  - action: utter_spl_mining_benefits
+
+- story: User asks how to join SPL Mining
+  steps:
+  - intent: ask_spl_mining_how_to_join
+  - action: utter_spl_mining_how_to_join
+
+- story: User asks reward and distribution
+  steps:
+  - intent: ask_spl_mining_rewards_distribution
+  - action: utter_spl_mining_rewards_distribution
+
+- story: User asks for a summary
+  steps:
+  - intent: ask_spl_mining_summary
+  - action: utter_spl_mining_summary
+
+#user type
+- story: user asks about all user types
+  steps:
+    - intent: ask_user_types
+    - action: utter_user_types
+
+- story: user asks about normal user
+  steps:
+    - intent: ask_normal_user
+    - action: utter_normal_user
+
+- story: user asks about pioneer
+  steps:
+    - intent: ask_pioneer_user
+    - action: utter_pioneer_user
+
+- story: user asks about distributor
+  steps:
+    - intent: ask_distributor_user
+    - action: utter_distributor_user
+
+- story: user asks about partner
+  steps:
+    - intent: ask_partner_user
+    - action: utter_partner_user
+
+- story: user asks about reactivation
+  steps:
+    - intent: ask_reactivation_requirement
+    - action: utter_reactivation_requirement
+
+- story: user asks about speedup effect
+  steps:
+    - intent: ask_speedup_drop_effect
+    - action: utter_speedup_drop_effect
+
+#upgrade user
+- story: user asks how to upgrade to Pioneer
+  steps:
+  - intent: ask_upgrade_steps_normal_to_pioneer
+  - action: utter_upgrade_normal_to_pioneer
+
+- story: user asks how to upgrade to Distributor
+  steps:
+  - intent: ask_upgrade_steps_pioneer_to_distributor
+  - action: utter_upgrade_pioneer_to_distributor
+
+- story: user asks how to upgrade to Partner
+  steps:
+  - intent: ask_upgrade_steps_distributor_to_partner
+  - action: utter_upgrade_distributor_to_partner
+
+#Mining structure
+- story: explain mining structure
+  steps:
+  - intent: ask_mining_structure_explained
+  - action: utter_explain_mining_structure
+
+- story: explain base rate
+  steps:
+  - intent: ask_base_rate
+  - action: utter_base_rate
+
+
+
+
+
 - story: Say goodbye
   steps:
     - intent: goodbye

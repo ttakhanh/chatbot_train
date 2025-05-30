@@ -372,3 +372,173 @@ nlu:
     - What do I need to join WaLX or LBR?
     - How to start with SuperWAL’s LBR?
     - Can you guide me to join LBR?
+
+#defi to walchain
+- intent: ask_defi_to_walchain_overview
+  examples: |
+    - What is DeFi to Walchain?
+    - Tell me about DeFi to Walchain
+    - Explain DeFi to Walchain initiative
+    - What does DeFi to Walchain aim to achieve?
+
+- intent: ask_defi_to_walchain_benefits
+  examples: |
+    - Why should I use DeFi on Walchain?
+    - What are the benefits of using DeFi to Walchain?
+    - How is DeFi better on Walchain?
+
+- intent: ask_defi_to_walchain_how_it_works
+  examples: |
+    - How does DeFi to Walchain work?
+    - How do I transfer assets to Walchain?
+    - Explain how the bridge works in DeFi to Walchain
+    - How do I withdraw assets from Walchain?
+
+- intent: ask_defi_products_on_walchain
+  examples: |
+    - What DeFi products are available on Walchain?
+    - Tell me about WaLX, WaLGrow, and other tools
+    - What platforms are part of the DeFi ecosystem?
+
+- intent: ask_defi_user_benefits
+  examples: |
+    - What benefits do users get on Walchain?
+    - How much are the transaction fees?
+    - How is it better than Ethereum?
+
+- intent: ask_how_to_get_started_defi
+  examples: |
+    - How do I start using DeFi to Walchain?
+    - How do I use the SuperWAL wallet?
+    - What's the first step to join Walchain DeFi?
+    
+#spl mining
+- intent: ask_spl_mining_overview
+  examples: |
+    - What is SPL Mining?
+    - Tell me about SPL Mining on SuperWAL
+    - How does SPL Mining work?
+
+- intent: ask_spl_mining_mechanism
+  examples: |
+    - How do I earn SPL through mining?
+    - What is the SPL mining formula?
+    - How does Proof of Participation work?
+
+- intent: ask_spl_mining_phases
+  examples: |
+    - What are the phases of SPL Mining?
+    - Tell me about the different stages of SPL Mining
+    - How is SPL Mining structured?
+
+#- intent: ask_spl_mining_light_node
+#  examples: |
+#    - What is a Light Node in SPL Mining?
+#    - How can I become a Light Node?
+#    - Benefits of activating Light Node?
+
+- intent: ask_spl_mining_benefits
+  examples: |
+    - What are the benefits of SPL Mining?
+    - Why should I join SPL Mining?
+    - How does SPL Mining help the network?
+
+- intent: ask_spl_mining_how_to_join
+  examples: |
+    - How do I start SPL Mining?
+    - What do I need to join SPL Mining?
+    - Steps to earn SPL Tokens?
+
+- intent: ask_spl_mining_rewards_distribution
+  examples: |
+    - How are rewards distributed in SPL Mining?
+    - Tell me about the SPL reward model
+    - How does SPL handle inflation?
+
+- intent: ask_spl_mining_summary
+  examples: |
+    - Can you summarize SPL Mining?
+    - Give me a short overview of SPL Mining
+
+#user type
+- intent: ask_user_types
+  examples: |
+    - What are the user types in SPL Mining?
+    - How many user roles are there in SuperWAL?
+    - Can you explain different user levels?
+    - Tell me about Normal, Pioneer, Distributor, and Partner.
+
+- intent: ask_normal_user
+  examples: |
+    - Who is a normal user?
+    - What is required to be a normal user?
+    - What are the benefits of a normal user?
+
+- intent: ask_pioneer_user
+  examples: |
+    - How can I become a pioneer?
+    - Tell me about the pioneer role
+    - What are the requirements to become a pioneer in SPL Mining?
+
+- intent: ask_distributor_user
+  examples: |
+    - How to become a distributor?
+    - What do I need to be a distributor?
+    - What’s the distributor badge?
+
+- intent: ask_partner_user
+  examples: |
+    - Who can become a partner?
+    - What are the conditions to become a partner?
+    - Explain the benefits of a partner in SPL Mining.
+
+- intent: ask_reactivation_requirement
+  examples: |
+    - Do I need to reactivate mining?
+    - How often do I need to activate mining?
+    - What happens if I don't activate mining daily?
+
+- intent: ask_speedup_drop_effect
+  examples: |
+    - What if my SpeedUP drops below 3?
+    - Do I lose my status if SpeedUP goes down?
+    - What are the consequences of SpeedUP rate falling?
+
+#upgrade user
+- intent: ask_upgrade_steps_normal_to_pioneer
+  examples: |
+    - How can I upgrade from Normal User to Pioneer?
+    - What are the steps to become a Pioneer in SPL Mining?
+    - Guide me to become a Pioneer user.
+    - How do I move from Normal to Pioneer level?
+
+- intent: ask_upgrade_steps_pioneer_to_distributor
+  examples: |
+    - What should I do to become a Distributor?
+    - Steps to upgrade from Pioneer to Distributor?
+    - How to qualify for the Distributor rank?
+    - How do I become a Distributor?
+
+- intent: ask_upgrade_steps_distributor_to_partner
+  examples: |
+    - How to become a Partner?
+    - What are the requirements to move from Distributor to Partner?
+    - Tell me the steps to upgrade to Partner rank.
+    - How can I unlock Partner level in SPL Mining?
+
+#Mining structure
+- intent: ask_mining_structure_explained
+  examples: |
+    - What is the mining structure in SPL Mining?
+    - Can you explain the mining formula?
+    - How is the mining speed calculated?
+    - Tell me how SPL/h is computed.
+    - Explain the mining equation in SPL Mining.
+
+- intent: ask_base_rate
+  examples: |
+    - What is the base rate in SPL mining?
+    - How do you calculate the base rate?
+    - What's AP in base rate?
+    - Explain base score and AP
+
