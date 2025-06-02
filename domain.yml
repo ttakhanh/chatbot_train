@@ -78,6 +78,40 @@ intents:
   - ask_upgrade_steps_distributor_to_partner
   - ask_mining_structure_explained
   - ask_base_rate
+  - ask_superup_overview
+  - ask_superup_formula
+  - ask_superup_purpose
+  - ask_superup_mechanism
+  - ask_superup_refund
+  - ask_booster_overview
+  - ask_booster_location_required
+  - ask_booster_meeting_point
+  - ask_booster_calculation
+  - ask_booster_privacy
+  - ask_booster_benefits
+  - ask_member_rewards_explanation
+  - ask_member_rewards_calculation
+  - ask_member_rewards_tips
+  - ask_ads_up_boost_overview
+  - ask_ads_up_boost_mechanism
+  - ask_how_to_use_ads_up_boost
+  - ask_benefits_ads_up_boost
+  - ask_leaderboard_overview
+  - ask_spl_leaderboard
+  - ask_contributor_leaderboard
+  - ask_referral_leaderboard
+  - ask_superup_leaderboard
+  - ask_growth_overview
+  - ask_eligibility
+  - ask_how_to_earn
+  - ask_snapshots
+  - ask_reward_payment
+  - ask_referral_id
+  - ask_terms_conditions
+  - ask_how_to_join
+  - ask_supported_devices
+  - ask_ios_features
+  - ask_android_features
   - goodbye
 
 responses:
@@ -574,8 +608,220 @@ responses:
 
         **AP (Activity Points)** are earned through task completions and will be unlocked soon. By default, each user starts with AP = 1. This rate ensures everyone can participate in mining regardless of hardware.
 
+  utter_superup_overview:
+    - text: |
+        SuperUP is a voluntary sponsorship mechanism in the SuperWAL ecosystem. It allows users to contribute WaLX tokens to support the long-term development of the project. In return, users receive benefits like increased SPL mining speed and SPL token refunds, but it does not unlock any exclusive features. All users still have equal access to core functionalities.
 
+  utter_superup_formula:
+    - text: |
+        The SuperUP rate is calculated as follows:
+        SuperUP = 50 * ln(0.0025x + 1) + Beta + 1
+        Where:
+        - x = Total Sponsor (total amount of WaLX you’ve contributed)
+        - Beta = 15% of the combined SuperUP rate of your referral team
+        This formula rewards both individual contribution and team participation.
 
+  utter_superup_purpose:
+    - text: |
+        SuperUP serves several purposes in the SuperWAL ecosystem:
+        1. **Support Development** – Helps fund ongoing advancements like ZK-Rollup, SCP, and Walchain infrastructure.
+        2. **Community Building** – Contributors are recognized as Sponsors and help grow the Web3 ecosystem.
+        3. **Increased SPL Mining Speed** – Contributions increase your mining rate, allowing you to earn more SPL.
+        Remember, participation is 100% voluntary and not required for using SuperWAL features.
+
+  utter_superup_mechanism:
+    - text: |
+        SuperUP is completely voluntary. All users can fully access SuperWAL features—mining, content, and community—without contributing.
+        Contributions are made in WaLX and cannot be refunded in cash. However, they are eligible for SPL token refunds through an internal exchange rate.
+
+  utter_superup_refund:
+    - text: |
+        While SuperUP contributions are not refundable in fiat or stablecoins, you will receive **SPL tokens** as a refund. The refund rate is determined transparently by SuperWAL's internal exchange rate between WaLX and SPL.
+        This SPL can be used within the ecosystem, such as for mining or accessing future platform utilities. SPL cannot be withdrawn or traded outside the app.
+
+#Boosters Rewards
+  utter_booster_overview:
+    - text: |
+        Booster is a feature that helps increase your SPL rewards by joining a local community via Meeting Points. When you're near other users (within 200 meters), you gain additional rewards through the Community Circle Rate and Get Reward.
+
+  utter_booster_location_required:
+    - text: |
+        The app requests location access to detect your proximity to other users, create Meeting Points, and calculate Community Circle Rate. Location updates occur once per minute when the app is open and are not tracked in real-time.
+
+  utter_booster_meeting_point:
+    - text: |
+        A Meeting Point is created when you open the app and allow location access. The system identifies users within a 200-meter radius who are actively mining SPL to calculate the Community Circle Rate.
+
+  utter_booster_calculation:
+    - text: |
+        Booster = (1 + Community Circle Rate + Get Reward)  
+        Where:
+        - Community Circle Rate = Number of meeting point members × 30%
+        - Boost duration: 60 minutes
+        - Get Reward: Additional reward depending on your activity
+
+  utter_booster_privacy:
+    - text: |
+        Your location is only used for the Booster feature and is never shared with third parties. Data is stored temporarily and automatically deleted after 60 minutes of inactivity.
+
+  utter_booster_benefits:
+    - text: |
+        Booster allows you to earn more SPL rewards by mining near other users. It enhances community engagement and creates a more interactive experience, without compromising your privacy or draining your device resources.
+
+#Members Rewards
+  utter_member_rewards_explanation:
+    - text: |
+        Member Rewards are points you earn by inviting others to join your team and mine SPL tokens. The more verified, active miners in your referral network, the higher your rewards. These rewards help increase your mining speed and overall earning rate.
+
+  utter_member_rewards_calculation:
+    - text: |
+        Member Rewards are calculated using the formula:
+
+        \[
+        \text{Rewards} = (\text{User Type} + \text{Verified Mining Team} \times 25\%)
+        \]
+
+        - User Type Score:
+          - Normal = 1
+          - Pioneer = 3
+          - Distributor = 5
+          - Partner = 7
+
+        - Verified Mining Team includes members you referred, who:
+          - Have verified their email
+          - Are currently mining
+        
+        Only active users contribute to your team rewards.
+
+  utter_member_rewards_tips:
+    - text: |
+        To boost your Member Rewards:
+        1. Invite more people using your referral link.
+        2. Make sure they verify their email and stay active in mining.
+        3. Educate your team about reactivating mining every 24 hours.
+        4. Upgrade your user type (e.g., to Pioneer or Distributor) to increase base rewards.
+
+#Get Rewards
+  utter_ads_up_boost_overview:
+    - text: |
+        Ads Up Boost is a feature in the SuperWAL Mining app that allows users to watch ads and earn 0.5 points per ad to increase their Booster multiplier. This directly enhances your SPL mining speed while supporting the project through ad revenue.
+
+  utter_ads_up_boost_mechanism:
+    - text: |
+        When you watch an ad in the SuperWAL app, you gain 0.5 points added to your Booster multiplier. The total formula is:
+
+        Boosters = 1 + Community Circle + Ads Up Boost
+
+        • Each ad watched = +0.5 points  
+        • Valid for 8 hours  
+        • You can watch multiple ads to maximize your multiplier.
+
+  utter_how_to_use_ads_up_boost:
+    - text: |
+        To activate Ads Up Boost:
+
+        1. Open the SuperWAL Mining app.
+        2. Tap on “Ads Up Boost”.
+        3. Press “Get Reward” and complete the ad.
+        4. After viewing, +0.5 points are added to your booster multiplier.
+
+        Note: Each session is valid for 8 hours. You can view multiple ads to stack points.
+
+  utter_benefits_ads_up_boost:
+    - text: |
+        Using Ads Up Boost gives you:
+
+        • Faster SPL mining  
+        • Higher token earnings  
+        • Participation in exclusive promotions  
+        • Supporting SuperWAL’s sustainable development
+
+#Leaderboard
+  utter_leaderboard_overview:
+    - text: |
+        The SPL Mining system features 4 leaderboards:
+        1. SPL Leaderboard – ranks users by total mined tokens
+        2. Contributor Leaderboard – for verified contributors with high Rating Index
+        3. Referral Leaderboard – based on the number of invited verified members
+        4. SuperUP Leaderboard – ranks users by their SuperUP multiplier
+
+  utter_spl_leaderboard:
+    - text: |
+        The SPL Leaderboard ranks users based on the total amount of SPL tokens mined.
+        The ranking is influenced by your base mining rate and community-based bonuses.
+
+  utter_contributor_leaderboard:
+    - text: |
+        The Contributor Leaderboard is for verified contributors.
+        Ranking is determined by: Rating Index = Verified Referral Members * SuperUP multiplier.
+
+  utter_referral_leaderboard:
+    - text: |
+        The Referral Leaderboard ranks users based on the number of members they have invited and verified.
+        The more verified users you bring in, the higher your ranking.
+
+  utter_superup_leaderboard:
+    - text: |
+        The SuperUP Leaderboard ranks users by their SuperUP multiplier,
+        which reflects their influence and contributions to the network.
+
+#WAL Growth
+  utter_growth_overview:
+    - text: |
+        WALGrowth is a referral-based reward program from SuperWAL.
+        You earn USDT by inviting Positive Mining Members – verified users who are actively mining.
+        Campaigns are launched in phases with fixed budgets and snapshot rules.
+
+  utter_eligibility:
+    - text: |
+        Anyone with a verified SuperWAL account (email + phone) can join WALGrowth.
+        Once you have active Positive Mining Members, the program will unlock in your app.
+
+  utter_how_to_earn:
+    - text: |
+        You earn 2 points (1 point = 1 USDT) for every new Positive Mining Member you invite, after your baseline is recorded.
+        Campaigns are limited by budget and start with an initial snapshot.
+        Rewards are calculated only from new users added after that snapshot.
+
+  utter_snapshots:
+    - text: |
+        Snapshots happen hourly. Only the highest number of Positive Mining Members is used to calculate rewards.
+        The first snapshot after activation sets your baseline – only growth beyond this baseline earns rewards.
+
+  utter_reward_payment:
+    - text: |
+        Rewards are credited to your SuperWAL Wallet every hour.
+        You can withdraw at any time. KYC may be required for secure withdrawals.
+
+  utter_referral_id:
+    - text: |
+        Your referral ID is your SuperWAL username. Share it with friends so they’re added to your referral network automatically.
+
+  utter_terms_conditions:
+    - text: |
+        No fake accounts or fraud allowed – violators will be banned.
+        Only new Positive Mining Members added after the first snapshot are eligible.
+        SuperWAL reserves the right to adjust campaign rules.
+
+  utter_how_to_join:
+    - text: |
+        To join WALGrowth:
+        1. Log in to the SuperWAL app
+        2. Activate the WALGrowth Program
+        3. Start inviting and earning!
+
+#Devices
+  utter_supported_devices:
+    - text: |
+        SuperWAL is available on both iOS and Android platforms, giving users access to a smooth and secure experience across a wide range of smartphones and tablets.
+
+  utter_ios_features:
+    - text: |
+        On iOS (iPhone and iPad), SuperWAL is optimized for Apple's design standards. It supports features like Face ID, Touch ID, and provides a clean, intuitive user interface.
+
+  utter_android_features:
+    - text: |
+        On Android, SuperWAL supports a wide variety of devices from different manufacturers. It runs smoothly on Android 8.0 and above, ensuring flexibility, performance, and security.
 
 
 session_config:

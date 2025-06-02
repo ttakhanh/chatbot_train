@@ -423,3 +423,186 @@ rules:
   steps:
   - intent: ask_base_rate
   - action: utter_base_rate
+
+#superup rewards
+- rule: Explain SuperUP rewards
+  steps:
+  - intent: ask_superup_overview
+  - action: utter_superup_overview
+
+- rule: respond superup formula
+  steps:
+  - intent: ask_superup_formula
+  - action: utter_superup_formula
+
+- rule: respond superup formula
+  steps:
+  - intent: ask_superup_purpose
+  - action: utter_superup_purpose
+
+- rule: respond superup mechanism
+  steps:
+  - intent: ask_superup_mechanism
+  - action: utter_superup_mechanism
+
+- rule: respond superup refund
+  steps:
+  - intent: ask_superup_refund
+  - action: utter_superup_refund
+
+#Boosters Rewards
+- rule: Answer what Booster is
+  steps:
+  - intent: ask_booster_overview
+  - action: utter_booster_overview
+
+- rule: Explain why location access is needed
+  steps:
+  - intent: ask_booster_location_required
+  - action: utter_booster_location_required
+
+- rule: Explain meeting point
+  steps:
+  - intent: ask_booster_meeting_point
+  - action: utter_booster_meeting_point
+
+- rule: Explain Booster formula
+  steps:
+  - intent: ask_booster_calculation
+  - action: utter_booster_calculation
+
+- rule: Answer privacy concerns
+  steps:
+  - intent: ask_booster_privacy
+  - action: utter_booster_privacy
+
+- rule: Explain Booster benefits
+  steps:
+  - intent: ask_booster_benefits
+  - action: utter_booster_benefits
+
+
+#Members Rewards
+- rule: Respond to questions about Member Rewards
+  steps:
+    - intent: ask_member_rewards_explanation
+    - action: utter_member_rewards_explanation
+
+- rule: Explain Member Rewards calculation
+  steps:
+    - intent: ask_member_rewards_calculation
+    - action: utter_member_rewards_calculation
+
+- rule: Provide tips for increasing Member Rewards
+  steps:
+    - intent: ask_member_rewards_tips
+    - action: utter_member_rewards_tips
+
+#Get Rewards
+- rule: Respond to Ads Up Boost overview
+  steps:
+  - intent: ask_ads_up_boost_overview
+  - action: utter_ads_up_boost_overview
+
+- rule: user wants to know how to use Ads Up Boost
+  steps:
+  - intent: ask_ads_up_boost_mechanism
+  - action: utter_ads_up_boost_mechanism
+
+- rule: Explain the formula with Ads Up Boost
+  steps:
+  - intent: ask_how_to_use_ads_up_boost
+  - action: utter_how_to_use_ads_up_boost
+
+#- rule: Inform about Ads Up Boost duration
+#  steps:
+#  - intent: ask_ads_up_duration
+#  - action: utter_ads_up_boost_duration
+
+- rule: Describe benefits of Ads Up Boost
+  steps:
+  - intent: ask_benefits_ads_up_boost
+  - action: utter_benefits_ads_up_boost
+
+#Leaderboard
+- rule: user asks for leaderboard overview
+  steps:
+  - intent: ask_leaderboard_overview
+  - action: utter_leaderboard_overview
+
+- rule: user asks about SPL leaderboard
+  steps:
+  - intent: ask_spl_leaderboard
+  - action: utter_spl_leaderboard
+
+- rule: user asks about contributor leaderboard
+  steps:
+  - intent: ask_contributor_leaderboard
+  - action: utter_contributor_leaderboard
+
+- rule: user asks about referral leaderboard
+  steps:
+  - intent: ask_referral_leaderboard
+  - action: utter_referral_leaderboard
+
+- rule: user asks about SuperUP leaderboard
+  steps:
+  - intent: ask_superup_leaderboard
+  - action: utter_superup_leaderboard
+
+#WAL Growth
+- rule: respond about WALGrowth
+  steps:
+  - intent: ask_growth_overview
+  - action: utter_growth_overview
+
+- rule: respond eligibility
+  steps:
+  - intent: ask_eligibility
+  - action: utter_eligibility
+
+- rule: respond how to earn
+  steps:
+  - intent: ask_how_to_earn
+  - action: utter_how_to_earn
+
+- rule: respond about snapshots
+  steps:
+  - intent: ask_snapshots
+  - action: utter_snapshots
+
+- rule: respond payment
+  steps:
+  - intent: ask_reward_payment
+  - action: utter_reward_payment
+
+- rule: respond referral id
+  steps:
+  - intent: ask_referral_id
+  - action: utter_referral_id
+
+- rule: respond rules
+  steps:
+  - intent: ask_terms_conditions
+  - action: utter_terms_conditions
+
+- rule: respond how to join
+  steps:
+  - intent: ask_how_to_join
+  - action: utter_how_to_join
+
+#Devices
+- rule: respond about supported devices
+  steps:
+  - intent: ask_supported_devices
+  - action: utter_supported_devices
+
+- rule: respond about iOS features
+  steps:
+  - intent: ask_ios_features
+  - action: utter_ios_features
+
+- rule: respond about Android features
+  steps:
+  - intent: ask_android_features
+  - action: utter_android_features

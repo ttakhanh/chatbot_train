@@ -448,6 +448,188 @@ stories:
   - intent: ask_base_rate
   - action: utter_base_rate
 
+#superup rewards
+- story: Explain SuperUP rewards
+  steps:
+  - intent: ask_superup_overview
+  - action: utter_superup_overview
+
+- story: respond superup formula
+  steps:
+  - intent: ask_superup_formula
+  - action: utter_superup_formula
+
+- story: respond superup formula
+  steps:
+  - intent: ask_superup_purpose
+  - action: utter_superup_purpose
+
+- story: respond superup mechanism
+  steps:
+  - intent: ask_superup_mechanism
+  - action: utter_superup_mechanism
+
+- story: respond superup refund
+  steps:
+  - intent: ask_superup_refund
+  - action: utter_superup_refund
+
+#Boosters Rewards
+- story: Explain Booster and location access
+  steps:
+  - intent: ask_booster_overview
+  - action: utter_booster_overview
+
+- story: Answer why location access is needed
+  steps:
+  - intent: ask_booster_location_required
+  - action: utter_booster_location_required
+
+- story: Explain meeting point and Booster formula
+  steps:
+  - intent: ask_booster_meeting_point
+  - action: utter_booster_meeting_point
+
+- story: Explain Booster formula calculation
+  steps:
+  - intent: ask_booster_calculation
+  - action: utter_booster_calculation
+
+- story: Booster and privacy
+  steps:
+  - intent: ask_booster_privacy
+  - action: utter_booster_privacy
+
+- story: Booster and benefits
+  steps:
+  - intent: ask_booster_benefits
+  - action: utter_booster_benefits
+
+
+#Members Rewards
+- story: explain_member_rewards
+  steps:
+    - intent: ask_member_rewards_explanation
+    - action: utter_member_rewards_explanation
+
+- story: explain_member_rewards_calculation
+  steps:
+    - intent: ask_member_rewards_calculation
+    - action: utter_member_rewards_calculation
+
+- story: suggest_member_rewards_tips
+  steps:
+    - intent: ask_member_rewards_tips
+    - action: utter_member_rewards_tips
+
+#Get Rewards
+- story: user asks about Ads Up Boost
+  steps:
+  - intent: ask_ads_up_boost_overview
+  - action: utter_ads_up_boost_overview
+
+- story: user wants to know how to use Ads Up Boost
+  steps:
+  - intent: ask_ads_up_boost_mechanism
+  - action: utter_ads_up_boost_mechanism
+
+- story: user asks about booster formula with ads
+  steps:
+  - intent: ask_how_to_use_ads_up_boost
+  - action: utter_how_to_use_ads_up_boost
+
+#- story: user inquires about ads up reward duration
+#  steps:
+#  - intent: ask_ads_up_duration
+#  - action: utter_ads_up_boost_duration
+
+- story: user wants to know benefits of watching ads
+  steps:
+  - intent: ask_benefits_ads_up_boost
+  - action: utter_benefits_ads_up_boost
+
+#Leaderboard
+- story: user asks for leaderboard overview
+  steps:
+  - intent: ask_leaderboard_overview
+  - action: utter_leaderboard_overview
+
+- story: user asks about SPL leaderboard
+  steps:
+  - intent: ask_spl_leaderboard
+  - action: utter_spl_leaderboard
+
+- story: user asks about contributor leaderboard
+  steps:
+  - intent: ask_contributor_leaderboard
+  - action: utter_contributor_leaderboard
+
+- story: user asks about referral leaderboard
+  steps:
+  - intent: ask_referral_leaderboard
+  - action: utter_referral_leaderboard
+
+- story: user asks about SuperUP leaderboard
+  steps:
+  - intent: ask_superup_leaderboard
+  - action: utter_superup_leaderboard
+
+#WAL Growth
+- story: ask about WALGrowth
+  steps:
+  - intent: ask_growth_overview
+  - action: utter_growth_overview
+
+- story: ask eligibility
+  steps:
+  - intent: ask_eligibility
+  - action: utter_eligibility
+
+- story: ask how to earn
+  steps:
+  - intent: ask_how_to_earn
+  - action: utter_how_to_earn
+
+- story: ask about snapshots
+  steps:
+  - intent: ask_snapshots
+  - action: utter_snapshots
+
+- story: ask payment
+  steps:
+  - intent: ask_reward_payment
+  - action: utter_reward_payment
+
+- story: ask referral id
+  steps:
+  - intent: ask_referral_id
+  - action: utter_referral_id
+
+- story: ask rules
+  steps:
+  - intent: ask_terms_conditions
+  - action: utter_terms_conditions
+
+- story: ask how to join
+  steps:
+  - intent: ask_how_to_join
+  - action: utter_how_to_join
+
+#Devices
+- story: user asks about supported devices
+  steps:
+  - intent: ask_supported_devices
+  - action: utter_supported_devices
+
+- story: user asks about iOS features
+  steps:
+  - intent: ask_ios_features
+  - action: utter_ios_features
+
+- story: user asks about Android features
+  steps:
+  - intent: ask_android_features
+  - action: utter_android_features
 
 
 

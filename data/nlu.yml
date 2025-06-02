@@ -542,3 +542,225 @@ nlu:
     - What's AP in base rate?
     - Explain base score and AP
 
+#SuperUp rewards
+- intent: ask_superup_overview
+  examples: |
+    - What is SuperUP in SuperWAL?
+    - Can you explain SuperUP rewards?
+    - Tell me about the sponsor mechanism in SuperWAL.
+
+- intent: ask_superup_formula
+  examples: |
+    - How is SuperUP calculated?
+    - What's the formula for the SuperUP rate?
+    - Explain how my SuperUP score is determined.
+
+- intent: ask_superup_purpose
+  examples: |
+    - What's the purpose of SuperUP?
+    - Why should I contribute to SuperUP?
+    - What does SuperUP sponsorship do?
+
+- intent: ask_superup_mechanism
+  examples: |
+    - How does SuperUP work?
+    - Is SuperUP mandatory?
+    - Can I use the app without contributing to SuperUP?
+
+- intent: ask_superup_refund
+  examples: |
+    - How does the SPL refund work in SuperUP?
+    - Can I get my WaLX back?
+    - What's the refund mechanism in SuperWAL?
+
+#Boosters Rewards
+- intent: ask_booster_overview
+  examples: |
+    - What is Booster?
+    - How does the Booster feature work?
+    - What are the benefits of Booster?
+
+- intent: ask_booster_location_required
+  examples: |
+    - Why does the app need location access?
+    - Do I need to enable GPS for Booster?
+    - What permissions are required for Booster?
+
+- intent: ask_booster_meeting_point
+  examples: |
+    - What is a Meeting Point in Booster?
+    - How is a meeting point created?
+    - How does the meeting point work?
+
+- intent: ask_booster_calculation
+  examples: |
+    - How is the Booster calculated?
+    - What's the Booster formula?
+    - How do you calculate the Community Circle Rate?
+
+- intent: ask_booster_privacy
+  examples: |
+    - Does Booster affect my privacy?
+    - Is my location data stored?
+    - What data does Booster collect?
+
+- intent: ask_booster_benefits
+  examples: |
+    - What are the benefits of using Booster?
+    - Does Booster give me more rewards?
+    - How does Booster help me earn more SPL?
+
+#Members Rewards
+- intent: ask_member_rewards_explanation
+  examples: |
+    - What are Member Rewards in SuperWAL?
+    - How do Member Rewards work?
+    - Tell me about the member score system.
+    - How do I earn points with my team?
+    - What’s the benefit of referring users?
+
+- intent: ask_member_rewards_calculation
+  examples: |
+    - How are Member Rewards calculated?
+    - What’s the formula for member points?
+    - How does my user type affect member rewards?
+    - What’s a Verified Mining Team?
+
+- intent: ask_member_rewards_tips
+  examples: |
+    - How can I increase my member rewards?
+    - How to get more verified miners in my team?
+    - What should I do to keep my team active?
+
+#Get Rewards
+- intent: ask_ads_up_boost_overview
+  examples: |
+    - What is Ads Up Boost in SuperWAL?
+    - How does watching ads increase my mining speed?
+    - Tell me about the ad reward feature
+    - What’s the purpose of Ads Up Boost?
+
+- intent: ask_ads_up_boost_mechanism
+  examples: |
+    - How does Ads Up Boost work?
+    - What’s the multiplier formula with Ads Up Boost?
+    - Explain the mechanism of ad rewards
+
+- intent: ask_how_to_use_ads_up_boost
+  examples: |
+    - How do I activate Ads Up Boost?
+    - Steps to watch ads for SPL rewards
+    - How can I get rewards by watching ads?
+
+- intent: ask_benefits_ads_up_boost
+  examples: |
+    - What are the benefits of watching ads?
+    - Why should I use Ads Up Boost?
+    - Is watching ads worth it in SuperWAL?
+
+#Leaderboard
+- intent: ask_leaderboard_overview
+  examples: |
+    - I want to see the SPL Mining leaderboard
+    - What leaderboards are available?
+    - How do the leaderboards in the system work?
+    - How many types of leaderboards are there?
+
+- intent: ask_spl_leaderboard
+  examples: |
+    - What is the SPL leaderboard?
+    - Who is on top of the SPL leaderboard?
+    - How is the ranking based on total SPL tokens?
+
+- intent: ask_contributor_leaderboard
+  examples: |
+    - How does the Contributor leaderboard work?
+    - How can I get into the Contributor top ranking?
+    - How is the Rating Index calculated?
+
+- intent: ask_referral_leaderboard
+  examples: |
+    - Who invited the most members?
+    - What is the referral leaderboard?
+    - How does the referral leaderboard work?
+
+- intent: ask_superup_leaderboard
+  examples: |
+    - What is the SuperUP leaderboard?
+    - Who has the highest SuperUP multiplier?
+    - What is the purpose of the SuperUP leaderboard?
+
+#WAL Growth
+- intent: ask_growth_overview
+  examples: |
+    - What is the WALGrowth program?
+    - Tell me about the SuperWAL Growth Campaign
+    - How does the referral reward system work
+
+- intent:  ask_eligibility
+  examples: |
+    - Who can join WALGrowth?
+    - What are the requirements to participate?
+    - Do I need to verify my account?
+
+- intent: ask_how_to_earn
+  examples: |
+    - How can I earn rewards?
+    - How does the mining referral bonus work?
+    - Explain the reward calculation in WALGrowth
+
+- intent: ask_snapshots
+  examples: |
+    - What are snapshots in WALGrowth?
+    - How are mining members counted?
+    - How often are referrals checked?
+
+- intent: ask_reward_payment
+  examples: |
+    - When do I receive my rewards?
+    - How are payments made?
+    - How can I withdraw my earnings?
+
+- intent: ask_referral_id
+  examples: |
+    - What is my referral ID?
+    - How do I share my SuperWAL referral code?
+
+- intent: ask_terms_conditions
+  examples: |
+    - What are the rules for WALGrowth?
+    - Can I use fake accounts?
+    - Is there any restriction in the program?
+
+- intent: ask_how_to_join
+  examples: |    
+    - How do I join the WALGrowth program?
+    - What are the steps to participate?
+    - Where can I activate the referral campaign?   
+
+#Devices
+- intent: ask_supported_devices
+  examples: |
+    - Which devices support the SuperWAL app?
+    - Is SuperWAL available on iOS and Android?
+    - What platforms is SuperWAL available on?
+    - Can I use SuperWAL on iPhone?
+    - Is there an Android version of SuperWAL?
+
+- intent: ask_ios_features
+  examples: |
+    - How does SuperWAL work on iOS?
+    - What is the iOS experience like for SuperWAL?
+    - Does SuperWAL support iPad?
+    - Is SuperWAL optimized for iOS?
+
+- intent: ask_android_features
+  examples: |
+    - How does SuperWAL work on Android?
+    - What Android devices can use SuperWAL?
+    - Is SuperWAL compatible with Samsung phones?
+    - Is the Android version of SuperWAL optimized?
+
+
+
+
