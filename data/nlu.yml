@@ -1,771 +1,6 @@
 version: "3.1"
 
 nlu:
-
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-    - Hello, I want to know about SuperWAL
-
-- intent: goodbye
-  examples: |
-    - good by
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-# Category: Key Features
-- intent: ask_superwal_components
-  examples: |
-    - What are the main components of the SuperWAL ecosystem?
-    - Tell me about the core features of SuperWAL
-    - What modules are included in SuperWAL?
-
-- intent: ask_walfinance_services
-  examples: |
-    - What services does WaLFinance offer?
-    - Tell me about DeFi features in SuperWAL
-    - What can I do with WaLFinance?
-
-- intent: ask_nft_marketplace
-  examples: |
-    - How can I mint NFTs on SuperWAL?
-    - Does SuperWAL support NFT trading?
-    - What is the NFT Marketplace like?
-
-- intent: ask_identity_ai
-  examples: |
-    - What is WaLIdentity?
-    - How does SuperWAL use AI for identity and security?
-    - Tell me about AI-powered DID in SuperWAL
-
-- intent: ask_socialfi_gamefi
-  examples: |
-    - How does SuperWAL support SocialFi and GameFi?
-    - Can I build a decentralized game on SuperWAL?
-    - Is there a social platform in the ecosystem?
-
-- intent: ask_rwa_tokenization
-  examples: |
-    - How does SuperWAL tokenize real-world assets?
-    - What is RWA in SuperWAL?
-    - Can I tokenize real estate or art?
-
-- intent: ask_multichain_bridge
-  examples: |
-    - What blockchains are supported by the Multi-Chain Bridge?
-    - Can I transfer tokens between chains?
-    - Does SuperWAL support cross-chain transfers?
-
-- intent: ask_spl_token
-  examples: |
-    - What is the SPL token?
-    - Can you explain SPL?
-    - Tell me about the SPL token in SuperWAL
-
-- intent: ask_spl_use_cases
-  examples: |
-    - What are the use cases of SPL?
-    - How is the SPL token used?
-    - What is SPL used for in Walchain?
-    - Tell me the real-world applications of SPL.
-    - How does SPL work in the ecosystem?
-
-- intent: ask_spl_payment
-  examples: |
-    - Can SPL be used for payments?
-    - How can I send money with SPL?
-    - How does SPL support peer-to-peer transactions?
-    - Is SPL suitable for microtransactions?
-
-- intent: ask_spl_governance
-  examples: |
-    - Can I use SPL for governance?
-    - How do I vote with SPL?
-    - How does the Walchain DAO work?
-    - What role does SPL play in decision-making?
-    
-- intent: ask_spl_verification
-  examples: |
-    - Can I verify documents with SPL?
-    - How does document verification work with SPL and DID?
-    - Is SPL used for identity verification?
-    - Can I authenticate files on Walchain?
-    
-- intent: ask_spl_storage
-  examples: |
-    - Can I store files using SPL?
-    - How is SPL used for decentralized storage?
-    - What's the relation between IPFS and SPL?
-    - How does Walchain support file storage?
-    
-
-- intent: ask_spl_validator_rewards
-  examples: |
-    - How do validators earn SPL?
-    - Tell me about SPL rewards for validators
-    - Validator incentives in SPL?
-
-- intent: ask_spl_staking
-  examples: |
-    - How does SPL staking work?
-    - Can I earn rewards by staking SPL?
-    - What's the benefit of staking SPL tokens?
-    - How do I become a Light Validator?
-
-- intent: ask_spl_inflation_deflation
-  examples: |
-    - Does SPL have a fixed supply?
-    - How is SPL deflation controlled?
-    - What are the inflation mechanisms for SPL?
-
-- intent: ask_staking_mining
-  examples: |
-    - How can I earn rewards from staking?
-    - Does SuperWAL support mining?
-    - What are the staking incentives?
-
-# Category: Walchain Infrastructure
-- intent: ask_tps_performance
-  examples: |
-    - How many TPS can Walchain handle?
-    - Is Walchain fast?
-    - What's the transaction speed?
-
-- intent: ask_low_fees
-  examples: |
-    - Why are SuperWAL's fees so low?
-    - Are there transaction costs?
-    - How does Walchain keep fees near zero?
-
-- intent: ask_solidity_support
-  examples: |
-    - Can I build with Solidity on Walchain?
-    - Is SuperWAL compatible with Ethereum tools?
-    - Does it support zkEVM?
-
-- intent: ask_energy_efficiency
-  examples: |
-    - Is Walchain energy-efficient?
-    - What consensus does it use?
-    - Does it use Proof-of-Work?
-
-- intent: ask_scalability
-  examples: |
-    - How scalable is SuperWAL?
-    - Can it handle a high volume of transactions?
-    - Is it suitable for large dApps?
-
-# Category: Solving Blockchain Problems
-- intent: ask_high_fee_solution
-  examples: |
-    - How does SuperWAL solve high gas fees?
-    - Are microtransactions possible?
-    - Is it affordable to use?
-
-- intent: ask_transaction_speed
-  examples: |
-    - Are transactions fast on SuperWAL?
-    - What’s the finality time?
-    - How fast are confirmations?
-
-- intent: ask_interoperability
-  examples: |
-    - Does SuperWAL support cross-chain features?
-    - Can it connect to other blockchains?
-    - What interoperability features does it have?
-
-- intent: ask_security_ai
-  examples: |
-    - How secure is SuperWAL?
-    - How does it detect fraud?
-    - Does AI protect the ecosystem?
-
-- intent: ask_rwa_challenges
-  examples: |
-    - How does SuperWAL simplify RWA tokenization?
-    - What legal framework does it use?
-    - Is RWA tokenization easy?
-
-# Category: Why SuperWAL Stands Out
-- intent: ask_why_superwal
-  examples: |
-    - What makes SuperWAL different?
-    - Why should I choose SuperWAL?
-    - How is SuperWAL better than others?
-
-- intent: ask_scalability_support
-  examples: |
-    - Can SuperWAL support large-scale dApps?
-    - Is it scalable for Web3?
-    - How does SuperWAL ensure performance?
-
-- intent: ask_fee_accessibility
-  examples: |
-    - Is SuperWAL affordable to use?
-    - Do users need to pay a lot in fees?
-    - Is it cost-effective?
-
-- intent: ask_cross_chain_integration
-  examples: |
-    - Does SuperWAL integrate with major chains?
-    - Can I use it with BNB, Solana, or Polygon?
-    - What blockchains does it support?
-
-- intent: ask_developer_support
-  examples: |
-    - What support is available for developers?
-    - Are there tools or SDKs?
-    - Can I build easily on SuperWAL?
-
-#roadmap
-- intent: ask_superwal_roadmap
-  examples: |
-    - What is the roadmap of SuperWAL?
-    - Tell me about SuperWAL's development plan.
-    - How does SuperWAL plan its ecosystem?
-
-- intent: ask_phase1
-  examples: |
-    - What is Phase 1 of SuperWAL?
-    - Tell me about the first phase of the roadmap.
-    - What happens in Q1 to Q3 2025?
-
-- intent: ask_phase2
-  examples: |
-    - What is Phase 2 about?
-    - What are the developments in Q4 2025 to Q1 2026?
-    - What DeFi features are being built?
-
-- intent: ask_phase3
-  examples: |
-    - What is Phase 3 of the roadmap?
-    - What is being planned from Q2 2026 to Q4 2026?
-    - How will SuperWAL achieve cross-chain trading?
-
-- intent: ask_phase4
-  examples: |
-    - What is Phase 4 in the roadmap?
-    - What's coming in Q1 to Q2 2027?
-    - Tell me about yield optimization and staking.
-
-- intent: ask_phase5
-  examples: |
-    - What is Phase 5 of the roadmap?
-    - What will happen after Q3 2027?
-    - How is SuperWAL using AI in Web3?
-
-#token distribution
-- intent: ask_token_distribution
-  examples: |
-    - How is the SPL token distributed?
-    - Can you tell me about SPL token allocation?
-    - What is the token distribution of SuperWAL?
-    - Tell me about the SPL token supply and allocation.
-    - How many SPL tokens are for mining?
-    - What percentage of SPL is for marketing?
-    - Explain the SPL tokenomics distribution.
-    - Who gets how much in SPL token allocation?
-    - How is the 1 billion SPL token supply divided?
-
-#WAL mobile
-- intent: ask_about_wal_mobile_node
-  examples: |
-    - What is WAL Mobile Node?
-    - Tell me about WAL Mobile Node
-    - How does WAL Mobile Node work?
-    - How can I earn SPL with my phone?
-    - What are the benefits of joining WAL Mobile Node?
-
-- intent: ask_who_can_join
-  examples: |
-    - Who can join WAL Mobile Node?
-    - Do I need to be a blockchain expert to use WAL Mobile Node?
-    - Is WAL Mobile Node beginner-friendly?
-
-- intent: ask_how_to_earn_spl
-  examples: |
-    - How do I earn SPL tokens?
-    - What do I need to do to receive airdrops?
-    - Can I earn from delegation?
-
-- intent: ask_phases_of_node
-  examples: |
-    - What are the phases of WAL Mobile Node?
-    - How does WAL Mobile Node progress over time?
-    - Tell me about the three stages of WAL Mobile Node
-
-- intent: ask_why_join
-  examples: |
-    - Why should I join WAL Mobile Node?
-    - What are the advantages of using WAL Mobile Node?
-    - Is it worth becoming a Light Node?
-    
-#WALX exchange
-- intent: ask_about_walx_exchange
-  examples: |
-    - What is the WaLX Exchange?
-    - Tell me about WaLX
-    - How does the WaLX Exchange work?
-    - Explain the WaLX platform
-    - What can I do on WaLX?
-
-- intent: ask_about_lbr
-  examples: |
-    - What is LBR?
-    - What is Liquidity Bootstrapping Round?
-    - Explain the LBR of SuperWAL
-    - How does the LBR system work?
-    - Tell me about the LBR process
-
-- intent: ask_about_superup
-  examples: |
-    - What is SuperUP?
-    - How does SuperUP relate to LBR?
-    - Why do I need to boost SuperUP?
-    - What does boosting SuperUP do?
-    - Can you explain how SuperUP works?
-
-- intent: ask_about_spl_refunds
-  examples: |
-    - How do I get SPL refunds?
-    - What are SPL refunds?
-    - What happens when I accelerate SuperUP?
-    - Will I earn tokens for participating?
-    - How are rewards distributed?
-
-- intent: ask_about_lbr_benefits
-  examples: |
-    - Why should I join LBR?
-    - What are the benefits of LBR?
-    - Is LBR a good opportunity?
-    - What makes LBR special?
-    - What's in it for me if I join LBR?
-
-- intent: ask_about_walx_vision
-  examples: |
-    - What is the future of WaLX?
-    - Will WaLX become a global exchange?
-    - What’s next for WaLX?
-    - Tell me the long-term plan for WaLX
-    - Will WaLX support other blockchains?
-
-- intent: ask_how_to_participate_in_lbr
-  examples: |
-    - How do I participate in LBR?
-    - How can I join LBR?
-    - What do I need to join WaLX or LBR?
-    - How to start with SuperWAL’s LBR?
-    - Can you guide me to join LBR?
-
-#defi to walchain
-- intent: ask_defi_to_walchain_overview
-  examples: |
-    - What is DeFi to Walchain?
-    - Tell me about DeFi to Walchain
-    - Explain DeFi to Walchain initiative
-    - What does DeFi to Walchain aim to achieve?
-
-- intent: ask_defi_to_walchain_benefits
-  examples: |
-    - Why should I use DeFi on Walchain?
-    - What are the benefits of using DeFi to Walchain?
-    - How is DeFi better on Walchain?
-
-- intent: ask_defi_to_walchain_how_it_works
-  examples: |
-    - How does DeFi to Walchain work?
-    - How do I transfer assets to Walchain?
-    - Explain how the bridge works in DeFi to Walchain
-    - How do I withdraw assets from Walchain?
-
-- intent: ask_defi_products_on_walchain
-  examples: |
-    - What DeFi products are available on Walchain?
-    - Tell me about WaLX, WaLGrow, and other tools
-    - What platforms are part of the DeFi ecosystem?
-
-- intent: ask_defi_user_benefits
-  examples: |
-    - What benefits do users get on Walchain?
-    - How much are the transaction fees?
-    - How is it better than Ethereum?
-
-- intent: ask_how_to_get_started_defi
-  examples: |
-    - How do I start using DeFi to Walchain?
-    - How do I use the SuperWAL wallet?
-    - What's the first step to join Walchain DeFi?
-    
-#spl mining
-- intent: ask_spl_mining_overview
-  examples: |
-    - What is SPL Mining?
-    - Tell me about SPL Mining on SuperWAL
-    - How does SPL Mining work?
-
-- intent: ask_spl_mining_mechanism
-  examples: |
-    - How do I earn SPL through mining?
-    - What is the SPL mining formula?
-    - How does Proof of Participation work?
-
-- intent: ask_spl_mining_phases
-  examples: |
-    - What are the phases of SPL Mining?
-    - Tell me about the different stages of SPL Mining
-    - How is SPL Mining structured?
-
-#- intent: ask_spl_mining_light_node
-#  examples: |
-#    - What is a Light Node in SPL Mining?
-#    - How can I become a Light Node?
-#    - Benefits of activating Light Node?
-
-- intent: ask_spl_mining_benefits
-  examples: |
-    - What are the benefits of SPL Mining?
-    - Why should I join SPL Mining?
-    - How does SPL Mining help the network?
-
-- intent: ask_spl_mining_how_to_join
-  examples: |
-    - How do I start SPL Mining?
-    - What do I need to join SPL Mining?
-    - Steps to earn SPL Tokens?
-
-- intent: ask_spl_mining_rewards_distribution
-  examples: |
-    - How are rewards distributed in SPL Mining?
-    - Tell me about the SPL reward model
-    - How does SPL handle inflation?
-
-- intent: ask_spl_mining_summary
-  examples: |
-    - Can you summarize SPL Mining?
-    - Give me a short overview of SPL Mining
-
-#user type
-- intent: ask_user_types
-  examples: |
-    - What are the user types in SPL Mining?
-    - How many user roles are there in SuperWAL?
-    - Can you explain different user levels?
-    - Tell me about Normal, Pioneer, Distributor, and Partner.
-
-- intent: ask_normal_user
-  examples: |
-    - Who is a normal user?
-    - What is required to be a normal user?
-    - What are the benefits of a normal user?
-
-- intent: ask_pioneer_user
-  examples: |
-    - How can I become a pioneer?
-    - Tell me about the pioneer role
-    - What are the requirements to become a pioneer in SPL Mining?
-
-- intent: ask_distributor_user
-  examples: |
-    - How to become a distributor?
-    - What do I need to be a distributor?
-    - What’s the distributor badge?
-
-- intent: ask_partner_user
-  examples: |
-    - Who can become a partner?
-    - What are the conditions to become a partner?
-    - Explain the benefits of a partner in SPL Mining.
-
-- intent: ask_reactivation_requirement
-  examples: |
-    - Do I need to reactivate mining?
-    - How often do I need to activate mining?
-    - What happens if I don't activate mining daily?
-
-- intent: ask_speedup_drop_effect
-  examples: |
-    - What if my SpeedUP drops below 3?
-    - Do I lose my status if SpeedUP goes down?
-    - What are the consequences of SpeedUP rate falling?
-
-#upgrade user
-- intent: ask_upgrade_steps_normal_to_pioneer
-  examples: |
-    - How can I upgrade from Normal User to Pioneer?
-    - What are the steps to become a Pioneer in SPL Mining?
-    - Guide me to become a Pioneer user.
-    - How do I move from Normal to Pioneer level?
-
-- intent: ask_upgrade_steps_pioneer_to_distributor
-  examples: |
-    - What should I do to become a Distributor?
-    - Steps to upgrade from Pioneer to Distributor?
-    - How to qualify for the Distributor rank?
-    - How do I become a Distributor?
-
-- intent: ask_upgrade_steps_distributor_to_partner
-  examples: |
-    - How to become a Partner?
-    - What are the requirements to move from Distributor to Partner?
-    - Tell me the steps to upgrade to Partner rank.
-    - How can I unlock Partner level in SPL Mining?
-
-#Mining structure
-- intent: ask_mining_structure_explained
-  examples: |
-    - What is the mining structure in SPL Mining?
-    - Can you explain the mining formula?
-    - How is the mining speed calculated?
-    - Tell me how SPL/h is computed.
-    - Explain the mining equation in SPL Mining.
-
-- intent: ask_base_rate
-  examples: |
-    - What is the base rate in SPL mining?
-    - How do you calculate the base rate?
-    - What's AP in base rate?
-    - Explain base score and AP
-
-#SuperUp rewards
-- intent: ask_superup_overview
-  examples: |
-    - What is SuperUP in SuperWAL?
-    - Can you explain SuperUP rewards?
-    - Tell me about the sponsor mechanism in SuperWAL.
-
-- intent: ask_superup_formula
-  examples: |
-    - How is SuperUP calculated?
-    - What's the formula for the SuperUP rate?
-    - Explain how my SuperUP score is determined.
-
-- intent: ask_superup_purpose
-  examples: |
-    - What's the purpose of SuperUP?
-    - Why should I contribute to SuperUP?
-    - What does SuperUP sponsorship do?
-
-- intent: ask_superup_mechanism
-  examples: |
-    - How does SuperUP work?
-    - Is SuperUP mandatory?
-    - Can I use the app without contributing to SuperUP?
-
-- intent: ask_superup_refund
-  examples: |
-    - How does the SPL refund work in SuperUP?
-    - Can I get my WaLX back?
-    - What's the refund mechanism in SuperWAL?
-
-#Boosters Rewards
-- intent: ask_booster_overview
-  examples: |
-    - What is Booster?
-    - How does the Booster feature work?
-    - What are the benefits of Booster?
-
-- intent: ask_booster_location_required
-  examples: |
-    - Why does the app need location access?
-    - Do I need to enable GPS for Booster?
-    - What permissions are required for Booster?
-
-- intent: ask_booster_meeting_point
-  examples: |
-    - What is a Meeting Point in Booster?
-    - How is a meeting point created?
-    - How does the meeting point work?
-
-- intent: ask_booster_calculation
-  examples: |
-    - How is the Booster calculated?
-    - What's the Booster formula?
-    - How do you calculate the Community Circle Rate?
-
-- intent: ask_booster_privacy
-  examples: |
-    - Does Booster affect my privacy?
-    - Is my location data stored?
-    - What data does Booster collect?
-
-- intent: ask_booster_benefits
-  examples: |
-    - What are the benefits of using Booster?
-    - Does Booster give me more rewards?
-    - How does Booster help me earn more SPL?
-
-#Members Rewards
-- intent: ask_member_rewards_explanation
-  examples: |
-    - What are Member Rewards in SuperWAL?
-    - How do Member Rewards work?
-    - Tell me about the member score system.
-    - How do I earn points with my team?
-    - What’s the benefit of referring users?
-
-- intent: ask_member_rewards_calculation
-  examples: |
-    - How are Member Rewards calculated?
-    - What’s the formula for member points?
-    - How does my user type affect member rewards?
-    - What’s a Verified Mining Team?
-
-- intent: ask_member_rewards_tips
-  examples: |
-    - How can I increase my member rewards?
-    - How to get more verified miners in my team?
-    - What should I do to keep my team active?
-
-#Get Rewards
-- intent: ask_ads_up_boost_overview
-  examples: |
-    - What is Ads Up Boost in SuperWAL?
-    - How does watching ads increase my mining speed?
-    - Tell me about the ad reward feature
-    - What’s the purpose of Ads Up Boost?
-
-- intent: ask_ads_up_boost_mechanism
-  examples: |
-    - How does Ads Up Boost work?
-    - What’s the multiplier formula with Ads Up Boost?
-    - Explain the mechanism of ad rewards
-
-- intent: ask_how_to_use_ads_up_boost
-  examples: |
-    - How do I activate Ads Up Boost?
-    - Steps to watch ads for SPL rewards
-    - How can I get rewards by watching ads?
-
-- intent: ask_benefits_ads_up_boost
-  examples: |
-    - What are the benefits of watching ads?
-    - Why should I use Ads Up Boost?
-    - Is watching ads worth it in SuperWAL?
-
-#Leaderboard
-- intent: ask_leaderboard_overview
-  examples: |
-    - I want to see the SPL Mining leaderboard
-    - What leaderboards are available?
-    - How do the leaderboards in the system work?
-    - How many types of leaderboards are there?
-
-- intent: ask_spl_leaderboard
-  examples: |
-    - What is the SPL leaderboard?
-    - Who is on top of the SPL leaderboard?
-    - How is the ranking based on total SPL tokens?
-
-- intent: ask_contributor_leaderboard
-  examples: |
-    - How does the Contributor leaderboard work?
-    - How can I get into the Contributor top ranking?
-    - How is the Rating Index calculated?
-
-- intent: ask_referral_leaderboard
-  examples: |
-    - Who invited the most members?
-    - What is the referral leaderboard?
-    - How does the referral leaderboard work?
-
-- intent: ask_superup_leaderboard
-  examples: |
-    - What is the SuperUP leaderboard?
-    - Who has the highest SuperUP multiplier?
-    - What is the purpose of the SuperUP leaderboard?
-
-#WAL Growth
-- intent: ask_growth_overview
-  examples: |
-    - What is the WALGrowth program?
-    - Tell me about the SuperWAL Growth Campaign
-    - How does the referral reward system work
-
-- intent:  ask_eligibility
-  examples: |
-    - Who can join WALGrowth?
-    - What are the requirements to participate?
-    - Do I need to verify my account?
-
-- intent: ask_how_to_earn
-  examples: |
-    - How can I earn rewards?
-    - How does the mining referral bonus work?
-    - Explain the reward calculation in WALGrowth
-
-- intent: ask_snapshots
-  examples: |
-    - What are snapshots in WALGrowth?
-    - How are mining members counted?
-    - How often are referrals checked?
-
-- intent: ask_reward_payment
-  examples: |
-    - When do I receive my rewards?
-    - How are payments made?
-    - How can I withdraw my earnings?
-
-- intent: ask_referral_id
-  examples: |
-    - What is my referral ID?
-    - How do I share my SuperWAL referral code?
-
-- intent: ask_terms_conditions
-  examples: |
-    - What are the rules for WALGrowth?
-    - Can I use fake accounts?
-    - Is there any restriction in the program?
-
-- intent: ask_how_to_join
-  examples: |
-    - How do I join the WALGrowth program?
-    - What are the steps to participate?
-    - Where can I activate the referral campaign?   
-
-#Devices
-- intent: ask_supported_devices
-  examples: |
-    - Which devices support the SuperWAL app?
-    - Is SuperWAL available on iOS and Android?
-    - What platforms is SuperWAL available on?
-    - Can I use SuperWAL on iPhone?
-    - Is there an Android version of SuperWAL?
-
-- intent: ask_ios_features
-  examples: |
-    - How does SuperWAL work on iOS?
-    - What is the iOS experience like for SuperWAL?
-    - Does SuperWAL support iPad?
-    - Is SuperWAL optimized for iOS?
-
-- intent: ask_android_features
-  examples: |
-    - How does SuperWAL work on Android?
-    - What Android devices can use SuperWAL?
-    - Is SuperWAL compatible with Samsung phones?
-    - Is the Android version of SuperWAL optimized?
-
-
-
-
-
   - intent: greet
     examples: |
       - hey
@@ -1306,25 +541,226 @@ nlu:
       - What's AP in base rate?
       - Explain base score and AP
 
+  #SuperUp rewards
+  - intent: ask_superup_overview
+    examples: |
+      - What is SuperUP in SuperWAL?
+      - Can you explain SuperUP rewards?
+      - Tell me about the sponsor mechanism in SuperWAL.
+
+  - intent: ask_superup_formula
+    examples: |
+      - How is SuperUP calculated?
+      - What's the formula for the SuperUP rate?
+      - Explain how my SuperUP score is determined.
+
+  - intent: ask_superup_purpose
+    examples: |
+      - What's the purpose of SuperUP?
+      - Why should I contribute to SuperUP?
+      - What does SuperUP sponsorship do?
+
+  - intent: ask_superup_mechanism
+    examples: |
+      - How does SuperUP work?
+      - Is SuperUP mandatory?
+      - Can I use the app without contributing to SuperUP?
+
+  - intent: ask_superup_refund
+    examples: |
+      - How does the SPL refund work in SuperUP?
+      - Can I get my WaLX back?
+      - What's the refund mechanism in SuperWAL?
+
+  #Boosters Rewards
+  - intent: ask_booster_overview
+    examples: |
+      - What is Booster?
+      - How does the Booster feature work?
+      - What are the benefits of Booster?
+
+  - intent: ask_booster_location_required
+    examples: |
+      - Why does the app need location access?
+      - Do I need to enable GPS for Booster?
+      - What permissions are required for Booster?
+
+  - intent: ask_booster_meeting_point
+    examples: |
+      - What is a Meeting Point in Booster?
+      - How is a meeting point created?
+      - How does the meeting point work?
+
+  - intent: ask_booster_calculation
+    examples: |
+      - How is the Booster calculated?
+      - What's the Booster formula?
+      - How do you calculate the Community Circle Rate?
+
+  - intent: ask_booster_privacy
+    examples: |
+      - Does Booster affect my privacy?
+      - Is my location data stored?
+      - What data does Booster collect?
+
+  - intent: ask_booster_benefits
+    examples: |
+      - What are the benefits of using Booster?
+      - Does Booster give me more rewards?
+      - How does Booster help me earn more SPL?
+
+  #Members Rewards
+  - intent: ask_member_rewards_explanation
+    examples: |
+      - What are Member Rewards in SuperWAL?
+      - How do Member Rewards work?
+      - Tell me about the member score system.
+      - How do I earn points with my team?
+      - What’s the benefit of referring users?
+
+  - intent: ask_member_rewards_calculation
+    examples: |
+      - How are Member Rewards calculated?
+      - What’s the formula for member points?
+      - How does my user type affect member rewards?
+      - What’s a Verified Mining Team?
+
+  - intent: ask_member_rewards_tips
+    examples: |
+      - How can I increase my member rewards?
+      - How to get more verified miners in my team?
+      - What should I do to keep my team active?
+
+  #Get Rewards
+  - intent: ask_ads_up_boost_overview
+    examples: |
+      - What is Ads Up Boost in SuperWAL?
+      - How does watching ads increase my mining speed?
+      - Tell me about the ad reward feature
+      - What’s the purpose of Ads Up Boost?
+
+  - intent: ask_ads_up_boost_mechanism
+    examples: |
+      - How does Ads Up Boost work?
+      - What’s the multiplier formula with Ads Up Boost?
+      - Explain the mechanism of ad rewards
+
+  - intent: ask_how_to_use_ads_up_boost
+    examples: |
+      - How do I activate Ads Up Boost?
+      - Steps to watch ads for SPL rewards
+      - How can I get rewards by watching ads?
+
+  - intent: ask_benefits_ads_up_boost
+    examples: |
+      - What are the benefits of watching ads?
+      - Why should I use Ads Up Boost?
+      - Is watching ads worth it in SuperWAL?
+
+  #Leaderboard
+  - intent: ask_leaderboard_overview
+    examples: |
+      - I want to see the SPL Mining leaderboard
+      - What leaderboards are available?
+      - How do the leaderboards in the system work?
+      - How many types of leaderboards are there?
+
+  - intent: ask_spl_leaderboard
+    examples: |
+      - What is the SPL leaderboard?
+      - Who is on top of the SPL leaderboard?
+      - How is the ranking based on total SPL tokens?
+
+  - intent: ask_contributor_leaderboard
+    examples: |
+      - How does the Contributor leaderboard work?
+      - How can I get into the Contributor top ranking?
+      - How is the Rating Index calculated?
+
+  - intent: ask_referral_leaderboard
+    examples: |
+      - Who invited the most members?
+      - What is the referral leaderboard?
+      - How does the referral leaderboard work?
+
+  - intent: ask_superup_leaderboard
+    examples: |
+      - What is the SuperUP leaderboard?
+      - Who has the highest SuperUP multiplier?
+      - What is the purpose of the SuperUP leaderboard?
+
+  #WAL Growth
+  - intent: ask_growth_overview
+    examples: |
+      - What is the WALGrowth program?
+      - Tell me about the SuperWAL Growth Campaign
+      - How does the referral reward system work
+
+  - intent: ask_eligibility
+    examples: |
+      - Who can join WALGrowth?
+      - What are the requirements to participate?
+      - Do I need to verify my account?
+
+  - intent: ask_how_to_earn
+    examples: |
+      - How can I earn rewards?
+      - How does the mining referral bonus work?
+      - Explain the reward calculation in WALGrowth
+
+  - intent: ask_snapshots
+    examples: |
+      - What are snapshots in WALGrowth?
+      - How are mining members counted?
+      - How often are referrals checked?
+
+  - intent: ask_reward_payment
+    examples: |
+      - When do I receive my rewards?
+      - How are payments made?
+      - How can I withdraw my earnings?
+
+  - intent: ask_referral_id
+    examples: |
+      - What is my referral ID?
+      - How do I share my SuperWAL referral code?
+
+  - intent: ask_terms_conditions
+    examples: |
+      - What are the rules for WALGrowth?
+      - Can I use fake accounts?
+      - Is there any restriction in the program?
+
+  - intent: ask_how_to_join
+    examples: |
+      - How do I join the WALGrowth program?
+      - What are the steps to participate?
+      - Where can I activate the referral campaign?
+
+  #Devices
+  - intent: ask_supported_devices
+    examples: |
+      - Which devices support the SuperWAL app?
+      - Is SuperWAL available on iOS and Android?
+      - What platforms is SuperWAL available on?
+      - Can I use SuperWAL on iPhone?
+      - Is there an Android version of SuperWAL?
+
+  - intent: ask_ios_features
+    examples: |
+      - How does SuperWAL work on iOS?
+      - What is the iOS experience like for SuperWAL?
+      - Does SuperWAL support iPad?
+      - Is SuperWAL optimized for iOS?
+
+  - intent: ask_android_features
+    examples: |
+      - How does SuperWAL work on Android?
+      - What Android devices can use SuperWAL?
+      - Is SuperWAL compatible with Samsung phones?
+      - Is the Android version of SuperWAL optimized?
+
   #=================  SUPERWAL ECOSYSTEM  ==================
-  #WalFlux ————
-  #OK
-  - intent: ask_walflux_features
-    examples: |
-      - What are the core features of WaLFlux?
-      - Can you tell me the capabilities of WaLFlux?
-      - What makes WaLFlux special?
-      - Why should I use WaLFlux?
-      - Explain the key benefits of WaLFlux.
-
-  - intent: ask_walflux_usecases
-    examples: |
-      - What can WaLFlux be used for?
-      - Give me some real-world use cases of WaLFlux.
-      - How does WaLFlux help in Web3?
-      - Is WaLFlux useful for cross-chain data?
-      - Any examples of how WaLFlux works?
-
   #WalVault ———
   - intent: ask_walvault_features
     examples: |
@@ -1496,6 +932,80 @@ nlu:
 
   #=================  /SUPERWAL ECOSYSTEM  ==================
 
+  #POLICY
+  - intent: ask_privacy_policy
+    examples: |
+      - What is SuperWAL's Privacy Policy?
+      - Can you explain the privacy policy?
+      - How does SuperWAL handle my data?
+
+  - intent: ask_data_collection
+    examples: |
+      - What information does SuperWAL collect?
+      - Does SuperWAL track my activities?
+      - What data is gathered when I use SuperWAL?
+
+  - intent: ask_data_usage
+    examples: |
+      - How is my information used?
+      - What does SuperWAL do with my data?
+      - Why does SuperWAL need my personal information?
+
+  - intent: ask_data_sharing
+    examples: |
+      - Does SuperWAL share my data with others?
+      - Who can access my information?
+      - Is my data shared with third parties?
+
+  - intent: ask_user_rights
+    examples: |
+      - What rights do I have over my data?
+      - Can I delete my information?
+      - How can I manage my privacy settings?
+
+  - intent: ask_data_security
+    examples: |
+      - How does SuperWAL protect my data?
+      - What security measures are in place?
+      - Is my information safe with SuperWAL?
+
+  - intent: ask_contact_info
+    examples: |
+      - How can I contact SuperWAL?
+      - Who do I reach out to for privacy concerns?
+      - What is SuperWAL's support email?
+  #/POLICY
+  #Term & condition
+  - intent: ask_terms_overview
+    examples: |
+      - What are the terms and conditions of SuperWAL?
+      - Can you summarize the SuperWAL Terms?
+      - Tell me about your terms of use.
+
+  - intent: ask_user_obligations
+    examples: |
+      - What are my responsibilities as a user?
+      - What do I need to follow when using SuperWAL?
+      - What am I obligated to do?
+
+  - intent: ask_prohibited_activities
+    examples: |
+      - What actions are not allowed?
+      - Can I use SuperWAL for crypto trading?
+      - Are there any restricted behaviors?
+
+  - intent: ask_termination_policy
+    examples: |
+      - When can my account be terminated?
+      - What is the termination policy?
+      - Can SuperWAL block my access?
+
+  - intent: ask_modifications_terms
+    examples: |
+      - Can the terms be changed?
+      - What happens if the terms are updated?
+      - How often do you update your policies?
+  #/Term & condition
   #Fallback
   - intent: out_of_scope
     examples: |
@@ -1507,4 +1017,3 @@ nlu:
       - Banana phone!
       - Can you cook pasta?
       - How many stars are in the sky?
-

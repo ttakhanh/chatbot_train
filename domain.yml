@@ -112,7 +112,7 @@ intents:
   - ask_supported_devices
   - ask_ios_features
   - ask_android_features
-=======
+
   #SUPERWAL ECOSYSTEM
   - ask_walflux_features
   - ask_walflux_usecases
@@ -139,8 +139,26 @@ intents:
   - ask_walid_concept
   - ask_walid_usage
   #/SUPERWAL ECOSYSTEM
+
+  #POLICY
+  - ask_privacy_policy
+  - ask_data_collection
+  - ask_data_usage
+  - ask_data_sharing
+  - ask_user_rights
+  - ask_data_security
+  - ask_contact_info
+  #/POLICY
+
+  #Term & condition
+  - ask_terms_overview
+  - ask_user_obligations
+  - ask_prohibited_activities
+  - ask_termination_policy
+  - ask_modifications_terms
+  #/Term & condition
+
   - out_of_scope #Fallback
->>>>>>> 77e1865 (Update NLU data, config, domain; ignore cache files)
   - goodbye
 
 responses:
@@ -636,7 +654,6 @@ responses:
 
         **AP (Activity Points)** are earned through task completions and will be unlocked soon. By default, each user starts with AP = 1. This rate ensures everyone can participate in mining regardless of hardware.
 
-<<<<<<< HEAD
   utter_superup_overview:
     - text: |
         SuperUP is a voluntary sponsorship mechanism in the SuperWAL ecosystem. It allows users to contribute WaLX tokens to support the long-term development of the project. In return, users receive benefits like increased SPL mining speed and SPL token refunds, but it does not unlock any exclusive features. All users still have equal access to core functionalities.
@@ -668,7 +685,7 @@ responses:
         While SuperUP contributions are not refundable in fiat or stablecoins, you will receive **SPL tokens** as a refund. The refund rate is determined transparently by SuperWAL's internal exchange rate between WaLX and SPL.
         This SPL can be used within the ecosystem, such as for mining or accessing future platform utilities. SPL cannot be withdrawn or traded outside the app.
 
-#Boosters Rewards
+  #Boosters Rewards
   utter_booster_overview:
     - text: |
         Booster is a feature that helps increase your SPL rewards by joining a local community via Meeting Points. When you're near other users (within 200 meters), you gain additional rewards through the Community Circle Rate and Get Reward.
@@ -697,7 +714,7 @@ responses:
     - text: |
         Booster allows you to earn more SPL rewards by mining near other users. It enhances community engagement and creates a more interactive experience, without compromising your privacy or draining your device resources.
 
-#Members Rewards
+  #Members Rewards
   utter_member_rewards_explanation:
     - text: |
         Member Rewards are points you earn by inviting others to join your team and mine SPL tokens. The more verified, active miners in your referral network, the higher your rewards. These rewards help increase your mining speed and overall earning rate.
@@ -719,7 +736,7 @@ responses:
         - Verified Mining Team includes members you referred, who:
           - Have verified their email
           - Are currently mining
-        
+
         Only active users contribute to your team rewards.
 
   utter_member_rewards_tips:
@@ -730,7 +747,7 @@ responses:
         3. Educate your team about reactivating mining every 24 hours.
         4. Upgrade your user type (e.g., to Pioneer or Distributor) to increase base rewards.
 
-#Get Rewards
+  #Get Rewards
   utter_ads_up_boost_overview:
     - text: |
         Ads Up Boost is a feature in the SuperWAL Mining app that allows users to watch ads and earn 0.5 points per ad to increase their Booster multiplier. This directly enhances your SPL mining speed while supporting the project through ad revenue.
@@ -765,7 +782,7 @@ responses:
         • Participation in exclusive promotions  
         • Supporting SuperWAL’s sustainable development
 
-#Leaderboard
+  #Leaderboard
   utter_leaderboard_overview:
     - text: |
         The SPL Mining system features 4 leaderboards:
@@ -794,7 +811,7 @@ responses:
         The SuperUP Leaderboard ranks users by their SuperUP multiplier,
         which reflects their influence and contributions to the network.
 
-#WAL Growth
+  #WAL Growth
   utter_growth_overview:
     - text: |
         WALGrowth is a referral-based reward program from SuperWAL.
@@ -839,7 +856,7 @@ responses:
         2. Activate the WALGrowth Program
         3. Start inviting and earning!
 
-#Devices
+  #Devices
   utter_supported_devices:
     - text: |
         SuperWAL is available on both iOS and Android platforms, giving users access to a smooth and secure experience across a wide range of smartphones and tablets.
@@ -1185,6 +1202,138 @@ responses:
 
   #================================  /SUPERWAL ECOSYSTEM  =============================
 
+  #POLICY
+  utter_privacy_policy_overview:
+    - text: |
+        🔐 **SuperWAL Privacy Policy Overview**
+
+        SuperWAL is committed to protecting your privacy. Our Privacy Policy outlines how we collect, use, and share your information when you interact with our services. We adhere to standards set by AdMob, Google, and applicable data protection regulations.
+
+        For detailed information, please visit our Privacy Policy: [SuperWAL Privacy Policy](https://docs.superwal.io/fundamentals/privacy-policy)
+
+  utter_data_collection:
+    - text: |
+        📊 **Information We Collect**
+
+        We collect the following types of information:
+
+        - **Information You Provide Directly**: Email address, username, and identity verification details.
+        - **Information Collected Automatically**: IP address, device type, operating system, browser information, and platform activities.
+        - **Information from Third Parties**: Data from connected services like cryptocurrency wallets or authentication platforms.
+
+  utter_data_usage:
+    - text: |
+        ⚙️ **How We Use Your Information**
+
+        Your information is used to:
+
+        - Provide and improve our services.
+        - Display personalized or non-personalized ads.
+        - Conduct analytics and research.
+        - Ensure security and prevent fraud.
+        - Comply with legal obligations.
+
+  utter_data_sharing:
+    - text: |
+        🔄 **Sharing Your Information**
+
+        We may share your information with:
+
+        - **Service Partners**: Blockchain service providers and cross-chain bridge providers.
+        - **Legal Authorities**: When required by law.
+        - **Public Blockchain**: Transaction data is recorded publicly on Walchain.
+
+        Note: We do not sell your personal data to third parties for commercial purposes.
+
+  utter_user_rights:
+    - text: |
+        🛡️ **Your Rights**
+
+        You have the right to:
+
+        - Access, correct, or delete your personal data.
+        - Withdraw consent for data processing.
+        - Lodge a complaint with a data protection authority.
+
+        To exercise these rights, contact us at: support@superwal.io
+
+  utter_data_security:
+    - text: |
+        🔒 **Data Security Measures**
+
+        We implement security measures such as:
+
+        - Encryption protocols.
+        - Secure storage practices.
+        - Regular security assessments.
+
+        These measures help protect your data from unauthorized access and breaches.
+
+  utter_contact_info:
+    - text: |
+        📬 **Contact Information**
+
+        For any questions or concerns regarding our Privacy Policy, please contact us at:
+
+        Email: support@superwal.io
+  #/POLICY
+  #Term & condition
+  utter_terms_overview:
+    - text: |
+        📄 **SuperWAL Terms & Conditions Overview**
+
+        Our Terms & Conditions lay the foundation for a secure, transparent, and fair digital experience across all SuperWAL services. These terms define your rights, responsibilities, and what you can expect from us — and vice versa.
+
+        ✅ They apply when you use any SuperWAL product, including Walpay, WaLTrust, WaLID, and others.
+
+        🔒 By continuing to use SuperWAL, you agree to these conditions as part of our commitment to trust and compliance.
+
+  utter_user_obligations:
+    - text: |
+        👤 **Your Responsibilities as a SuperWAL User**
+
+        As a user, you're expected to:
+        - Provide accurate and up-to-date information 📝
+        - Use SuperWAL services only for lawful purposes ⚖️
+        - Protect your login credentials and account access 🔐
+
+        SuperWAL may suspend or restrict your access if you fail to comply with these obligations.
+
+  utter_prohibited_activities:
+    - text: |
+        🚫 **What You Can’t Do on SuperWAL**
+
+        To ensure a secure ecosystem, users must **NOT**:
+        - Use our services for fraudulent or illegal activities
+        - Attempt to reverse-engineer our technology
+        - Violate intellectual property rights
+        - Interfere with or disrupt platform operations
+
+        Engaging in prohibited behavior may lead to suspension or legal consequences.
+
+  utter_termination_policy:
+    - text: |
+        🛑 **Termination of Access**
+
+        SuperWAL reserves the right to:
+        - Suspend or terminate accounts that breach our terms
+        - Investigate suspected abuse or security threats
+        - Remove or disable content at our discretion
+
+        We always aim to notify users in advance, but severe violations may result in immediate action.
+
+  utter_modifications_terms:
+    - text: |
+        🔁 **Changes to the Terms & Conditions**
+
+        SuperWAL may update these terms from time to time to reflect legal, technical, or business changes.
+
+        📢 When updates occur:
+        - We'll notify you through the platform or email
+        - Your continued use after changes implies agreement
+
+        We encourage all users to review our terms periodically at https://docs.superwal.io/fundamentals/terms-and-conditions.
+  #/Term & condition
   #Fallback
   utter_out_of_scope:
     - text: |

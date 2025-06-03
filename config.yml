@@ -60,15 +60,11 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    confidence_threshold: 0.7 # Ngưỡng hiểu ý định
+    confidence_threshold: 0.7
+  - name: EntitySynonymMapper
   - name: FallbackClassifier
     threshold: 0.7
     ambiguity_threshold: 0.1
-  - name: EntitySynonymMapper
-  - name: ResponseSelector
-  - name: FallbackClassifier
-    threshold: 0.7
-
 policies:
   - name: MemoizationPolicy
   - name: RulePolicy
