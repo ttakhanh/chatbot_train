@@ -1,3 +1,4 @@
+.rasa/cache/
 rasaenv/
 __pycache__/
 *.pyc
@@ -19,3 +20,74 @@ rasaenv/
 
 # Bỏ log
 *.log
+
+
+#============  MACOS  ============
+File .gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+rasaenv/
+
+# Environment files
+.env
+*.env
+
+# Rasa trained models
+models/
+*.tar.gz
+
+# Log files
+logs/
+*.log
+
+# Cache
+.cache/
+*.db
+*.sqlite3
+
+# NLU / Tracker stores
+*.json
+*.jsonl
+*.md
+*.yml~
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# VSCode, PyCharm, etc.
+.vscode/
+.idea/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Tokenizer cache (spaCy, HuggingFace)
+*.tokenizer
+*.spacy
+*.msgpack
+*.bin
+*.h5
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# rasa test results or temp files
+results/
+test-results/
+rasa_test_results/
+
+# Local training cache
+.nlu_cache/
+#============  /MACOS  ============

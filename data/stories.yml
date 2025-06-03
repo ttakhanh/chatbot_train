@@ -30,6 +30,7 @@ version: "3.1"
 #      - action: utter_ask_identity_ai
 stories:
 
+
 - story: Greet and ask about SuperWAL components
   steps:
     - intent: greet
@@ -638,3 +639,567 @@ stories:
   steps:
     - intent: goodbye
     - action: utter_goodbye
+
+  - story: Greet and ask about SuperWAL components
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_superwal_components
+      - action: utter_ask_superwal_components
+
+  - story: Ask about WaLFinance services
+    steps:
+      - intent: ask_walfinance_services
+      - action: utter_ask_walfinance_services
+
+  - story: Ask about NFT marketplace
+    steps:
+      - intent: ask_nft_marketplace
+      - action: utter_ask_nft_marketplace
+
+  - story: Ask about Identity and AI
+    steps:
+      - intent: ask_identity_ai
+      - action: utter_ask_identity_ai
+
+  - story: Ask about SocialFi and GameFi
+    steps:
+      - intent: ask_socialfi_gamefi
+      - action: utter_ask_socialfi_gamefi
+
+  - story: Ask about RWA tokenization
+    steps:
+      - intent: ask_rwa_tokenization
+      - action: utter_ask_rwa_tokenization
+
+  - story: Ask about Multi-Chain Bridge
+    steps:
+      - intent: ask_multichain_bridge
+      - action: utter_ask_multichain_bridge
+
+  - story: Ask about SPL token
+    steps:
+      - intent: ask_spl_token
+      - action: utter_ask_spl_token
+
+  - story: greet and ask about SPL
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_spl_token
+      - action: utter_ask_spl_token
+
+  #- story: ask use cases of SPL
+  #  steps:
+  #  - intent: ask_spl_token_use_cases
+  #  - action: utter_ask_spl_token_usecases
+
+  - story: ask SPL governance
+    steps:
+      - intent: ask_spl_governance
+      - action: utter_ask_spl_governance
+
+  - story: ask SPL validator rewards
+    steps:
+      - intent: ask_spl_validator_rewards
+      - action: utter_ask_spl_validator_rewards
+
+  #- story: ask SPL staking and yield farming
+  #  steps:
+  #  - intent: ask_spl_staking_yield
+  #  - action: utter_ask_spl_staking_yield
+
+  - story: ask SPL inflation and deflation
+    steps:
+      - intent: ask_spl_inflation_deflation
+      - action: utter_ask_spl_inflation_deflation
+
+  - story: Ask about staking and mining
+    steps:
+      - intent: ask_staking_mining
+      - action: utter_ask_staking_mining
+
+  - story: Ask about TPS performance
+    steps:
+      - intent: ask_tps_performance
+      - action: utter_ask_tps_performance
+
+  - story: Ask about low fees
+    steps:
+      - intent: ask_low_fees
+      - action: utter_ask_low_fees
+
+  - story: Ask about Solidity support
+    steps:
+      - intent: ask_solidity_support
+      - action: utter_ask_solidity_support
+
+  - story: Ask about energy efficiency
+    steps:
+      - intent: ask_energy_efficiency
+      - action: utter_ask_energy_efficiency
+
+  - story: Ask about scalability
+    steps:
+      - intent: ask_scalability
+      - action: utter_ask_scalability
+
+  - story: Ask about high fee solution
+    steps:
+      - intent: ask_high_fee_solution
+      - action: utter_ask_high_fee_solution
+
+  - story: Ask about transaction speed
+    steps:
+      - intent: ask_transaction_speed
+      - action: utter_ask_transaction_speed
+
+  - story: Ask about interoperability
+    steps:
+      - intent: ask_interoperability
+      - action: utter_ask_interoperability
+
+  - story: Ask about security with AI
+    steps:
+      - intent: ask_security_ai
+      - action: utter_ask_security_ai
+
+  - story: Ask about RWA challenges
+    steps:
+      - intent: ask_rwa_challenges
+      - action: utter_ask_rwa_challenges
+
+  - story: Ask why SuperWAL is unique
+    steps:
+      - intent: ask_why_superwal
+      - action: utter_ask_why_superwal
+
+  - story: Ask about scalability support
+    steps:
+      - intent: ask_scalability_support
+      - action: utter_ask_scalability_support
+
+  - story: Ask about fee accessibility
+    steps:
+      - intent: ask_fee_accessibility
+      - action: utter_ask_fee_accessibility
+
+  - story: Ask about cross-chain integration
+    steps:
+      - intent: ask_cross_chain_integration
+      - action: utter_ask_cross_chain_integration
+
+  - story: Ask about developer support
+    steps:
+      - intent: ask_developer_support
+      - action: utter_ask_developer_support
+
+  #roadmap
+  - story: Ask about SuperWAL roadmap
+    steps:
+      - intent: ask_superwal_roadmap
+      - action: utter_ask_superwal_roadmap
+
+  - story: Ask about Phase 1
+    steps:
+      - intent: ask_phase1
+      - action: utter_ask_phase1
+
+  - story: Ask about Phase 2
+    steps:
+      - intent: ask_phase2
+      - action: utter_ask_phase2
+
+  - story: Ask about Phase 3
+    steps:
+      - intent: ask_phase3
+      - action: utter_ask_phase3
+
+  - story: Ask about Phase 4
+    steps:
+      - intent: ask_phase4
+      - action: utter_ask_phase4
+
+  - story: Ask about Phase 5
+    steps:
+      - intent: ask_phase5
+      - action: utter_ask_phase5
+
+  #token distribution
+  - story: token distribution story
+    steps:
+      - intent: ask_token_distribution
+      - action: utter_ask_token_distribution
+
+  - story: user asks about spl use cases
+    steps:
+      - intent: ask_spl_use_cases
+      - action: utter_ask_spl_use_cases
+
+  - story: user asks about spl payment
+    steps:
+      - intent: ask_spl_payment
+      - action: utter_ask_spl_payment
+
+  - story: user asks about spl staking
+    steps:
+      - intent: ask_spl_staking
+      - action: utter_ask_spl_staking
+
+  - story: user asks about spl governance
+    steps:
+      - intent: ask_spl_governance
+      - action: utter_ask_spl_governance
+
+  - story: user asks about spl storage
+    steps:
+      - intent: ask_spl_storage
+      - action: utter_ask_spl_storage
+
+  - story: user asks about spl verification
+    steps:
+      - intent: ask_spl_verification
+      - action: utter_ask_spl_verification
+
+  #WAL mobile
+  - story: user asks about WAL Mobile Node
+    steps:
+      - intent: ask_about_wal_mobile_node
+      - action: utter_about_wal_mobile_node
+
+  - story: user asks who can join
+    steps:
+      - intent: ask_who_can_join
+      - action: utter_who_can_join
+
+  - story: user asks how to earn SPL
+    steps:
+      - intent: ask_how_to_earn_spl
+      - action: utter_how_to_earn_spl
+
+  - story: user asks about the phases of the node
+    steps:
+      - intent: ask_phases_of_node
+      - action: utter_phases_of_node
+
+  - story: user asks why join
+    steps:
+      - intent: ask_why_join
+      - action: utter_why_join
+
+  #walx exchange
+  - story: user asks walx exchange
+    steps:
+      - intent: ask_about_walx_exchange
+      - action: utter_about_walx_exchange
+
+  - story: user asks about lbr
+    steps:
+      - intent: ask_about_lbr
+      - action: utter_about_lbr
+
+  - story: user asks about superup
+    steps:
+      - intent: ask_about_superup
+      - action: utter_about_superup
+
+  - story: user asks spl refunds
+    steps:
+      - intent: ask_about_spl_refunds
+      - action: utter_about_spl_refunds
+
+  - story: user asks lbr benefits
+    steps:
+      - intent: ask_about_lbr_benefits
+      - action: utter_about_lbr_benefits
+
+  - story: user asks walx vision
+    steps:
+      - intent: ask_about_walx_vision
+      - action: utter_about_walx_vision
+
+  - story: user asks participate in lbr
+    steps:
+      - intent: ask_how_to_participate_in_lbr
+      - action: utter_how_to_participate_in_lbr
+
+  #defi walchain
+  - story: DeFi to Walchain Overview Story
+    steps:
+      - intent: ask_defi_to_walchain_overview
+      - action: utter_about_defi_to_walchain
+
+  - story: Benefits of DeFi to Walchain Story
+    steps:
+      - intent: ask_defi_to_walchain_benefits
+      - action: utter_defi_to_walchain_benefits
+
+  - story: How DeFi to Walchain Works
+    steps:
+      - intent: ask_defi_to_walchain_how_it_works
+      - action: utter_how_defi_to_walchain_works
+
+  - story: DeFi Products on Walchain
+    steps:
+      - intent: ask_defi_products_on_walchain
+      - action: utter_defi_products_on_walchain
+
+  - story: User Benefits on Walchain
+    steps:
+      - intent: ask_defi_user_benefits
+      - action: utter_user_benefits_defi
+
+  - story: Getting Started with DeFi to Walchain
+    steps:
+      - intent: ask_how_to_get_started_defi
+      - action: utter_get_started_defi
+
+  #spl mining
+  - story: User asks about SPL Mining overview
+    steps:
+      - intent: ask_spl_mining_overview
+      - action: utter_spl_mining_overview
+
+  - story: User asks how SPL Mining works
+    steps:
+      - intent: ask_spl_mining_mechanism
+      - action: utter_spl_mining_mechanism
+
+  - story: User asks about SPL Mining phases
+    steps:
+      - intent: ask_spl_mining_phases
+      - action: utter_spl_mining_phases
+
+  #- story: User asks about Light Node
+  #  steps:
+  #  - intent: ask_spl_mining_light_node
+  #  - action: utter_spl_mining_light_node
+
+  - story: User asks benefits of SPL Mining
+    steps:
+      - intent: ask_spl_mining_benefits
+      - action: utter_spl_mining_benefits
+
+  - story: User asks how to join SPL Mining
+    steps:
+      - intent: ask_spl_mining_how_to_join
+      - action: utter_spl_mining_how_to_join
+
+  - story: User asks reward and distribution
+    steps:
+      - intent: ask_spl_mining_rewards_distribution
+      - action: utter_spl_mining_rewards_distribution
+
+  - story: User asks for a summary
+    steps:
+      - intent: ask_spl_mining_summary
+      - action: utter_spl_mining_summary
+
+  #user type
+  - story: user asks about all user types
+    steps:
+      - intent: ask_user_types
+      - action: utter_user_types
+
+  - story: user asks about normal user
+    steps:
+      - intent: ask_normal_user
+      - action: utter_normal_user
+
+  - story: user asks about pioneer
+    steps:
+      - intent: ask_pioneer_user
+      - action: utter_pioneer_user
+
+  - story: user asks about distributor
+    steps:
+      - intent: ask_distributor_user
+      - action: utter_distributor_user
+
+  - story: user asks about partner
+    steps:
+      - intent: ask_partner_user
+      - action: utter_partner_user
+
+  - story: user asks about reactivation
+    steps:
+      - intent: ask_reactivation_requirement
+      - action: utter_reactivation_requirement
+
+  - story: user asks about speedup effect
+    steps:
+      - intent: ask_speedup_drop_effect
+      - action: utter_speedup_drop_effect
+
+  #upgrade user
+  - story: user asks how to upgrade to Pioneer
+    steps:
+      - intent: ask_upgrade_steps_normal_to_pioneer
+      - action: utter_upgrade_normal_to_pioneer
+
+  - story: user asks how to upgrade to Distributor
+    steps:
+      - intent: ask_upgrade_steps_pioneer_to_distributor
+      - action: utter_upgrade_pioneer_to_distributor
+
+  - story: user asks how to upgrade to Partner
+    steps:
+      - intent: ask_upgrade_steps_distributor_to_partner
+      - action: utter_upgrade_distributor_to_partner
+
+  #Mining structure
+  - story: explain mining structure
+    steps:
+      - intent: ask_mining_structure_explained
+      - action: utter_explain_mining_structure
+
+  - story: explain base rate
+    steps:
+      - intent: ask_base_rate
+      - action: utter_base_rate
+
+  #===================================  SUPERWAL ECOSYSTEM  ===============================
+  #WalFlux
+  - story: explain WaLFlux features
+    steps:
+      - intent: ask_walflux_features
+      - action: utter_walflux_features
+
+  - story: show WaLFlux use cases
+    steps:
+      - intent: ask_walflux_usecases
+      - action: utter_walflux_usecases
+
+  #WalVault
+  - story: explain walvault features
+    steps:
+      - intent: ask_walvault_features
+      - action: utter_walvault_features
+
+  - story: explain walvault benefits
+    steps:
+      - intent: ask_walvault_benefits
+      - action: utter_walvault_benefits
+
+  #WalSynx
+  - story: explain walsynx intro
+    steps:
+      - intent: ask_walsynx_intro
+      - action: utter_walsynx_intro
+
+  - story: explain walsynx usecases
+    steps:
+      - intent: ask_walsynx_usecases
+      - action: utter_walsynx_usecases
+
+  #WalAuth
+  - story: explain walauth features
+    steps:
+      - intent: ask_walauth_features
+      - action: utter_ask_walauth_features
+
+  - story: explain walauth use cases
+    steps:
+      - intent: ask_walauth_use_cases
+      - action: utter_ask_walauth_use_cases
+
+  #WalBig
+  - story: explain walbig features
+    steps:
+      - intent: ask_walbig_features
+      - action: utter_ask_walbig_features
+
+  - story: explain walbig use cases
+    steps:
+      - intent: ask_walbig_use_cases
+      - action: utter_ask_walbig_use_cases
+
+  #WalLink
+  - story: explain wallink overview
+    steps:
+      - intent: ask_wallink_overview
+      - action: utter_ask_wallink_overview
+
+  - story: explain wallink use cases
+    steps:
+      - intent: ask_wallink_use_cases
+      - action: utter_ask_wallink_use_cases
+
+  #WalGrow
+  - story: explain walgrow overview
+    steps:
+      - intent: ask_walgrow_overview
+      - action: utter_ask_walgrow_overview
+
+  - story: explain walgrow features
+    steps:
+      - intent: ask_walgrow_features
+      - action: utter_ask_walgrow_features
+
+  #WalData
+  - story: explain waldata overview
+    steps:
+      - intent: ask_waldata_overview
+      - action: utter_ask_waldata_overview
+
+  - story: explain waldata usecases
+    steps:
+      - intent: ask_waldata_usecases
+      - action: utter_ask_waldata_usecases
+
+  #WalPay
+  - story: explain walpay overview
+    steps:
+      - intent: ask_walpay_overview
+      - action: utter_ask_walpay_overview
+
+  - story: show walpay features
+    steps:
+      - intent: ask_walpay_features
+      - action: utter_ask_walpay_features
+
+  #WaLTrust
+  - story: explain waltrust concept
+    steps:
+      - intent: ask_waltrust_concept
+      - action: utter_ask_waltrust_concept
+
+  - story: explain waltrust utilities
+    steps:
+      - intent: ask_waltrust_utilities
+      - action: utter_ask_waltrust_utilities
+
+  #WaLX
+  - story: explain walx overview
+    steps:
+      - intent: ask_walx_overview
+      - action: utter_ask_walx_overview
+
+  - story: show walx benefits
+    steps:
+      - intent: ask_walx_benefits
+      - action: utter_ask_walx_benefits
+
+  #WaLID
+  - story: explain walid concept
+    steps:
+      - intent: ask_walid_concept
+      - action: utter_ask_walid_concept
+
+  - story: explain walid usage
+    steps:
+      - intent: ask_walid_usage
+      - action: utter_ask_walid_usage
+
+  #===================================  /SUPERWAL ECOSYSTEM  ===============================
+
+  #Fallback
+  - story: Handle fallback
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
+  - story: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

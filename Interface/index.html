@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Chatbot Rasa Đơn Giản</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 1rem;
+            background-color: #f9f9f9;
+        }
+
+        #chatbox {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            height: 400px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-y: auto;
+            background: #fff;
+        }
+
+        .user {
+            text-align: right;
+            color: blue;
+            margin: 5px 0;
+        }
+
+        .bot {
+            text-align: left;
+            color: green;
+            margin: 5px 0;
+        }
+
+        .bot ul {
+            padding-left: 20px;
+            list-style-type: disc;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .bot li {
+            margin-bottom: 3px;
+        }
+
+        #input {
+            width: 100%;
+            max-width: 600px;
+            margin: 1rem auto;
+            display: flex;
+        }
+
+        #input input {
+            flex: 1;
+            padding: 10px;
+        }
+
+        #input button {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align: center;">Chatbot Rasa Đơn Giản</h2>
+    <div id="chatbox"></div>
+
+    <div id="input">
+        <input type="text" id="message" placeholder="Nhập tin nhắn..." />
+        <button onclick="sendMessage()">Gửi</button>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const msg = document.getElementById("message").value;
+            if (!msg) return;
+
+            appendMessage("user", msg);
+            document.getElementById("message").value = "";
+
+            const response = await fetch("http://localhost:5005/webhooks/rest/webhook", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    sender: "user123",
+                    message: msg
+                })
+            });
+
+            const data = await response.json();
+            data.forEach(res => {
+                if (res.text) appendMessage("bot", res.text);
+            });
+        }
+
+        function appendMessage(sender, text) {
+            const chat = document.getElementById("chatbox");
+            const msg = document.createElement("div");
+            msg.className = sender;
+
+            // Nếu là bot → render markdown
+            if (sender === "bot") {
+                msg.innerHTML = marked.parse(text);
+            } else {
+                msg.innerText = text;
+            }
+
+            chat.appendChild(msg);
+            chat.scrollTop = chat.scrollHeight;
+        }
+
+
+
+
+        // Enter
+        document.getElementById("message").addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault(); // Ngăn form submit nếu có
+                sendMessage();
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

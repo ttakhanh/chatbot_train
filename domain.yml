@@ -112,6 +112,35 @@ intents:
   - ask_supported_devices
   - ask_ios_features
   - ask_android_features
+=======
+  #SUPERWAL ECOSYSTEM
+  - ask_walflux_features
+  - ask_walflux_usecases
+  - ask_walvault_features
+  - ask_walvault_benefits
+  - ask_walsynx_intro
+  - ask_walsynx_usecases
+  - ask_walauth_features
+  - ask_walauth_use_cases
+  - ask_walbig_features
+  - ask_walbig_use_cases
+  - ask_wallink_overview
+  - ask_wallink_use_cases
+  - ask_walgrow_overview
+  - ask_walgrow_features
+  - ask_waldata_overview
+  - ask_waldata_usecases
+  - ask_walpay_overview
+  - ask_walpay_features
+  - ask_waltrust_concept
+  - ask_waltrust_utilities
+  - ask_walx_overview
+  - ask_walx_benefits
+  - ask_walid_concept
+  - ask_walid_usage
+  #/SUPERWAL ECOSYSTEM
+  - out_of_scope #Fallback
+>>>>>>> 77e1865 (Update NLU data, config, domain; ignore cache files)
   - goodbye
 
 responses:
@@ -150,7 +179,6 @@ responses:
 
   utter_ask_spl_validator_rewards:
     - text: "Validators earn SPL for verifying transactions and generating ZK-Rollup proofs. Rewards depend on performance and contribution."
-
 
   utter_ask_spl_inflation_deflation:
     - text: "SPL has a fixed 1B supply with burning mechanisms, staking locks, and buyback strategies to maintain value and reduce inflation."
@@ -200,7 +228,7 @@ responses:
   utter_ask_developer_support:
     - text: "SuperWAL supports developers with Solidity compatibility, zkEVM, and user-friendly Web3 development tools."
 
-#roadmap
+  #roadmap
   utter_ask_superwal_roadmap:
     - text: "SuperWAL's roadmap includes five key phases from 2025 onwards, focusing on infrastructure, DeFi, interoperability, asset management, and AI-driven Web3 solutions."
 
@@ -288,7 +316,7 @@ responses:
         - Example: Store a degree certificate hash or verify identity for DeFi KYC.
         - IPFS PubSub broadcasts verification requests in under 0.5s.
 
-#WAL mobile
+  #WAL mobile
   utter_about_wal_mobile_node:
     - text: |
         WAL Mobile Node is a mobile application that allows you to earn SPL Tokens and become part of the SuperWAL blockchain network as a Light Node.
@@ -296,7 +324,7 @@ responses:
         ✅ Earn SPL through simple in-app tasks and airdrops.
         ✅ Help build a secure, community-driven blockchain system – all from your smartphone.
         It’s your gateway into Web3 without needing high-end hardware or technical expertise!
-      
+
   utter_who_can_join:
     - text: |
         Anyone with a smartphone can join WAL Mobile Node! 💡
@@ -304,15 +332,15 @@ responses:
         🚀 Blockchain Enthusiasts: Get involved early in a growing Layer 1 network.
         💼 Investors & Supporters: Earn sustainable income by delegating to validators.
         Whether you’re a casual user or a crypto veteran, WAL Mobile Node has something for you.
-      
+
   utter_how_to_earn_spl:
     - text: |
         You can earn SPL Tokens in 3 main ways with WAL Mobile Node:
         🔹 **Complete in-app tasks**: Engage with the app to receive airdrops.
         🔹 **Enable Light Node mode**: Support basic transaction validation.
         🔹 **Delegate to Validator Nodes**: Earn a portion of transaction fees passively.
-        As you stay active and help grow the SuperWAL network, your earnings potential increases!   
-      
+        As you stay active and help grow the SuperWAL network, your earnings potential increases!
+
   utter_phases_of_node:
     - text: |
         WAL Mobile Node operates in 3 progressive phases:
@@ -334,7 +362,7 @@ responses:
         🚀 **Step into Web3**: Be an early contributor to a next-gen blockchain ecosystem.
         It’s more than earning—it’s building the future of decentralized finance with your phone.
 
-#WALX exchange
+  #WALX exchange
 
   utter_about_walx_exchange:
     - text: |
@@ -372,7 +400,7 @@ responses:
         🌐 Support cross-chain trading with other Layer 1s  
         🔄 Integrate with DeFi protocols and bridges  
         🔒 Offer secure, smart-contract powered trading with no intermediaries  
-        📈 Provide access to liquidity pools and advanced financial tools for SPL and partner tokens  
+        📈 Provide access to liquidity pools and advanced financial tools for SPL and partner tokens
 
   utter_how_to_participate_in_lbr:
     - text: |
@@ -382,7 +410,7 @@ responses:
         3. 🎁 Receive SPL token refunds in your Vaults spot wallet.  
         The earlier you join, the better the refund ratio and the greater your impact in helping us reach the 20 million USDT goal to launch the WaLX Exchange.
 
-#defi walchain
+  #defi walchain
   utter_about_defi_to_walchain:
     - text: |
         🚀 **DeFi to Walchain** is a strategic initiative to bring assets from multiple blockchains like Ethereum, BSC, Solana, and Polygon into one unified platform – **Walchain**, the core of the SuperWAL ecosystem.
@@ -446,7 +474,7 @@ responses:
         • Lend, borrow, or invest in tokenized assets
         ⏱ In less than 5 minutes, you’re onboarded into a fast, affordable, next-gen Web3 ecosystem.
 
-#spl mining
+  #spl mining
   utter_spl_mining_overview:
     - text: >
         SPL Mining on SuperWAL is a new way to earn SPL Tokens by contributing to the Walchain ecosystem. 
@@ -475,43 +503,43 @@ responses:
 
   utter_spl_mining_benefits:
     - text: >
-         By participating in SPL Mining, you can enjoy:
-         ✅ Free SPL earnings from daily activities and referrals.
-         ✅ No need for expensive mining hardware—just a mobile device or PC.
-         ✅ Support validators by staking SPL and earn passive income from fees.
-         ✅ Early access to the SuperWAL ecosystem and potential SPL token value growth.
-         ✅ Contribute to decentralization, security, and ecosystem adoption across DeFi, GameFi, and NFTs.
+        By participating in SPL Mining, you can enjoy:
+        ✅ Free SPL earnings from daily activities and referrals.
+        ✅ No need for expensive mining hardware—just a mobile device or PC.
+        ✅ Support validators by staking SPL and earn passive income from fees.
+        ✅ Early access to the SuperWAL ecosystem and potential SPL token value growth.
+        ✅ Contribute to decentralization, security, and ecosystem adoption across DeFi, GameFi, and NFTs.
 
   utter_spl_mining_how_to_join:
     - text: >
-         It's simple to start earning SPL with SuperWAL:
-         1️⃣ Download the SuperWAL app from Google Play or App Store.
-         2️⃣ Create an account and complete basic verification.
-         3️⃣ Complete daily tasks and invite friends to earn rewards.
-         4️⃣ Stake SPL tokens to delegate to Validator Nodes.
-         5️⃣ Stake at least 500 SPL to activate Light Node mode and earn delegation rewards from transaction fees.
-         No advanced KYC or mining rig required—just your participation!
+        It's simple to start earning SPL with SuperWAL:
+        1️⃣ Download the SuperWAL app from Google Play or App Store.
+        2️⃣ Create an account and complete basic verification.
+        3️⃣ Complete daily tasks and invite friends to earn rewards.
+        4️⃣ Stake SPL tokens to delegate to Validator Nodes.
+        5️⃣ Stake at least 500 SPL to activate Light Node mode and earn delegation rewards from transaction fees.
+        No advanced KYC or mining rig required—just your participation!
 
   utter_spl_mining_rewards_distribution:
     - text: >
         SPL rewards are distributed as follows:
-         - 🟢 Light Node users: Earn SPL through tasks and delegation rewards.
-         - 🔵 Validator Full Nodes: Receive transaction fees and validation rewards.
-         - 🟣 DAO community: Get rewarded for participating in governance and upgrades.
-         Inflation is controlled through:
-         🔁 Gradual reward reduction (e.g., halving after every 1 million SPL distributed).
+        - 🟢 Light Node users: Earn SPL through tasks and delegation rewards.
+        - 🔵 Validator Full Nodes: Receive transaction fees and validation rewards.
+        - 🟣 DAO community: Get rewarded for participating in governance and upgrades.
+        Inflation is controlled through:
+        🔁 Gradual reward reduction (e.g., halving after every 1 million SPL distributed).
         🔥 Token burn: A portion of transaction fees is burned to maintain long-term value.
 
   utter_spl_mining_summary:
     - text: >
-         SPL Mining is more than just earning tokens—it's your gateway into SuperWAL’s decentralized Layer 1 blockchain.
-         You can:
-         🔹 Earn free SPL by participating in the platform.
-         🔹 Become a Light Node and support network validation.
-         🔹 Enjoy sustainable, long-term earnings through transaction fee rewards.
-         Join early and contribute to the future of Web3 infrastructure with SuperWAL!
+        SPL Mining is more than just earning tokens—it's your gateway into SuperWAL’s decentralized Layer 1 blockchain.
+        You can:
+        🔹 Earn free SPL by participating in the platform.
+        🔹 Become a Light Node and support network validation.
+        🔹 Enjoy sustainable, long-term earnings through transaction fee rewards.
+        Join early and contribute to the future of Web3 infrastructure with SuperWAL!
 
-#user type
+  #user type
   utter_user_types:
     - text: |
         There are four user types in SPL Mining:
@@ -550,7 +578,7 @@ responses:
         - You might be removed from contributor rankings.
         - You may lose access to special airdrops.
 
-#upgrade user
+  #upgrade user
   utter_upgrade_normal_to_pioneer:
     - text: |
         To upgrade from **Normal User** to **Pioneer**: 
@@ -579,7 +607,7 @@ responses:
         5. **Auto mining** is available, and **daily reactivation is still required**.
         ⚠️ *Note: If your SuperUP drops below 3 later, you keep Partner status but lose ranking visibility and some airdrops.*
 
-#Mining structure
+  #Mining structure
   utter_explain_mining_structure:
     - text: |
         The **Mining Speed (SPL/h)** in SPL Mining is calculated using the following advanced formula:
@@ -608,6 +636,7 @@ responses:
 
         **AP (Activity Points)** are earned through task completions and will be unlocked soon. By default, each user starts with AP = 1. This rate ensures everyone can participate in mining regardless of hardware.
 
+<<<<<<< HEAD
   utter_superup_overview:
     - text: |
         SuperUP is a voluntary sponsorship mechanism in the SuperWAL ecosystem. It allows users to contribute WaLX tokens to support the long-term development of the project. In return, users receive benefits like increased SPL mining speed and SPL token refunds, but it does not unlock any exclusive features. All users still have equal access to core functionalities.
@@ -823,6 +852,351 @@ responses:
     - text: |
         On Android, SuperWAL supports a wide variety of devices from different manufacturers. It runs smoothly on Android 8.0 and above, ensuring flexibility, performance, and security.
 
+  #================================  SUPERWAL ECOSYSTEM  =============================
+  #WalFlux —————
+  utter_walflux_features:
+    - text: |
+        🔄 **WaLFlux: Real-Time Data Bridge for Web3**
+
+        WaLFlux acts as a seamless, decentralized data bridge for Web3 and real-world systems 🌐. It's designed to **stream, process, and synchronize data** across diverse blockchain ecosystems and external sources.
+
+        ✳️ **Key Features**:
+        • 🔁 Real-time data ingestion & distribution  
+        • ⚙️ Smart contract-triggered data events  
+        • 🌍 Multichain compatibility (L1 & L2)  
+        • 🔐 Tamper-proof and verifiable data logs  
+        • 🧩 Compatible with oracles and indexing protocols
+
+        WaLFlux ensures that **data flows securely, consistently, and with high throughput** – ideal for DeFi, GameFi, AI agents, and dynamic NFT platforms.
+
+  utter_walflux_usecases:
+    - text: |
+        🌍 **WaLFlux in Action: Real-World Use Cases**
+
+        Here are some powerful scenarios where WaLFlux shines:
+
+        • 🏦 **DeFi Price Feeds**: Stream real-time market data from CEXs to DeFi protocols via smart triggers  
+        • 🕹️ **GameFi State Sync**: Sync off-chain gameplay actions with on-chain logic for real-time rewards  
+        • 🤖 **AI Integration**: Connect on-chain data with AI agents that respond instantly to blockchain state changes  
+        • 🧠 **Knowledge Graphs**: Build a cross-chain semantic index from various L1s using WaLFlux’s data stream capabilities  
+        • 🔄 **Cross-Chain Governance**: Enable synchronized voting and proposal tracking across DAO platforms
+
+        WaLFlux plays a crucial role in **bridging real-time decisions between on-chain and off-chain systems** with low latency and high reliability.
+
+  #WalVault  ————————
+  utter_walvault_features:
+    - text: |
+        🏦 **WaLVault: Your Digital Safety Deposit Box**
+
+        WaLVault provides a highly secure, decentralized storage solution for digital assets such as tokens, credentials, and personal documents. Unlike traditional custodial platforms, WaLVault ensures that only you retain control of your data and assets.
+
+        🔐 **Key Features:**
+        - **End-to-End Encryption**: Assets are encrypted locally and never stored in plaintext.
+        - **Multi-signature Access**: Adds layers of protection through multi-party verification.
+        - **Interoperability**: Seamless integration with other SuperWAL services like WaLID and WaLTrust.
+
+        ✅ WaLVault ensures your digital assets remain yours — untouched, untraceable, and secure.
+
+  utter_walvault_benefits:
+    - text: |
+        🔐 **Decentralization Done Right**
+
+        WaLVault empowers users with:
+        - 🚫 **No Central Point of Failure**: Eliminates the risk of hacks or data leaks due to central server breaches.
+        - 🧠 **Smart Contract Governance**: Assets are governed by immutable, transparent rules.
+        - 👁️ **Zero Knowledge Access Logs**: Know *when* access happens, but not *what* is accessed.
+
+        With WaLVault, you're not just storing data — you're claiming **sovereignty** over your digital identity and assets.
+
+  #WalSynx
+  utter_walsynx_intro:
+    - text: |
+        🌉 **WaLSynx: The Bridge Between Blockchains**
+
+        WaLSynx is SuperWAL’s oracle and interoperability layer, enabling seamless communication between different blockchains and external systems. It's the backbone of data integrity and cross-network functionality in the SuperWAL ecosystem.
+
+        🔗 **Core Functions:**
+        - Real-time data feeds for DeFi protocols
+        - Cross-chain asset transfers and messaging
+        - Integration with external APIs and off-chain data sources
+
+        🔎 WaLSynx turns isolated systems into a connected digital world.
+
+  utter_walsynx_usecases:
+    - text: |
+        🌐 **Real-World Power of WaLSynx**
+
+        Here’s how WaLSynx brings impact:
+        - 📉 **DeFi Price Feeds**: Injects real-time oracle data for lending and trading platforms.
+        - 🔀 **Cross-chain DAO Voting**: Syncs votes and states across multiple blockchains.
+        - 🧠 **AI-Driven Insights**: Connects on-chain activity to off-chain AI analytics platforms.
+
+        WaLSynx acts as the **truth layer** — making decentralized decisions smarter and more responsive.
+
+  #WalAuth
+  utter_ask_walauth_features:
+    - text: |
+        🔐 **WaLAuth – Secure, Passwordless Authentication for Web3**
+
+        WaLAuth is SuperWAL's decentralized authentication service designed to eliminate password-based vulnerabilities and streamline user access across platforms.
+
+        ⚙️ **Key Features**:
+        • **Passwordless Login**: Say goodbye to password leaks – WaLAuth uses decentralized identifiers (DIDs) and cryptographic keys for authentication.
+        • **Blockchain-Backed Access**: Every login is verified on-chain via smart contracts, ensuring tamper-proof validation.
+        • **Single Sign-On (SSO)**: Users can securely authenticate once and access multiple dApps across the SuperWAL ecosystem.
+
+        🛡️ **Security First**:
+        • Relies on **non-custodial key management**, giving users complete control of their identity.
+        • Integrated with **Zero-Knowledge Proofs** to verify without revealing personal data.
+        • Reduces phishing risks and eliminates centralized points of failure.
+
+        🌐 Works seamlessly with services like **WaLID** (identity layer) and **Walpay** (payment authentication).
+
+        > WaLAuth brings the future of authentication: secure, seamless, and fully decentralized.
+
+  utter_ask_walauth_use_cases:
+    - text: |
+        🌍 **Real-World Use Cases of WaLAuth**
+
+        WaLAuth enables secure, unified access across the decentralized internet, especially in Web3-native environments.
+
+        🧩 **Integration Highlights**:
+        • **DeFi Platforms**: Allow users to log in securely without email/password — combined with **WaLID**, it also handles KYC compliance.
+        • **NFT Marketplaces**: Seamless access to digital asset platforms while verifying identity in a decentralized manner.
+        • **Decentralized Social Networks**: Authenticate real users while reducing bots and impersonators — working in tandem with **WaLID** and **WaLSynx**.
+        • **DAO Governance**: Enable vote-based access and actions with secure DID-based authentication.
+        • **Super App Access**: Use WaLAuth as a central gateway to other SuperWAL services like **WaLBig**, **WaLVault**, and **WaLFlux**.
+
+        🛠️ **Flexible Integration**: Available via SDKs and APIs for developers building decentralized apps or Web2-to-Web3 bridges.
+
+        🔗 WaLAuth isn't just a login tool — it's your decentralized access pass to the SuperWAL universe.
+
+  #WalBig
+  utter_ask_walbig_features:
+    - text: |
+        📊 **WaLBig – Decentralized Big Data & Analytics Engine**
+
+        WaLBig empowers your apps with large-scale, blockchain-native data processing and real-time analytics without compromising decentralization.
+
+        🔧 **Main Features**:
+        • **Distributed Query Engine**: Query across fragmented data stores using a P2P computation layer.
+        • **Web3 Native Data**: Index on-chain transactions, smart contracts, DID activity, and token flows.
+        • **Real-Time Pipelines**: Stream data from sources like **WaLFlux**, **WaLSynx**, and **WaLLink** to extract insights instantly.
+        • **Privacy by Design**: Differential privacy and encrypted computation for compliant data handling.
+
+        🧠 **Built-in AI/ML Compatibility**:
+        • Plug into your preferred frameworks (TensorFlow, PyTorch) via decentralized compute nodes.
+        • Training models on private, decentralized datasets becomes possible via **ZKML-ready infrastructure**.
+
+        > WaLBig turns your decentralized data into actionable intelligence – without central servers.
+
+  utter_ask_walbig_use_cases:
+    - text: |
+        🌐 **Use Cases of WaLBig**
+
+        WaLBig powers data-driven decisions across the decentralized economy:
+
+        🔍 **DeFi Intelligence**: Monitor liquidity pools, lending behavior, or whale movements in real-time.
+        📈 **dApp Analytics**: Track usage trends, retention, and conversion across SuperWAL-powered apps.
+        🧬 **Personal Data Vaults**: Analyze private datasets stored in **WaLVault** with complete privacy.
+        🗳️ **DAO Sentiment Analysis**: Use on-chain data to predict voting outcomes and proposal impact.
+        🧠 **Decentralized Machine Learning**: Fuel AI agents using on-chain and off-chain behavioral data.
+
+        🛠️ Seamless integration with **WaLFlux**, **WaLSynx**, and **WaLGrow** for a full-stack data solution.
+
+  #WalLink
+  utter_ask_wallink_overview:
+    - text: |
+        🔗 **WaLLink – Universal Web3 Data Integration Layer**
+
+        WaLLink bridges decentralized systems, enabling smooth, real-time data sync across multiple platforms.
+
+        🌐 **Key Capabilities**:
+        • **Cross-Protocol Data Ingestion**: Connect on-chain, off-chain, and hybrid sources seamlessly.
+        • **Plug & Sync Architecture**: Deploy connector modules with minimal setup — plug into wallets, ledgers, IoT devices, etc.
+        • **Event-Driven Pipelines**: React to blockchain events or DID activity in real-time.
+        • **Secure & Composable**: Designed with granular permission control and composability for other SuperWAL modules.
+
+        🔄 **Integration Ready**:
+        • Feeds directly into **WaLBig** (analytics), **WaLFlux** (streaming), and **WaLVault** (storage).
+        • Compatible with Ethereum, Cosmos, Polkadot, and IPFS-based ecosystems.
+
+        > WaLLink makes decentralized data truly interoperable — build once, connect anywhere.
+
+  utter_ask_wallink_use_cases:
+    - text: |
+        🚀 **WaLLink Use Cases**
+
+        WaLLink empowers developers and businesses to build rich, cross-chain apps and services:
+
+        🧩 **Unified Web3 Dashboard**: Aggregate user wallet, DID, and app activity into a single interface.
+        🛰️ **DePIN Data Sync**: Sync data from decentralized physical infrastructure networks (like sensors or nodes).
+        🛠️ **DAO Ops Automation**: Trigger proposals, token transfers, or access control based on live chain events.
+        🔐 **Private Data Mesh**: Use WaLLink to feed consent-based data flows from WaLVault into analytics or AI.
+
+        📦 Pairs perfectly with WaLBig for analytics and WaLFlux for real-time monitoring.
+
+        > With WaLLink, Web3 data becomes programmable, portable, and permissioned.
+
+  #WalGrow
+  utter_ask_walgrow_overview:
+    - text: |
+        🌱 **WaLGrow – Web3 Growth Stack for Users, Communities & Protocols**
+
+        WaLGrow empowers you to design and launch smart, transparent, and highly interactive growth campaigns in the Web3 space.
+
+        📈 **Core Features**:
+        • **On-chain Quest System** – Create missions and rewards directly on the blockchain.
+        • **Loyalty Token Engine** – Issue tokens exclusively for loyal community members.
+        • **Referral & Reputation** – Track, evaluate, and rank referral activities.
+        • **Gamified Engagement** – Integrate gaming elements like points, leaderboards, and NFTs.
+
+        🛠️ Built for:
+        • DAOs seeking real user engagement.
+        • Dapps/Web3 apps launching high-quality airdrop campaigns.
+        • DeFi/NFT communities building long-term user loyalty.
+
+        > WaLGrow = sustainable growth + real engagement + on-chain transparency.
+
+  utter_ask_walgrow_features:
+    - text: |
+        ✨ **Key Features of WaLGrow**
+
+        WaLGrow delivers a complete set of growth tools, tailor-made for the Web3 ecosystem:
+
+        🎯 **Smart Quests** – Let users complete tasks like joining a DAO, staking tokens, or following NFTs to earn rewards.
+        🎟️ **Tokenized Loyalty** – Create flexible reward systems with points convertible to tokens, NFTs, or privileges.
+        👥 **Referral Mechanics** – Automatically track and reward valid referrals.
+        🧠 **Behavior Scoring** – Analyze user behavior to create more personalized growth programs.
+        🛡️ **Sybil Resistance** – Built-in mechanisms to prevent spam and reward farming by fake users.
+
+        🔄 Seamlessly integrates with WaLID (DID), WaLVault (data), and WaLTrust (consent) to power authentic and secure growth campaigns.
+
+        > WaLGrow helps Web3 projects not only attract users but also retain and foster real loyalty.
+
+  #WalData
+  utter_ask_waldata_overview:
+    - text: |
+        📊 **WaLData – Decentralized Data Query Layer for Web3**
+
+        WaLData is a decentralized data extraction and analytics layer, enabling you to query and connect Web3 data in a transparent, real-time, and trustless way—without relying on centralized systems.
+
+        🔍 **Highlights**:
+        • **Cross-chain Data Layer** – Retrieve data from multiple blockchains (EVM and non-EVM).
+        • **GraphQL Support** – Modern, easy-to-integrate query interface.
+        • **Permissioned Queries** – Access control based on DID, trust level, and consent.
+        • **Streaming API** – Receive real-time data updates.
+
+        🌐 Strongly integrates with WaLVault, WaLTrust, and WaLID to ensure data is user-owned, authorized, and trustworthy.
+
+        > WaLData = transparent data + open queries + identity verification.
+
+  utter_ask_waldata_usecases:
+    - text: |
+        💡 **Real-world Use Cases of WaLData**
+
+        WaLData unlocks the power of Web3 data across multiple domains:
+
+        🧠 **AI on-chain training** – Supply reliable data sources for training AI models in Web3 contexts.
+        📈 **Data-driven DeFi** – Query staking, yield, and transaction data to inform investment strategies.
+        🧩 **Composability Layer** – Allow Dapps to merge data from diverse sources into custom logic flows.
+        🔐 **Privacy-first Analytics** – Perform user behavior analytics while respecting privacy and consent.
+        🚀 **Personalized UX** – Deliver tailored user experiences based on on-chain behavior and DID.
+
+        WaLData is the data infrastructure for the Web3 future—transparent, multi-source, and reliable.
+
+        > Query like REST, power like The Graph, privacy like ZK.
+
+  #WalPay
+  utter_ask_walpay_overview:
+    - text: |
+        💳 **WaLPay** is a cutting-edge digital payment gateway within the SuperWAL ecosystem.  
+        Designed for speed, scalability, and security, it enables users to make real-time payments, automate transactions, and reduce operational costs.
+
+        🔍 Whether you're paying peers, businesses, or smart contracts — WaLPay ensures every transaction is smooth and traceable.
+
+  utter_ask_walpay_features:
+    - text: |
+        ✨ **Key Highlights of WaLPay**:  
+        - 🔐 End-to-end encryption for secure transactions  
+        - ⚡ Instant payment settlements across borders  
+        - 💼 Smart invoicing and billing capabilities  
+        - 🌐 Multi-asset support including stablecoins  
+        - 🔗 API-ready for external integration  
+
+        🚀 Ideal for individuals, businesses, and dApps that demand fast and trustworthy payment infrastructure.
+
+  #WaLTrust
+  utter_ask_waltrust_concept:
+    - text: |
+        🔒 **WaLTrust** is the backbone of digital trust in the SuperWAL ecosystem.  
+        It provides a decentralized framework for verifying identities, validating documents, and building secure smart contract relationships.
+
+        🧠 With WaLTrust, you can eliminate fraud, enforce data integrity, and build transparent audit trails across services.
+
+  utter_ask_waltrust_utilities:
+    - text: |
+        🛠️ **Powerful Use Cases of WaLTrust**:  
+        - ✅ Verify credentials and attestations  
+        - 📜 Digitally sign and seal agreements  
+        - 🔍 Provide audit-proof trust logs  
+        - 🤝 Enable tamper-proof inter-service authentication  
+        - 🧾 Reduce reliance on third-party verifiers  
+
+        🔗 WaLTrust brings legal-grade confidence to your digital processes.
+
+  #WaLX
+  utter_ask_walx_overview:
+    - text: |
+        🌉 **WaLX** is the bridge that connects traditional systems with the decentralized world.  
+        It enables seamless cross-chain communication, token transfers, and interoperability between EVM and non-EVM chains.
+
+        🔗 Think of WaLX as the glue holding multi-chain apps together in one unified experience.
+
+  utter_ask_walx_benefits:
+    - text: |
+        🚀 **Why Choose WaLX?**  
+        - 🔄 Real-time token and data transfers  
+        - 🧩 Works across multiple blockchains  
+        - 💻 Easy-to-use APIs and SDKs  
+        - 🛡️ Built-in security and rate-limiting  
+        - 🧠 Abstracts the complexity of cross-chain protocols
+
+        🌐 Developers save time. Users enjoy seamlessness.
+
+  #WaLID
+  utter_ask_walid_concept:
+    - text: |
+        🆔 **WaLID** is a decentralized identity layer that empowers users with full control over their digital identity.  
+        Built on open DID standards, it ensures verifiable, portable, and privacy-centric credentials.
+
+        🔐 Whether you’re accessing an app or verifying a document — WaLID puts identity ownership where it belongs: with you.
+
+  utter_ask_walid_usage:
+    - text: |
+        🧑‍💼 **Where WaLID Shines**:  
+        - 🔐 Passwordless logins across apps  
+        - 🎓 Share education or professional credentials  
+        - 🎯 KYC/AML processes with reusable proofs  
+        - 🛂 Control over which data gets shared  
+        - 👥 Manage identities across multiple roles or apps
+
+        💡 WaLID makes self-sovereign identity a reality for everyday use.
+
+  #================================  /SUPERWAL ECOSYSTEM  =============================
+
+  #Fallback
+  utter_out_of_scope:
+    - text: |
+        🤔 I'm not sure I understand what you mean.  
+        Could you please rephrase or ask about a SuperWAL service?
+
+    - text: |
+        🚫 Sorry, that doesn’t seem related to anything I can help with.  
+        Try asking about services like **WaLPay**, **WaLTrust**, or **WaLID**!
+
+    - text: |
+        🤖 That input isn’t recognized. But I’m here to help with all things SuperWAL — let’s try again!
 
 session_config:
   session_expiration_time: 60
