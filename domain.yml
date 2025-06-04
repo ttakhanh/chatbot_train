@@ -158,6 +158,46 @@ intents:
   - ask_modifications_terms
   #/Term & condition
 
+  #GG Authentication
+  - ask_google_authenticator_overview
+  - ask_ga_setup_steps
+  - ask_ga_download_app
+  - ask_ga_scan_qr
+  - ask_ga_manual_entry
+  - ask_ga_code_usage
+  - ask_ga_troubleshooting_sync
+  - ask_ga_troubleshooting_loss
+  - ask_ga_security_benefits
+  - ask_ga_what_is_2fa
+  - ask_ga_backup_codes
+  - ask_ga_faq
+  - ask_ga_disable
+  - ask_ga_compatibility
+  #GG Authentication
+
+  #KYC
+  - ask_kyc_overview
+  - ask_kyc_process
+  - ask_data_usage_protection
+  - ask_aml_regulations
+  - ask_suspicious_activities
+  - ask_kyc_methods
+  - ask_additional_documents
+  - ask_kyc_mandatory_consent
+  - ask_policy_updates
+  #/KYC
+
+  #Verify
+  - ask_verify_overview
+  - ask_verify_purpose
+  - ask_verify_components
+  - ask_unverified_impact
+  - ask_email_verify_requirement
+  - ask_referral_verify
+  - ask_token_release_verify
+  - ask_kyc_app_functionality
+  #/Verify
+
   - out_of_scope #Fallback
   - goodbye
 
@@ -870,6 +910,7 @@ responses:
         On Android, SuperWAL supports a wide variety of devices from different manufacturers. It runs smoothly on Android 8.0 and above, ensuring flexibility, performance, and security.
 
   #================================  SUPERWAL ECOSYSTEM  =============================
+
   #WalFlux —————
   utter_walflux_features:
     - text: |
@@ -1334,6 +1375,228 @@ responses:
 
         We encourage all users to review our terms periodically at https://docs.superwal.io/fundamentals/terms-and-conditions.
   #/Term & condition
+  #GG Authentication
+  utter_ask_google_authenticator_overview:
+    - text: |
+        🔑 **Google Authenticator Overview for SuperWAL**
+        Google Authenticator is a **Two-Factor Authentication (2FA)** method that adds an extra layer of security to your SuperWAL account. It generates time-based one-time passcodes (TOTP) on your mobile device, which you'll need to enter after your password during login. This significantly reduces the risk of unauthorized access. It's highly recommended for enhanced security.
+        Is there a specific step you'd like to know about, like setup, usage, or troubleshooting? 🤔
+
+  utter_ask_ga_setup_steps:
+    - text: |
+        ⚙️ **Setting Up Google Authenticator for SuperWAL**
+        The setup process typically involves these steps:
+        1.  **Download the App:** 📱 Install Google Authenticator on your smartphone.
+        2.  **Access SuperWAL Security Settings:** 🌐 Go to your SuperWAL account settings and find the 2FA/Google Authenticator section.
+        3.  **Scan QR Code OR Manual Entry:** 📸 Use the app to scan the QR code displayed on SuperWAL, or manually enter the provided key.
+        4.  **Verify Setup:** ✅ Enter the generated code from the app into SuperWAL to confirm.
+        Which step would you like to know more about? For example, "How do I download the app?" or "How do I scan the QR code?"
+
+  utter_ask_ga_download_app:
+    - text: |
+        📱 **Downloading the Google Authenticator App**
+        You can download the Google Authenticator app from your device's official app store:
+        * **For Android:** Search for "Google Authenticator" on the **Google Play Store**. 🤖
+        * **For iOS (iPhone/iPad):** Search for "Google Authenticator" on the **Apple App Store**. 🍎
+        Make sure it's the official app from Google LLC.
+        Once downloaded, open the app to begin the setup process. ✨
+
+  utter_ask_ga_scan_qr:
+    - text: |
+        📸 **Scanning the QR Code in Google Authenticator**
+        After opening the Google Authenticator app:
+        1.  Tap the **"+" (plus)** icon (usually in the bottom right or top right corner).
+        2.  Select **"Scan a QR code"**.
+        3.  Point your phone's camera at the QR code displayed on the SuperWAL security settings page.
+        The app should automatically add your SuperWAL account and start generating codes. If your camera isn't working or the code isn't scanning, try the manual entry option. 💡
+
+  utter_ask_ga_manual_entry:
+    - text: |
+        ⌨️ **Manual Entry for Google Authenticator Setup**
+        If you can't scan the QR code, you can set it up manually:
+        1.  On the SuperWAL security settings page, look for a **"manual entry key"** or **"setup key"** (a long string of characters). 🔑
+        2.  Open the Google Authenticator app.
+        3.  Tap the **"+" (plus)** icon.
+        4.  Select **"Enter a setup key"** (or "Manual entry").
+        5.  Enter an **"Account name"** (e.g., "SuperWAL").
+        6.  Paste or type the **"Your key"** (the manual entry key from SuperWAL).
+        7.  Ensure **"Time based"** is selected. ⏰
+        8.  Tap **"Add"**. Your SuperWAL account should now appear in the app. ✅
+
+  utter_ask_ga_code_usage:
+    - text: |
+        🔢 **Using Google Authenticator Codes for Login**
+        When logging into SuperWAL after enabling 2FA:
+        1.  Enter your **username and password** as usual. 💻
+        2.  When prompted for the 2FA code, open your Google Authenticator app. 📱
+        3.  Locate the code for your "SuperWAL" account.
+        4.  Enter this **6-digit code** into the SuperWAL login prompt.
+        Remember, these codes change every 30-60 seconds, so enter the current one. If it doesn't work, ensure your phone's time is synchronized. ⏱️
+
+  utter_ask_ga_troubleshooting_sync:
+    - text: |
+        ⏰ **Troubleshooting Time Sync Issues (Google Authenticator)**
+        If your codes are not working, it's often a time synchronization problem. 😥
+        * **Android:** Open Google Authenticator > Tap the 3 dots (top right) > Settings > Time correction for codes > Sync now.
+        * **iOS:** Go to iPhone Settings > General > Date & Time > Ensure "Set Automatically" is ON.
+        Correcting your phone's time usually resolves invalid code errors. ✨
+
+  utter_ask_ga_troubleshooting_loss:
+    - text: |
+        🚨 **What to Do if You Lose Your Device (Google Authenticator)**
+        Losing your device can be tricky. This is why **backup codes** are crucial. 📝
+        * If you **saved your backup codes** when setting up 2FA, use one of them to log in to SuperWAL and then disable/re-enable 2FA on your new device.
+        * If you **don't have backup codes**, you will need to contact SuperWAL Support for account recovery. They will guide you through identity verification to regain access. This process might take some time for security reasons. ⏳
+
+  utter_ask_ga_security_benefits:
+    - text: |
+        🛡️ **Security Benefits of Google Authenticator**
+        Using Google Authenticator adds a significant layer of security:
+        * **Protection against password theft:** Even if someone gets your password, they can't log in without the code from your device. 🔒
+        * **Defense against phishing:** Phishing attempts might steal your password, but not your dynamic 2FA code. 🎣
+        * **Time-based codes:** Codes are constantly changing, making them very hard to guess or reuse. ⏰
+        It's a strong deterrent against unauthorized access to your SuperWAL account. 💪
+
+  utter_ask_ga_what_is_2fa:
+    - text: |
+        🔒 **What is Two-Factor Authentication (2FA)?**
+        2FA is a security process where a user provides two different authentication factors to verify themselves. It's like having two locks on a door instead of one. 🔐
+        * **First factor:** Something you know (e.g., your password).
+        * **Second factor:** Something you have (e.g., your phone generating a Google Authenticator code) or something you are (e.g., a fingerprint).
+        It greatly enhances your account's security by making it much harder for unauthorized users to gain access. ✨
+
+  utter_ask_ga_backup_codes:
+    - text: |
+        📝 **Google Authenticator Backup Codes for SuperWAL**
+        When you set up Google Authenticator on SuperWAL, the system usually provides a list of **one-time backup codes**.
+        * **Purpose:** These codes are your lifeline if you lose your phone or the app stops working. Each code can be used once to log in. 🆘
+        * **Action:** It is **CRITICAL** that you download, print, or write down these codes and store them in a very safe, offline place (not on your computer). 🖨️
+        * **Usage:** If you need to use one, simply enter it in the 2FA prompt instead of a code from the app. Once used, disable 2FA and set it up again to generate new codes. 🔄
+
+  utter_ask_ga_faq:
+    - text: |
+        ❓ **Google Authenticator - Frequently Asked Questions**
+        What specifically are you wondering about? Here are some common questions:
+        * "Can I use Google Authenticator for multiple accounts?" (Yes! ✅)
+        * "What if I get a new phone?" (You'll need to transfer or re-setup 🔄)
+        * "Does it require internet?" (No, the codes are generated offline 📶❌)
+        Please ask your specific question. 🤔
+
+  utter_ask_ga_disable:
+    - text: |
+        ❌ **Disabling Google Authenticator for SuperWAL**
+        To disable Google Authenticator:
+        1.  Log in to your SuperWAL account. 💻
+        2.  Navigate to your **Security Settings** or 2FA section. ⚙️
+        3.  Look for an option to "Disable 2FA" or "Remove Google Authenticator."
+        4.  You may be prompted to enter your current Google Authenticator code or a backup code to confirm. ✅
+        Be aware that disabling 2FA will reduce your account's security. ⚠️
+
+  utter_ask_ga_compatibility:
+    - text: |
+        🔗 **Google Authenticator Compatibility with SuperWAL**
+        Google Authenticator is a widely adopted standard for 2FA (TOTP). SuperWAL supports it as a primary method for enhancing your account security. As long as your smartphone can run the Google Authenticator app (available on Android and iOS), it should be compatible. 📱
+        Are you facing a specific compatibility issue? 🤔
+  #/GG Authentication
+  #KYC
+  utter_kyc_overview:
+    - text: |
+        💳 **SuperWAL's KYC (Know Your Customer) Overview**
+        KYC is crucial for ensuring a fair and transparent platform. It is mandatory for users who wish to receive SPL airdrops or withdraw SPL tokens, serving to verify your identity and prevent fraudulent activities.
+
+  utter_kyc_process:
+    - text: |
+        📝 **KYC Verification Process**
+        To complete KYC verification, you will need to provide:
+        - **Biometric data:** Typically a facial scan.
+        - **Phone number verification:** To confirm your contact details.
+        This information is used exclusively for identity verification and processing related to SPL token mining.
+
+  utter_data_usage_protection:
+    - text: |
+        🔒 **Data Usage and Protection**
+        Your personal data collected during KYC (biometric data, phone number) is used solely for identity verification and SPL token mining processing. SuperWAL adheres strictly to data protection policies, including standards like GDPR, to ensure your privacy and security.
+
+  utter_aml_regulations:
+    - text: |
+        ⚖️ **Anti-Money Laundering (AML) Regulations**
+        SuperWAL is committed to adhering to international AML regulations. We continuously monitor all SPL-related activities for suspicious transactions to maintain a secure and compliant ecosystem.
+
+  utter_suspicious_activities:
+    - text: |
+        🚫 **Suspicious Activities and Consequences**
+        Any suspicious transactions detected may lead to serious consequences, including:
+        - Restricted participation on the platform.
+        - Account suspension.
+        - Account termination.
+        This is part of our commitment to maintaining a secure and law-abiding environment.
+
+  utter_kyc_methods:
+    - text: |
+        ⚙️ **KYC Verification Methods**
+        SuperWAL may perform KYC verification through:
+        - Reputable third-party services.
+        - Our internal verification system.
+        We ensure robust and reliable identity checks to secure our platform.
+
+  utter_additional_documents:
+    - text: |
+        📑 **Request for Additional Documents**
+        SuperWAL reserves the right to request additional documents at any time for further identity verification, especially if there are any discrepancies or if more information is needed to ensure compliance and security.
+
+  utter_kyc_mandatory_consent:
+    - text: |
+        ✅ **Mandatory KYC and Consent**
+        Users acknowledge that completing KYC verification is mandatory for certain activities (like SPL airdrops and withdrawals). By proceeding, you consent to the processing of your personal data specifically for identity verification purposes.
+
+  utter_policy_updates:
+    - text: |
+        🔄 **Commitment and Policy Updates**
+        SuperWAL is dedicated to ensuring a transparent and secure SPL mining process. We regularly update our policies to comply with the latest international AML regulations and data protection standards, ensuring ongoing security and compliance.
+  #/KYC
+  #Verify
+  utter_verify_overview:
+    - text: |
+        ✅ **SuperWAL Verify Overview**
+        SuperWAL Verify is a fundamental process designed to validate identities, ensuring compliance with our policies and promoting genuine interactions across the application. It's a critical step for maintaining a secure and trustworthy environment.
+
+  utter_verify_purpose:
+    - text: |
+        👥 **Purpose of Verification: One Account, No Fraud**
+        SuperWAL mandates a strict "one account per person" policy. The Verify process is essential for preventing the creation of fake accounts and ensuring fair SPL token accumulation. It helps us maintain integrity and trust on the platform.
+
+  utter_verify_components:
+    - text: |
+        ➡️ **Components of the Verify Process**
+        The Verify action on SuperWAL includes two main components:
+        1.  **Email Verification:** Confirming your registered email address.
+        2.  **Completing KYC (Know Your Customer):** A more comprehensive identity verification process.
+
+  utter_unverified_impact:
+    - text: |
+        ⚠️ **Impact of Unverified Email**
+        If your account's email has not been verified, all SPL tokens you have mined, as well as rewards from member referrals, will remain in an "unverified status." This means they cannot be fully utilized until verification is complete.
+
+  utter_email_verify_requirement:
+    - text: |
+        📧 **Email Verification Requirement for Tokens**
+        To successfully receive and access the SPL tokens you have mined, it is mandatory to complete your email verification. This step is crucial for releasing your tokens into a verified status.
+
+  utter_referral_verify:
+    - text: |
+        🤝 **Referral Verification for Full Rewards**
+        To ensure that the SPL tokens and rewards from your referred members are fully verified and that you receive your earned rewards, it's important to check that the members you refer also complete their email verification.
+
+  utter_token_release_verify:
+    - text: |
+        🔐 **Verification During Token Release**
+        During the token release process, users are required to participate in a verification step via their email. This is a vital measure to confirm that users are real individuals and to prevent any fraudulent activities during the SPL mining and distribution process.
+
+  utter_kyc_app_functionality:
+    - text: |
+        🚀 **KYC to Unlock App Functionality**
+        Completing the KYC verification process is essential to unlock unlimited app functionality. This allows you to access all features and benefits available on the SuperWAL application without restrictions.
+  #/Verify
   #Fallback
   utter_out_of_scope:
     - text: |

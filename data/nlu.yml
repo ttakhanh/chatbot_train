@@ -761,6 +761,23 @@ nlu:
       - Is the Android version of SuperWAL optimized?
 
   #=================  SUPERWAL ECOSYSTEM  ==================
+  #WalFlux ————
+  - intent: ask_walflux_features
+    examples: |
+      - What are the core features of WaLFlux?
+      - Can you tell me the capabilities of WaLFlux?
+      - What makes WaLFlux special?
+      - Why should I use WaLFlux?
+      - Explain the key benefits of WaLFlux.
+
+  - intent: ask_walflux_usecases
+    examples: |
+      - What can WaLFlux be used for?
+      - Give me some real-world use cases of WaLFlux.
+      - How does WaLFlux help in Web3?
+      - Is WaLFlux useful for cross-chain data?
+      - Any examples of how WaLFlux works?
+
   #WalVault ———
   - intent: ask_walvault_features
     examples: |
@@ -1006,6 +1023,413 @@ nlu:
       - What happens if the terms are updated?
       - How often do you update your policies?
   #/Term & condition
+  #GG Authentication
+  - intent: ask_google_authenticator_overview
+    examples: |
+      - what is google authenticator
+      - tell me about google authenticator
+      - google authenticator overview
+      - what is GA
+      - how does google authenticator work
+      - explain google authenticator
+      - superwal ga
+      - authenticator app info
+      - what is the authenticator for
+      - what is this app for
+      - authenticator explanation
+      - google authenticator info
+      - tell me about 2fa for superwal
+      - what is google authenticator used for
+      - how does GA provide security
+      - what is the purpose of google authenticator
+
+  - intent: ask_ga_setup_steps
+    examples: |
+      - how to set up google authenticator
+      - what are the steps to set up ga
+      - google authenticator setup guide
+      - how to enable google authenticator
+      - steps for GA setup
+      - setup process
+      - start using google authenticator
+      - where do I begin setting up 2fa
+      - authenticator setup
+      - how do I configure GA
+      - what's the installation process for google authenticator
+      - guide me through setting up 2fa
+      - beginning google authenticator
+
+  - intent: ask_ga_download_app
+    examples: |
+      - where can I download google authenticator
+      - how to get the google authenticator app
+      - download GA
+      - app store link for authenticator
+      - play store for authenticator
+      - which app to download
+      - get the authenticator app
+      - download the 2fa app
+      - authenticator app download
+      - install google authenticator
+      - link to google authenticator app
+      - can I download authenticator on android
+      - where is the authenticator for ios
+
+  - intent: ask_ga_scan_qr
+    examples: |
+      - how to scan qr code in google authenticator
+      - scan qr code GA
+      - where do I scan the qr code
+      - authenticator qr scan
+      - qr code setup
+      - my qr code isn't working
+      - scan the code in the app
+      - qr code for authenticator
+      - how to add account with qr
+
+  - intent: ask_ga_manual_entry
+    examples: |
+      - how to manually enter key in google authenticator
+      - manual entry ga
+      - enter setup key
+      - what if qr code doesn't work
+      - add account manually
+      - manual setup for authenticator
+      - key entry in GA
+      - can I type the key instead of scanning
+      - what is the manual key
+      - setup authenticator without qr
+
+  - intent: ask_ga_code_usage
+    examples: |
+      - how to use google authenticator codes
+      - where do I enter the GA code
+      - how do I log in with authenticator
+      - using the 2fa code
+      - authenticator code login
+      - when do I use the code
+      - how long is the code valid
+      - codes from authenticator
+      - authenticator code input
+      - how to verify login with ga
+      - what do I do with the 6 digit code
+      - entering 2fa code
+
+  - intent: ask_ga_troubleshooting_sync
+    examples: |
+      - my google authenticator code is not working
+      - codes are invalid
+      - authenticator sync issue
+      - time sync for GA
+      - how to fix wrong authenticator code
+      - time correction authenticator
+      - code validation failed
+      - authenticator not syncing
+      - ga codes are incorrect
+      - why are my codes not working
+      - how to fix authenticator time
+      - synchronize authenticator app
+
+  - intent: ask_ga_troubleshooting_loss
+    examples: |
+      - what if I lose my phone with google authenticator
+      - lost device authenticator
+      - my phone with GA was stolen
+      - can't access authenticator
+      - what to do if device is lost
+      - recover account without authenticator
+      - lost 2fa device
+      - my phone broke, authenticator is gone
+      - how to restore authenticator after phone loss
+      - I don't have my authenticator device
+
+  - intent: ask_ga_security_benefits
+    examples: |
+      - what are the benefits of google authenticator
+      - why should I use GA
+      - is google authenticator secure
+      - how secure is authenticator
+      - security advantages of 2fa
+      - benefits of using GA
+      - what's the point of google authenticator
+      - how does authenticator improve security
+      - what are the pros of using GA
+
+  - intent: ask_ga_what_is_2fa
+    examples: |
+      - what is 2fa
+      - explain two factor authentication
+      - what's 2 factor auth
+      - how does 2fa work
+      - two factor authentication explained
+      - different factors of authentication
+      - what does 2fa mean
+      - what's the purpose of 2fa
+      - define two factor authentication
+
+  - intent: ask_ga_backup_codes
+    examples: |
+      - what are backup codes for google authenticator
+      - how to use backup codes
+      - where to find backup codes
+      - save backup codes
+      - lost my phone, need backup codes
+      - what are 2fa recovery codes
+      - authenticator recovery codes
+      - emergency codes for GA
+      - how do backup codes work
+
+  - intent: ask_ga_faq
+    examples: |
+      - google authenticator faq
+      - frequent questions about ga
+      - common authenticator questions
+      - authenticator q&a
+      - tell me more about ga
+      - other questions about authenticator
+
+  - intent: ask_ga_disable
+    examples: |
+      - how to disable google authenticator
+      - turn off ga
+      - remove 2fa from superwal
+      - disconnect authenticator
+      - can I disable google authenticator
+      - how to remove ga
+      - stop using authenticator
+
+  - intent: ask_ga_compatibility
+    examples: |
+      - is google authenticator compatible with superwal
+      - ga compatibility
+      - can I use authenticator on my phone
+      - what devices support ga
+      - is ga supported by superwal
+      - authenticator support
+  #/GG Authentication
+  #KYC
+  - intent: ask_kyc_overview
+    examples: |
+      - What is KYC about?
+      - Why do I need to do KYC?
+      - What is the purpose of KYC?
+      - Explain KYC
+      - What is KYC for?
+      - Tell me about KYC policy
+      - Why is KYC required for SPL?
+      - What are SuperWAL's KYC policies?
+      - Overview of KYC
+      - What's the deal with KYC?
+
+  - intent: ask_kyc_process
+    examples: |
+      - How do I complete KYC verification?
+      - What is the KYC process?
+      - What steps are involved in KYC?
+      - How to verify my identity for KYC?
+      - What biometric data is needed for KYC?
+      - Do I need to provide my phone number for KYC?
+      - Explain the KYC verification steps.
+      - What does the KYC process entail?
+      - How to get KYC verified?
+      - What kind of information is required for KYC?
+
+  - intent: ask_data_usage_protection
+    examples: |
+      - How is my data used?
+      - Is my data protected?
+      - How does SuperWAL protect personal data?
+      - What is the data protection policy?
+      - Is my biometric data secure?
+      - How is my phone number used in KYC?
+      - Does SuperWAL follow GDPR?
+      - What about data privacy?
+      - How is my information handled?
+      - What are the privacy measures for KYC data?
+
+  - intent: ask_aml_regulations
+    examples: |
+      - What are AML regulations?
+      - How does SuperWAL comply with AML?
+      - Tell me about Anti-Money Laundering policies.
+      - What are the AML policies?
+      - How does SuperWAL monitor for AML?
+      - What is SuperWAL's stance on AML?
+      - Explain AML adherence.
+      - How do you ensure AML compliance?
+      - What are your AML standards?
+      - Details on AML regulations.
+
+  - intent: ask_suspicious_activities
+    examples: |
+      - What happens if there are suspicious transactions?
+      - What are the consequences of suspicious activity?
+      - Can my account be suspended due to suspicious activity?
+      - What actions does SuperWAL take against suspicious transactions?
+      - What is considered a suspicious activity?
+      - Will I be restricted from participating?
+      - Can my account be terminated?
+      - How does SuperWAL deal with fraud?
+      - What are the penalties for suspicious activity?
+      - What if a transaction is flagged?
+
+  - intent: ask_kyc_methods
+    examples: |
+      - How is KYC verified?
+      - Do you use third-party services for KYC?
+      - Is KYC done internally?
+      - What are the methods for KYC verification?
+      - How does SuperWAL verify identities?
+      - What services are used for KYC?
+      - Who verifies my KYC?
+      - How do you confirm my identity?
+      - Explain KYC verification methods.
+      - What tools are used for KYC?
+
+  - intent: ask_additional_documents
+    examples: |
+      - Will I need to provide more documents for KYC?
+      - Can SuperWAL request additional documents?
+      - When might I need to submit more documents?
+      - What if SuperWAL needs more identity proof?
+      - Are additional documents ever required?
+      - What kind of extra documents might be asked?
+      - Can you ask for more information after initial KYC?
+      - What if my initial documents are not enough?
+      - What is the process for requesting additional documents?
+      - When would I be asked for further verification?
+
+  - intent: ask_kyc_mandatory_consent
+    examples: |
+      - Is KYC mandatory?
+      - Do I have to do KYC?
+      - Is consent required for data processing during KYC?
+      - Do I consent to my data being processed for KYC?
+      - Is KYC compulsory?
+      - What about mandatory KYC?
+      - Do I acknowledge KYC is necessary?
+      - Is there a consent form for data usage?
+      - What are the terms of consent for KYC?
+      - Do I need to agree to data processing for identity verification?
+
+  - intent: ask_policy_updates
+    examples: |
+      - Does SuperWAL update its policies?
+      - How often are policies updated?
+      - Is SuperWAL committed to security?
+      - What is SuperWAL's commitment to transparency?
+      - How does SuperWAL maintain secure SPL mining?
+      - When are policy updates made?
+      - How often do you review AML regulations?
+      - Are policies regularly updated?
+      - How does SuperWAL ensure compliance with new regulations?
+      - What is your commitment to platform security?
+  #/KYC
+  #Verify
+  - intent: ask_verify_overview
+    examples: |
+      - What is SuperWAL Verify?
+      - Tell me about the Verify feature.
+      - What does "Verify" mean on SuperWAL?
+      - Explain SuperWAL's verification process.
+      - What is the purpose of Verify?
+      - Give me an overview of Verify.
+      - Why is verification important?
+      - What is the verification module?
+      - SuperWAL verification details.
+      - How does Verify work?
+
+  - intent: ask_verify_purpose
+    examples: |
+      - Why does SuperWAL mandate one account per person?
+      - What is the purpose of verification?
+      - How does Verify prevent fake accounts?
+      - Why is verification needed for SPL accumulation?
+      - What is the reason for SuperWAL's verification policy?
+      - Does Verify prevent unfair SPL mining?
+      - What is the goal of the Verify process?
+      - Why do I need to verify my identity?
+      - How does verification ensure genuine interactions?
+      - Why is account verification important?
+
+  - intent: ask_verify_components
+    examples: |
+      - What does the Verify action include?
+      - What are the steps for verification?
+      - Does Verify involve email verification?
+      - Is KYC part of the Verify process?
+      - What comprises SuperWAL's verification?
+      - What components make up the Verify process?
+      - How do I complete verification?
+      - What are the required actions for Verify?
+      - What is included in the verification?
+      - What do I need to do to verify?
+
+  - intent: ask_unverified_impact
+    examples: |
+      - What happens if my email is not verified?
+      - What is "unverified status" for SPL tokens?
+      - Do unverified tokens include referral rewards?
+      - What is the impact of not verifying email?
+      - Will my mined SPL tokens be unverified?
+      - What if my account is not email verified?
+      - What does unverified status mean for my tokens?
+      - How does email verification affect my SPL?
+      - Can I use unverified tokens?
+      - Are referral rewards affected by unverified status?
+
+  - intent: ask_email_verify_requirement
+    examples: |
+      - Do I need to verify email to receive tokens?
+      - Is email verification mandatory for token release?
+      - How can I receive my mined tokens?
+      - What is required to get my SPL tokens?
+      - Must I verify my email to claim tokens?
+      - When do I need to verify my email?
+      - Is email verification a must for token withdrawal?
+      - What's the condition for token reception?
+      - Is email verification required for mining rewards?
+      - How to get my tokens out?
+
+  - intent: ask_referral_verify
+    examples: |
+      - How do I ensure my referral rewards are verified?
+      - Do my referred members need to verify their email?
+      - How does referral verification work?
+      - What about email verification for my referrals?
+      - Do I need to check my referrals' email verification?
+      - How can I get full rewards from referrals?
+      - What is required for verified referral tokens?
+      - How do referred members impact my rewards?
+      - What should I tell my referred members about verification?
+      - Does my referral's email verification affect me?
+
+  - intent: ask_token_release_verify
+    examples: |
+      - What verification happens during token release?
+      - Do I need to verify my email during token release?
+      - Is there verification to prevent fraud during token release?
+      - How does SuperWAL ensure real users during token release?
+      - What's the verification process for token release?
+      - Is email verification part of the token release?
+      - How do you avoid fraud when releasing tokens?
+      - What steps are taken during token release for verification?
+      - Do users have to participate in verification for token release?
+      - Explain verification during token distribution.
+
+  - intent: ask_kyc_app_functionality
+    examples: |
+      - Does KYC unlock app functionality?
+      - What does completing KYC do for app features?
+      - How does KYC affect app functionality?
+      - Can I access unlimited app features with KYC?
+      - What functionalities are unlocked by KYC?
+      - Is KYC required for full app access?
+      - What benefits does KYC provide for the app?
+      - How to unlock all app features?
+      - What does "unlimited app functionality" mean?
+      - Is KYC related to app functions?
+  #/Verify
   #Fallback
   - intent: out_of_scope
     examples: |
@@ -1017,3 +1441,33 @@ nlu:
       - Banana phone!
       - Can you cook pasta?
       - How many stars are in the sky?
+      - tell me a joke
+      - what's the weather like
+      - how are you
+      - change my password
+      - what is superwal
+      - how to send money
+      - book a flight
+      - what's your name
+      - tell me about yourself
+      - what's your favorite color
+      - open my superwal account
+      - how to reset my superwal password
+      - where is my wallet
+      - tell me about cryptocurrencies
+      - who created you
+      - what time is it
+      - how to contact superwal support
+      - I want to speak to a human
+      - what is the meaning of life
+      - open the app
+      - buy something
+      - how do I add funds
+      -    
+      - ƯKHDBGA
+      - akdjfbadkjf
+      - qẻuityw
+      - iẻutyvnc
+      - xcvbhxznmv
+      - xyzajdvf
+      - abvcksjdak

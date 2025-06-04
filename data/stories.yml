@@ -1251,6 +1251,219 @@ stories:
       - intent: ask_modifications_terms
       - action: utter_modifications_terms
   #/Term & condition
+
+  #GG Authentication
+  - story: ga setup steps flow
+    steps:
+      - intent: ask_ga_setup_steps
+      - action: utter_ask_ga_setup_steps
+      - intent: ask_ga_download_app
+      - action: utter_ask_ga_download_app
+      # - intent: affirm
+      # - action: utter_affirm
+      - intent: ask_ga_scan_qr
+      - action: utter_ask_ga_scan_qr
+      # - intent: affirm
+      # - action: utter_affirm
+      - intent: ask_ga_code_usage
+      - action: utter_ask_ga_code_usage
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: ga setup steps with manual entry
+    steps:
+      - intent: ask_ga_setup_steps
+      - action: utter_ask_ga_setup_steps
+      - intent: ask_ga_download_app
+      - action: utter_ask_ga_download_app
+      # - intent: deny
+      # - action: utter_deny # User might deny if they already have the app or don't want to download now
+      - intent: ask_ga_manual_entry
+      - action: utter_ask_ga_manual_entry
+      # - intent: thank_you
+      # - action: utter_thank_you
+
+  - story: troubleshooting sync issue
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_ga_troubleshooting_sync
+      - action: utter_ask_ga_troubleshooting_sync
+      # - intent: thank_you
+      # - action: utter_thank_you
+
+  - story: troubleshooting lost device flow
+    steps:
+      - intent: ask_ga_troubleshooting_loss
+      - action: utter_ask_ga_troubleshooting_loss
+      # - intent: affirm # User confirms they have backup codes
+      # - action: utter_affirm
+      - intent: ask_ga_backup_codes
+      - action: utter_ask_ga_backup_codes
+      # - intent: thank_you
+      # - action: utter_thank_you
+
+  - story: security benefits inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_ga_security_benefits
+      - action: utter_ask_ga_security_benefits
+      - intent: ask_ga_what_is_2fa # Follow up question
+      - action: utter_ask_ga_what_is_2fa
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: ask about 2fa and then general faq
+    steps:
+      - intent: ask_ga_what_is_2fa
+      - action: utter_ask_ga_what_is_2fa
+      - intent: ask_ga_faq
+      - action: utter_ask_ga_faq
+      # - intent: thank_you
+      # - action: utter_thank_you
+
+  - story: ask to disable authenticator
+    steps:
+      - intent: ask_ga_disable
+      - action: utter_ask_ga_disable
+      # - intent: thank_you
+      # - action: utter_thank_you
+
+  - story: compatibility check
+    steps:
+      - intent: ask_ga_compatibility
+      - action: utter_ask_ga_compatibility
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: repeated questions (basic)
+    steps:
+      - intent: ask_google_authenticator_overview
+      - action: utter_ask_google_authenticator_overview
+      - intent: ask_google_authenticator_overview
+      - action: utter_ask_google_authenticator_overview # Bot repeats
+      - intent: goodbye
+      - action: utter_goodbye
+  #/GG Authentication
+
+  #KYC
+  - story: KYC overview path
+    steps:
+      - intent: ask_kyc_overview
+      - action: utter_kyc_overview
+
+  - story: KYC process path
+    steps:
+      - intent: ask_kyc_process
+      - action: utter_kyc_process
+
+  - story: Data usage and protection path
+    steps:
+      - intent: ask_data_usage_protection
+      - action: utter_data_usage_protection
+
+  - story: AML regulations path
+    steps:
+      - intent: ask_aml_regulations
+      - action: utter_aml_regulations
+
+  - story: Suspicious activities path
+    steps:
+      - intent: ask_suspicious_activities
+      - action: utter_suspicious_activities
+
+  - story: KYC methods path
+    steps:
+      - intent: ask_kyc_methods
+      - action: utter_kyc_methods
+
+  - story: Additional documents path
+    steps:
+      - intent: ask_additional_documents
+      - action: utter_additional_documents
+
+  - story: KYC mandatory and consent path
+    steps:
+      - intent: ask_kyc_mandatory_consent
+      - action: utter_kyc_mandatory_consent
+
+  - story: Policy updates path
+    steps:
+      - intent: ask_policy_updates
+      - action: utter_policy_updates
+
+  - story: User asks about KYC then about data usage
+    steps:
+      - intent: ask_kyc_overview
+      - action: utter_kyc_overview
+      - intent: ask_data_usage_protection
+      - action: utter_data_usage_protection
+
+  - story: User asks about AML then about suspicious activities
+    steps:
+      - intent: ask_aml_regulations
+      - action: utter_aml_regulations
+      - intent: ask_suspicious_activities
+      - action: utter_suspicious_activities
+  #/KYC
+
+  #Verify
+  - story: Verify overview path
+    steps:
+      - intent: ask_verify_overview
+      - action: utter_verify_overview
+
+  - story: Verify purpose path
+    steps:
+      - intent: ask_verify_purpose
+      - action: utter_verify_purpose
+
+  - story: Verify components path
+    steps:
+      - intent: ask_verify_components
+      - action: utter_verify_components
+
+  - story: Unverified impact path
+    steps:
+      - intent: ask_unverified_impact
+      - action: utter_unverified_impact
+
+  - story: Email verify requirement path
+    steps:
+      - intent: ask_email_verify_requirement
+      - action: utter_email_verify_requirement
+
+  - story: Referral verify path
+    steps:
+      - intent: ask_referral_verify
+      - action: utter_referral_verify
+
+  - story: Token release verify path
+    steps:
+      - intent: ask_token_release_verify
+      - action: utter_token_release_verify
+
+  - story: KYC app functionality path
+    steps:
+      - intent: ask_kyc_app_functionality
+      - action: utter_kyc_app_functionality
+
+  - story: User asks about verify then its components
+    steps:
+      - intent: ask_verify_overview
+      - action: utter_verify_overview
+      - intent: ask_verify_components
+      - action: utter_verify_components
+
+  - story: User asks about unverified tokens then email requirement
+    steps:
+      - intent: ask_unverified_impact
+      - action: utter_unverified_impact
+      - intent: ask_email_verify_requirement
+      - action: utter_email_verify_requirement
+  #/Verify
+
   #Fallback
   - story: Handle fallback
     steps:

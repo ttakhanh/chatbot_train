@@ -60,6 +60,11 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
+    epochs: 60
+    embedding_dimension: 64 # mặc định là 128
+    constrain_similarities: true
+    intent_classification: true
+    entity_recognition: false
     confidence_threshold: 0.7
   - name: EntitySynonymMapper
   - name: FallbackClassifier

@@ -1226,6 +1226,95 @@ rules:
       - action: utter_modifications_terms
   #/Term & condition
 
+  #KYC
+  - rule: Respond to KYC overview
+    steps:
+      - intent: ask_kyc_overview
+      - action: utter_kyc_overview
+
+  - rule: Respond to KYC process
+    steps:
+      - intent: ask_kyc_process
+      - action: utter_kyc_process
+
+  - rule: Respond to data usage and protection
+    steps:
+      - intent: ask_data_usage_protection
+      - action: utter_data_usage_protection
+
+  - rule: Respond to AML regulations
+    steps:
+      - intent: ask_aml_regulations
+      - action: utter_aml_regulations
+
+  - rule: Respond to suspicious activities
+    steps:
+      - intent: ask_suspicious_activities
+      - action: utter_suspicious_activities
+
+  - rule: Respond to KYC methods
+    steps:
+      - intent: ask_kyc_methods
+      - action: utter_kyc_methods
+
+  - rule: Respond to additional documents
+    steps:
+      - intent: ask_additional_documents
+      - action: utter_additional_documents
+
+  - rule: Respond to KYC mandatory and consent
+    steps:
+      - intent: ask_kyc_mandatory_consent
+      - action: utter_kyc_mandatory_consent
+
+  - rule: Respond to policy updates
+    steps:
+      - intent: ask_policy_updates
+      - action: utter_policy_updates
+  #/KYC
+
+  #Verify
+  - rule: Respond to verify overview
+    steps:
+      - intent: ask_verify_overview
+      - action: utter_verify_overview
+
+  - rule: Respond to verify purpose
+    steps:
+      - intent: ask_verify_purpose
+      - action: utter_verify_purpose
+
+  - rule: Respond to verify components
+    steps:
+      - intent: ask_verify_components
+      - action: utter_verify_components
+
+  - rule: Respond to unverified impact
+    steps:
+      - intent: ask_unverified_impact
+      - action: utter_unverified_impact
+
+  - rule: Respond to email verify requirement
+    steps:
+      - intent: ask_email_verify_requirement
+      - action: utter_email_verify_requirement
+
+  - rule: Respond to referral verify
+    steps:
+      - intent: ask_referral_verify
+      - action: utter_referral_verify
+
+  - rule: Respond to token release verify
+    steps:
+      - intent: ask_token_release_verify
+      - action: utter_token_release_verify
+
+  - rule: Respond to KYC app functionality
+    steps:
+      - intent: ask_kyc_app_functionality
+      - action: utter_kyc_app_functionality
+  #/Verify
+
   #Fallback
   - rule: Handle fallback
     steps:
