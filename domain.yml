@@ -112,7 +112,7 @@ intents:
   - ask_supported_devices
   - ask_ios_features
   - ask_android_features
-=======
+
   #SUPERWAL ECOSYSTEM
   - ask_walflux_features
   - ask_walflux_usecases
@@ -140,8 +140,16 @@ intents:
   - ask_walid_usage
   #/SUPERWAL ECOSYSTEM
   - out_of_scope #Fallback
->>>>>>> 77e1865 (Update NLU data, config, domain; ignore cache files)
+
   - goodbye
+
+slots:
+  fallback_count:
+    type: float
+    initial_value: 0
+    influence_conversation: false
+    mappings:
+      - type: custom
 
 responses:
   utter_greet:
@@ -636,7 +644,7 @@ responses:
 
         **AP (Activity Points)** are earned through task completions and will be unlocked soon. By default, each user starts with AP = 1. This rate ensures everyone can participate in mining regardless of hardware.
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
   utter_superup_overview:
     - text: |
         SuperUP is a voluntary sponsorship mechanism in the SuperWAL ecosystem. It allows users to contribute WaLX tokens to support the long-term development of the project. In return, users receive benefits like increased SPL mining speed and SPL token refunds, but it does not unlock any exclusive features. All users still have equal access to core functionalities.
@@ -706,10 +714,8 @@ responses:
     - text: |
         Member Rewards are calculated using the formula:
 
-        \[
-        \text{Rewards} = (\text{User Type} + \text{Verified Mining Team} \times 25\%)
-        \]
-
+        Rewards = (User Type + Verified Mining Team \times 25\%)
+        
         - User Type Score:
           - Normal = 1
           - Pioneer = 3
@@ -1191,13 +1197,15 @@ responses:
         🤔 I'm not sure I understand what you mean.  
         Could you please rephrase or ask about a SuperWAL service?
 
-    - text: |
-        🚫 Sorry, that doesn’t seem related to anything I can help with.  
-        Try asking about services like **WaLPay**, **WaLTrust**, or **WaLID**!
+#    - text: |
+#        🚫 Sorry, that doesn’t seem related to anything I can help with.
+#        Try asking about services like **WaLPay**, **WaLTrust**, or **WaLID**!
+#
+#    - text: |
+#        🤖 That input isn’t recognized. But I’m here to help with all things SuperWAL — let’s try again!
 
-    - text: |
-        🤖 That input isn’t recognized. But I’m here to help with all things SuperWAL — let’s try again!
-
+actions:
+  - action_out_of_scope
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

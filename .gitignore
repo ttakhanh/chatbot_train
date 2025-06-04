@@ -6,6 +6,7 @@ __pycache__/
 rasaenv/
 rasaenv/ 
 rasaenv/
+*.rasa/cache
 
 .idea/
 .vscode/

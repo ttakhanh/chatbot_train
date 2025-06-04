@@ -60,19 +60,19 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    confidence_threshold: 0.7 # Ngưỡng hiểu ý định
+    confidence_threshold: 0.4 # Ngưỡng hiểu ý định
   - name: FallbackClassifier
-    threshold: 0.7
+    threshold: 0.4
     ambiguity_threshold: 0.1
   - name: EntitySynonymMapper
   - name: ResponseSelector
   - name: FallbackClassifier
-    threshold: 0.7
+    threshold: 0.4
 
 policies:
   - name: MemoizationPolicy
   - name: RulePolicy
-    core_fallback_action_name: "action_default_fallback"
+    core_fallback_action_name: "action_out_of_scope"
     core_fallback_threshold: 0.3
     enable_fallback_prediction: True
   - name: UnexpecTEDIntentPolicy
