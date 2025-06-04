@@ -52,6 +52,9 @@ language: en
 #Fallback
 pipeline:
   - name: WhitespaceTokenizer
+  - name: LanguageModelFeaturizer
+    model_name: "bert" # Tên mô hình cơ bản bạn muốn sử dụng (ví dụ: "bert", "roberta", "distilbert")
+    model_weights: "bert-base-uncased" # Phiên bản cụ thể của mô hình.
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
@@ -61,8 +64,10 @@ pipeline:
     max_ngram: 4
   - name: DIETClassifier
     confidence_threshold: 0.4 # Ngưỡng hiểu ý định
-    epochs: 60
+    epochs: 70
     embedding_dimension: 64 # mặc định là 128
+    # epochs: 80
+    # embedding_dimension: 100 # mặc định là 128
     constrain_similarities: true
     intent_classification: true
     entity_recognition: false

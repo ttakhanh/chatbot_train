@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SuperWAL Chatbot</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <link rel="stylesheet" href="Asset/Interface.css">
+</head>
+
+<body>
+
+    <div class="chat-toggle" id="chatToggle" onclick="toggleChat()">💬</div>
+
+    <div class="chat-container" id="chatbox">
+        <div class="chat-header">
+            🤖 SuperWAL Assistant
+            <button onclick="toggleChat()">❌</button>
+        </div>
+        <div class="suggestions" id="suggestions"></div>
+
+        <div class="chat-messages" id="messages"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type a message..." onkeydown="checkEnter(event)" />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="Asset/Interface.js"></script>
+</body>
+
+</html>
