@@ -66,17 +66,13 @@ stories:
       - intent: ask_multichain_bridge
       - action: utter_ask_multichain_bridge
 
-  - story: Ask about SPL token
-    steps:
-      - intent: ask_spl_token
-      - action: utter_ask_spl_token
 
-  - story: greet and ask about SPL
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: ask_spl_token
-      - action: utter_ask_spl_token
+#  - story: greet and ask about SPL
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: ask_spl_token
+#      - action: utter_ask_spl_token
 
   #- story: ask use cases of SPL
   #  steps:
@@ -282,10 +278,10 @@ stories:
       - intent: ask_about_walx_exchange
       - action: utter_about_walx_exchange
 
-  - story: user asks about lbr
-    steps:
-      - intent: ask_about_lbr
-      - action: utter_about_lbr
+#  - story: user asks about lbr
+#    steps:
+#      - intent: ask_about_lbr
+#      - action: utter_about_lbr
 
   - story: user asks about superup
     steps:
@@ -313,20 +309,20 @@ stories:
       - action: utter_how_to_participate_in_lbr
 
   #defi walchain
-  - story: DeFi to Walchain Overview Story
-    steps:
-      - intent: ask_defi_to_walchain_overview
-      - action: utter_about_defi_to_walchain
+#  - story: DeFi to Walchain Overview Story
+#    steps:
+#      - intent: ask_defi_to_walchain_overview
+#      - action: utter_about_defi_to_walchain
+#
+#  - story: Benefits of DeFi to Walchain Story
+#    steps:
+#      - intent: ask_defi_to_walchain_benefits
+#      - action: utter_defi_to_walchain_benefits
 
-  - story: Benefits of DeFi to Walchain Story
-    steps:
-      - intent: ask_defi_to_walchain_benefits
-      - action: utter_defi_to_walchain_benefits
-
-  - story: How DeFi to Walchain Works
-    steps:
-      - intent: ask_defi_to_walchain_how_it_works
-      - action: utter_how_defi_to_walchain_works
+#  - story: How DeFi to Walchain Works
+#    steps:
+#      - intent: ask_defi_to_walchain_how_it_works
+#      - action: utter_how_defi_to_walchain_works
 
   - story: DeFi Products on Walchain
     steps:
@@ -448,10 +444,10 @@ stories:
       - action: utter_base_rate
 
   #superup rewards
-  - story: Explain SuperUP rewards
-    steps:
-      - intent: ask_superup_overview
-      - action: utter_superup_overview
+#  - story: Explain SuperUP rewards
+#    steps:
+#      - intent: ask_superup_overview
+#      - action: utter_superup_overview
 
   - story: respond superup formula
     steps:
@@ -671,17 +667,17 @@ stories:
       - intent: ask_multichain_bridge
       - action: utter_ask_multichain_bridge
 
-  - story: Ask about SPL token
-    steps:
-      - intent: ask_spl_token
-      - action: utter_ask_spl_token
+#  - story: Ask about SPL token
+#    steps:
+#      - intent: ask_spl_token
+#      - action: utter_ask_spl_token
 
-  - story: greet and ask about SPL
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: ask_spl_token
-      - action: utter_ask_spl_token
+#  - story: greet and ask about SPL
+#    steps:
+#      - intent: greet
+#      - action: utter_greet
+#      - intent: ask_spl_token
+#      - action: utter_ask_spl_token
 
   #- story: ask use cases of SPL
   #  steps:
@@ -887,10 +883,10 @@ stories:
       - intent: ask_about_walx_exchange
       - action: utter_about_walx_exchange
 
-  - story: user asks about lbr
-    steps:
-      - intent: ask_about_lbr
-      - action: utter_about_lbr
+#  - story: user asks about lbr
+#    steps:
+#      - intent: ask_about_lbr
+#      - action: utter_about_lbr
 
   - story: user asks about superup
     steps:
@@ -918,10 +914,10 @@ stories:
       - action: utter_how_to_participate_in_lbr
 
   #defi walchain
-  - story: DeFi to Walchain Overview Story
-    steps:
-      - intent: ask_defi_to_walchain_overview
-      - action: utter_about_defi_to_walchain
+#  - story: DeFi to Walchain Overview Story
+#    steps:
+#      - intent: ask_defi_to_walchain_overview
+#      - action: utter_about_defi_to_walchain
 
   - story: Benefits of DeFi to Walchain Story
     steps:

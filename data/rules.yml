@@ -46,10 +46,10 @@ rules:
       - intent: ask_multichain_bridge
       - action: utter_ask_multichain_bridge
 
-  - rule: Answer SPL token
-    steps:
-      - intent: ask_spl_token
-      - action: utter_ask_spl_token
+#  - rule: Answer SPL token
+#    steps:
+#      - intent: ask_spl_token
+#      - action: utter_ask_spl_token
 
   #- rule: Explain SPL token use cases
   #  steps:
@@ -257,10 +257,10 @@ rules:
       - intent: ask_about_walx_exchange
       - action: utter_about_walx_exchange
 
-  - rule: Answer about lbr
-    steps:
-      - intent: ask_about_lbr
-      - action: utter_about_lbr
+#  - rule: Answer about lbr
+#    steps:
+#      - intent: ask_about_lbr
+#      - action: utter_about_lbr
 
   - rule: Answer about superup
     steps:
@@ -288,20 +288,20 @@ rules:
       - action: utter_how_to_participate_in_lbr
 
   #defi walchain
-  - rule: Respond to DeFi to Walchain Overview
-    steps:
-      - intent: ask_defi_to_walchain_overview
-      - action: utter_about_defi_to_walchain
+#  - rule: Respond to DeFi to Walchain Overview
+#    steps:
+#      - intent: ask_defi_to_walchain_overview
+#      - action: utter_about_defi_to_walchain
 
-  - rule: Respond to DeFi to Walchain Benefits
-    steps:
-      - intent: ask_defi_to_walchain_benefits
-      - action: utter_defi_to_walchain_benefits
+#  - rule: Respond to DeFi to Walchain Benefits
+#    steps:
+#      - intent: ask_defi_to_walchain_benefits
+#      - action: utter_defi_to_walchain_benefits
 
-  - rule: Respond to DeFi Workflow
-    steps:
-      - intent: ask_defi_to_walchain_how_it_works
-      - action: utter_how_defi_to_walchain_works
+#  - rule: Respond to DeFi Workflow
+#    steps:
+#      - intent: ask_defi_to_walchain_how_it_works
+#      - action: utter_how_defi_to_walchain_works
 
   - rule: Respond to DeFi Products
     steps:
@@ -650,11 +650,17 @@ rules:
       - intent: ask_multichain_bridge
       - action: utter_ask_multichain_bridge
 
+
   - rule: Answer SPL token
     steps:
       - intent: ask_spl_token
       - action:
           utter_ask_spl_token
+
+#  - rule: Answer SPL token
+#    steps:
+#      - intent: ask_spl_token
+#      - action: utter_ask_spl_token
 
           #- rule: Explain SPL token use cases
           #  steps:
@@ -879,10 +885,10 @@ rules:
       - intent: ask_about_walx_exchange
       - action: utter_about_walx_exchange
 
-  - rule: Answer about lbr
-    steps:
-      - intent: ask_about_lbr
-      - action: utter_about_lbr
+#  - rule: Answer about lbr
+#    steps:
+#      - intent: ask_about_lbr
+#      - action: utter_about_lbr
 
   - rule: Answer about superup
     steps:
@@ -910,10 +916,10 @@ rules:
       - action: utter_how_to_participate_in_lbr
 
   #defi walchain
-  - rule: Respond to DeFi to Walchain Overview
-    steps:
-      - intent: ask_defi_to_walchain_overview
-      - action: utter_about_defi_to_walchain
+#  - rule: Respond to DeFi to Walchain Overview
+#    steps:
+#      - intent: ask_defi_to_walchain_overview
+#      - action: utter_about_defi_to_walchain
 
   - rule: Respond to DeFi to Walchain Benefits
     steps:

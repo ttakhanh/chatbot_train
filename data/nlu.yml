@@ -117,9 +117,6 @@ nlu:
       - What are the main components of the SuperWAL ecosystem?
       - Tell me about the core features of SuperWAL
       - What modules are included in SuperWAL?
-      - What are the main components of the SuperWAL ecosystem?
-      - Tell me about the core features of SuperWAL
-      - What modules are included in SuperWAL?
       - What does the SuperWAL ecosystem consist of?
       - Can you list the different modules in SuperWAL?
       - What technologies power the SuperWAL platform?
@@ -133,9 +130,6 @@ nlu:
 
   - intent: ask_walfinance_services
     examples: |
-      - What services does WaLFinance offer?
-      - Tell me about DeFi features in SuperWAL
-      - What can I do with WaLFinance?
       - What services does WaLFinance offer?
       - Tell me about DeFi features in SuperWAL
       - What can I do with WaLFinance?
@@ -155,9 +149,6 @@ nlu:
       - How can I mint NFTs on SuperWAL?
       - Does SuperWAL support NFT trading?
       - What is the NFT Marketplace like?
-      - How can I mint NFTs on SuperWAL?
-      - Does SuperWAL support NFT trading?
-      - What is the NFT Marketplace like?
       - Can I create my own NFTs on SuperWAL?
       - How do I list NFTs for sale on SuperWAL?
       - Does SuperWAL have a built-in NFT marketplace?
@@ -171,9 +162,6 @@ nlu:
 
   - intent: ask_identity_ai
     examples: |
-      - What is WaLIdentity?
-      - How does SuperWAL use AI for identity and security?
-      - Tell me about AI-powered DID in SuperWAL
       - What is WaLIdentity?
       - How does SuperWAL use AI for identity and security?
       - Tell me about AI-powered DID in SuperWAL
@@ -193,9 +181,6 @@ nlu:
       - How does SuperWAL support SocialFi and GameFi?
       - Can I build a decentralized game on SuperWAL?
       - Is there a social platform in the ecosystem?
-      - How does SuperWAL support SocialFi and GameFi?
-      - Can I build a decentralized game on SuperWAL?
-      - Is there a social platform in the ecosystem?
       - What GameFi features are available in SuperWAL?
       - Does SuperWAL support in-game assets or NFTs?
       - Can developers launch SocialFi dApps on SuperWAL?
@@ -209,9 +194,6 @@ nlu:
 
   - intent: ask_rwa_tokenization
     examples: |
-      - How does SuperWAL tokenize real-world assets?
-      - What is RWA in SuperWAL?
-      - Can I tokenize real estate or art?
       - How does SuperWAL tokenize real-world assets?
       - What is RWA in SuperWAL?
       - Can I tokenize real estate or art?
@@ -231,9 +213,6 @@ nlu:
       - What blockchains are supported by the Multi-Chain Bridge?
       - Can I transfer tokens between chains?
       - Does SuperWAL support cross-chain transfers?
-      - What blockchains are supported by the Multi-Chain Bridge?
-      - Can I transfer tokens between chains?
-      - Does SuperWAL support cross-chain transfers?
       - How does the Multi-Chain Bridge in SuperWAL work?
       - Which chains can I bridge to from SuperWAL?
       - Is Ethereum supported in the cross-chain bridge?
@@ -245,6 +224,7 @@ nlu:
       - Can I bridge SPL tokens to other chains?
       - Is ZK-Rollup involved in cross-chain transactions?
 
+#<<<<<<< HEAD
   - intent: ask_spl_token
     examples: |
       - What is the SPL token?
@@ -263,13 +243,10 @@ nlu:
       - How is SPL different from other crypto tokens?
       - What’s the total supply of SPL tokens?
 
+#=======
+#>>>>>>> f47ecb5 (cap nhat nlu)
   - intent: ask_spl_use_cases
     examples: |
-      - What are the use cases of SPL?
-      - How is the SPL token used?
-      - What is SPL used for in Walchain?
-      - Tell me the real-world applications of SPL.
-      - How does SPL work in the ecosystem?
       - What are the use cases of SPL?
       - How is the SPL token used?
       - What is SPL used for in Walchain?
@@ -290,6 +267,12 @@ nlu:
       - How can I send money with SPL?
       - How does SPL support peer-to-peer transactions?
       - Is SPL suitable for microtransactions?
+      - Can I pay someone directly with SPL?
+      - Is SPL good for everyday payments?
+      - Can SPL handle small value transactions?
+      - Does SPL work for personal money transfers?
+      - Is SPL a good option for P2P payments?
+      - How do I use SPL for buying goods or services?
 
   - intent: ask_spl_governance
     examples: |
@@ -297,6 +280,12 @@ nlu:
       - How do I vote with SPL?
       - How does the Walchain DAO work?
       - What role does SPL play in decision-making?
+      - Can SPL holders participate in governance?
+      - How is voting power determined with SPL?
+      - What decisions can I vote on using SPL?
+      - Is SPL required to join the Walchain DAO?
+      - How do I take part in DAO proposals with SPL?
+      - Does SPL give me a voice in the Walchain ecosystem?
 
   - intent: ask_spl_verification
     examples: |
@@ -304,6 +293,12 @@ nlu:
       - How does document verification work with SPL and DID?
       - Is SPL used for identity verification?
       - Can I authenticate files on Walchain?
+      - How do I verify my identity using SPL?
+      - What role does SPL play in document authentication?
+      - Can SPL and DID be used for file certification?
+      - How secure is document verification with SPL?
+      - Is document authentication on Walchain decentralized?
+      - Can I use SPL for KYC or identity proof?
 
   - intent: ask_spl_storage
     examples: |
@@ -311,12 +306,26 @@ nlu:
       - How is SPL used for decentralized storage?
       - What's the relation between IPFS and SPL?
       - How does Walchain support file storage?
+      - Can I use SPL to pay for IPFS storage?
+      - Is file storage on Walchain permanent?
+      - How do I upload files with SPL on Walchain?
+      - Can I store and access files securely using SPL?
+      - Does SPL power decentralized file systems?
+      - What benefits does SPL bring to data storage on IPFS?
+#>>>>>>> f47ecb5 (cap nhat nlu)
 
   - intent: ask_spl_validator_rewards
     examples: |
       - How do validators earn SPL?
       - Tell me about SPL rewards for validators
       - Validator incentives in SPL?
+      - What do validators get for supporting the network?
+      - How are SPL tokens distributed to validators?
+      - Is there a reward system for validators on Walchain?
+      - How much SPL can a validator earn?
+      - Do validators receive SPL for validation work?
+      - What's the earning model for validators with SPL?
+      - How does staking relate to validator rewards in SPL?
 
   - intent: ask_spl_staking
     examples: |
@@ -324,18 +333,38 @@ nlu:
       - Can I earn rewards by staking SPL?
       - What's the benefit of staking SPL tokens?
       - How do I become a Light Validator?
+      - Is staking SPL safe and profitable?
+      - What are the requirements to stake SPL?
+      - How is staking different from mining in SPL?
+      - How often do I get rewards when staking SPL?
+      - Can I stake SPL without running a full node?
+      - What’s the role of Light Validators in staking?
 
   - intent: ask_spl_inflation_deflation
     examples: |
       - Does SPL have a fixed supply?
       - How is SPL deflation controlled?
       - What are the inflation mechanisms for SPL?
+      - Is SPL supply capped or unlimited?
+      - How does SPL manage token issuance?
+      - Are new SPL tokens minted over time?
+      - Can SPL supply be reduced?
+      - What affects the total supply of SPL?
+      - Is SPL designed to be deflationary or inflationary?
+      - How is token inflation handled in Walchain?
 
   - intent: ask_staking_mining
     examples: |
       - How can I earn rewards from staking?
       - Does SuperWAL support mining?
       - What are the staking incentives?
+      - How do I get rewards by staking SPL?
+      - Can I mine SPL tokens on SuperWAL?
+      - What benefits come from staking on SuperWAL?
+      - Are there bonuses for staking SPL?
+      - How often are staking rewards paid out?
+      - Do staking rewards depend on the amount staked?
+      - Is mining different from staking on SuperWAL?
 
   # Category: Walchain Infrastructure
   - intent: ask_tps_performance
@@ -343,30 +372,56 @@ nlu:
       - How many TPS can Walchain handle?
       - Is Walchain fast?
       - What's the transaction speed?
+      - How quickly does Walchain process transactions?
+      - What is the average TPS of Walchain?
+      - Is Walchain faster than other blockchains?
+      - How scalable is Walchain in terms of speed?
+      - Does Walchain support high throughput?
+      - What’s the max transactions per second Walchain can reach?
+      - How efficient is Walchain in handling traffic?
 
   - intent: ask_low_fees
     examples: |
       - Why are SuperWAL's fees so low?
-      - Are there transaction costs?
-      - How does Walchain keep fees near zero?
 
   - intent: ask_solidity_support
     examples: |
       - Can I build with Solidity on Walchain?
       - Is SuperWAL compatible with Ethereum tools?
       - Does it support zkEVM?
+      - Do I need to pay gas fees on Walchain?
+      - What makes SPL transactions so cheap?
+      - Are Walchain fees cheaper than Ethereum?
+      - How are transaction fees calculated in SuperWAL?
+      - Is it free to transfer tokens on Walchain?
+      - Why does Walchain have almost no fees?
+      - Are fees fixed or dynamic on Walchain?
 
   - intent: ask_energy_efficiency
     examples: |
       - Is Walchain energy-efficient?
       - What consensus does it use?
       - Does it use Proof-of-Work?
+      - How eco-friendly is Walchain?
+      - Does Walchain consume a lot of energy?
+      - Is Walchain greener than Bitcoin?
+      - What kind of consensus mechanism powers Walchain?
+      - Is Walchain based on Proof-of-Stake?
+      - How does Walchain reduce environmental impact?
+      - Is energy consumption low on Walchain?
 
-  - intent: ask_scalability
-    examples: |
-      - How scalable is SuperWAL?
-      - Can it handle a high volume of transactions?
-      - Is it suitable for large dApps?
+#  - intent: ask_scalability
+#    examples: |
+#      - How scalable is SuperWAL?
+#      - Can it handle a high volume of transactions?
+#      - Is it suitable for large dApps?
+#      - Can SuperWAL support millions of users?
+#      - Is SuperWAL built for mass adoption?
+#      - How does SuperWAL ensure scalability?
+#      - Can SuperWAL scale with network growth?
+#      - Is SuperWAL fast and scalable?
+#      - Will performance drop with more users on SuperWAL?
+#      - How does SuperWAL compare in scalability with other chains?
 
   # Category: Solving Blockchain Problems
   - intent: ask_high_fee_solution
@@ -374,30 +429,65 @@ nlu:
       - How does SuperWAL solve high gas fees?
       - Are microtransactions possible?
       - Is it affordable to use?
+      - Does SuperWAL charge gas fees like Ethereum?
+      - How cheap is it to transact on SuperWAL?
+      - Can I send tiny payments without high fees?
+      - What makes SuperWAL good for microtransactions?
+      - How does SuperWAL reduce transaction costs?
+      - Is SuperWAL more affordable than other blockchains?
+      - Do users need to worry about gas on SuperWAL?
 
   - intent: ask_transaction_speed
     examples: |
       - Are transactions fast on SuperWAL?
       - What’s the finality time?
       - How fast are confirmations?
+      - How long does it take for a transaction to complete?
+      - Is SuperWAL instant in processing transfers?
+      - How quick is the settlement on SuperWAL?
+      - What is the block time on SuperWAL?
+      - Do SuperWAL transactions confirm in seconds?
+      - Is the network latency low on SuperWAL?
+      - How fast is SuperWAL compared to other chains?
 
   - intent: ask_interoperability
     examples: |
       - Does SuperWAL support cross-chain features?
       - Can it connect to other blockchains?
       - What interoperability features does it have?
+      - How does SuperWAL handle cross-chain transfers?
+      - Is there a bridge for SuperWAL to other chains?
+      - Can I move assets between SuperWAL and other blockchains?
+      - What protocols enable cross-chain on SuperWAL?
+      - Does SuperWAL use multi-chain bridges?
+      - How secure are SuperWAL’s cross-chain operations?
+      - Can SuperWAL integrate with Ethereum or Binance Smart Chain?
 
   - intent: ask_security_ai
     examples: |
       - How secure is SuperWAL?
       - How does it detect fraud?
       - Does AI protect the ecosystem?
+      - What security measures does SuperWAL use?
+      - How does SuperWAL prevent hacks?
+      - Is user data safe on SuperWAL?
+      - Does SuperWAL use AI for fraud detection?
+      - How reliable is SuperWAL’s security system?
+      - What makes SuperWAL secure against attacks?
+      - Are transactions on SuperWAL tamper-proof?
 
   - intent: ask_rwa_challenges
     examples: |
       - How does SuperWAL simplify RWA tokenization?
       - What legal framework does it use?
       - Is RWA tokenization easy?
+      - Can I tokenize real-world assets on SuperWAL?
+      - How does SuperWAL ensure legal compliance for RWA?
+      - What steps are involved in RWA tokenization with SuperWAL?
+      - Does SuperWAL support asset-backed tokens?
+      - How secure is tokenizing RWAs on SuperWAL?
+      - Is there a platform to manage RWA tokens on SuperWAL?
+      - How fast can I tokenize assets in SuperWAL ecosystem?
 
   # Category: Why SuperWAL Stands Out
   - intent: ask_why_superwal
@@ -405,30 +495,64 @@ nlu:
       - What makes SuperWAL different?
       - Why should I choose SuperWAL?
       - How is SuperWAL better than others?
+      - What unique features does SuperWAL have?
+      - Why is SuperWAL special?
+      - How does SuperWAL stand out from competitors?
+      - What benefits do I get with SuperWAL?
+      - Why trust SuperWAL over other blockchains?
+      - What innovations does SuperWAL bring?
+      - What’s the advantage of using SuperWAL?
 
   - intent: ask_scalability_support
     examples: |
       - Can SuperWAL support large-scale dApps?
       - Is it scalable for Web3?
       - How does SuperWAL ensure performance?
+      - Can SuperWAL handle complex decentralized apps?
+      - Does SuperWAL offer reliable uptime for dApps?
+      - How fast can dApps run on SuperWAL?
+      - Is SuperWAL suitable for enterprise-level dApps?
+      - What mechanisms improve SuperWAL's performance?
+      - Can SuperWAL support millions of dApp users?
+      - How does SuperWAL manage dApp scalability challenges?
 
   - intent: ask_fee_accessibility
     examples: |
       - Is SuperWAL affordable to use?
       - Do users need to pay a lot in fees?
       - Is it cost-effective?
+      - How much does it cost to use SuperWAL?
+      - Are fees low on SuperWAL?
+      - Can I use SuperWAL without high expenses?
+      - Is SuperWAL cheaper than other blockchains?
+      - How affordable is SuperWAL for developers?
+      - Do transaction fees add up on SuperWAL?
+      - Is SuperWAL budget-friendly for users?
 
   - intent: ask_cross_chain_integration
     examples: |
       - Does SuperWAL integrate with major chains?
       - Can I use it with BNB, Solana, or Polygon?
       - What blockchains does it support?
+      - Is SuperWAL compatible with Binance Smart Chain?
+      - Can SuperWAL connect to Solana network?
+      - Does SuperWAL support Polygon?
+      - How many blockchains can SuperWAL bridge to?
+      - Are there cross-chain features with major chains?
+      - Can I transfer assets between SuperWAL and BNB Chain?
+      - What interoperability options does SuperWAL provide?
 
   - intent: ask_developer_support
     examples: |
       - What support is available for developers?
       - Are there tools or SDKs?
       - Can I build easily on SuperWAL?
+      - Does SuperWAL provide developer documentation?
+      - Are there APIs for building on SuperWAL?
+      - What programming languages does SuperWAL support?
+      - Is there a developer community for SuperWAL?
+      - Can I deploy smart contracts on SuperWAL?
+      - Does SuperWAL offer testnets for development?
 
   #roadmap
   - intent: ask_superwal_roadmap
@@ -436,36 +560,78 @@ nlu:
       - What is the roadmap of SuperWAL?
       - Tell me about SuperWAL's development plan.
       - How does SuperWAL plan its ecosystem?
+      - What are the upcoming milestones for SuperWAL?
+      - When will new features launch on SuperWAL?
+      - How does SuperWAL schedule its product releases?
+      - What phases are in SuperWAL's roadmap?
+      - Is there a timeline for SuperWAL upgrades?
+      - What future plans does SuperWAL have?
+      - How can I track SuperWAL’s progress?
 
   - intent: ask_phase1
     examples: |
       - What is Phase 1 of SuperWAL?
       - Tell me about the first phase of the roadmap.
       - What happens in Q1 to Q3 2025?
+      - What are the goals of Phase 1 in SuperWAL?
+      - Which features launch in Phase 1?
+      - What milestones does SuperWAL plan for Phase 1?
+      - How does Phase 1 set up the ecosystem?
+      - What developments occur in early 2025?
+      - Can you explain the initial stage of SuperWAL?
+      - What is included in SuperWAL’s Phase 1 roadmap?
 
   - intent: ask_phase2
     examples: |
       - What is Phase 2 about?
       - What are the developments in Q4 2025 to Q1 2026?
       - What DeFi features are being built?
+      - What milestones are planned for Phase 2?
+      - How does Phase 2 expand the SuperWAL ecosystem?
+      - What new products launch in Phase 2?
+      - What improvements happen in late 2025 and early 2026?
+      - What role does DeFi play in Phase 2?
+      - Are there new staking or lending protocols in Phase 2?
+      - What should users expect in SuperWAL’s second phase?
 
   - intent: ask_phase3
     examples: |
       - What is Phase 3 of the roadmap?
       - What is being planned from Q2 2026 to Q4 2026?
       - How will SuperWAL achieve cross-chain trading?
+      - What milestones are set for Phase 3?
+      - What new features launch in mid to late 2026?
+      - How does Phase 3 enhance interoperability?
+      - What are the goals for cross-chain in Phase 3?
+      - Will there be new DeFi products in Phase 3?
+      - How does SuperWAL plan to support multi-chain trading?
+      - What can users expect in Phase 3 of SuperWAL?
 
   - intent: ask_phase4
     examples: |
       - What is Phase 4 in the roadmap?
       - What's coming in Q1 to Q2 2027?
       - Tell me about yield optimization and staking.
+      - What new features launch in early 2027?
+      - How will SuperWAL improve staking rewards?
+      - What yield farming options will be available?
+      - What milestones are planned for Phase 4?
+      - How does Phase 4 support DeFi growth?
+      - What are the goals for yield optimization in Phase 4?
+      - How can users benefit from Phase 4 updates?
 
   - intent: ask_phase5
     examples: |
       - What is Phase 5 of the roadmap?
       - What will happen after Q3 2027?
       - How is SuperWAL using AI in Web3?
+      - What are the future plans for AI integration?
+      - How does Phase 5 advance SuperWAL's technology?
+      - What innovations are expected post-2027?
+      - How will AI enhance the SuperWAL ecosystem?
+      - What milestones are set for Phase 5?
+      - How does SuperWAL plan to use AI for security?
+      - What can users expect in the final roadmap phase?
 
   #token distribution
   - intent: ask_token_distribution
@@ -488,30 +654,63 @@ nlu:
       - How does WAL Mobile Node work?
       - How can I earn SPL with my phone?
       - What are the benefits of joining WAL Mobile Node?
+      - Can I become a Light Node using my mobile?
+      - How do I participate in WAL Mobile Node?
+      - Is WAL Mobile Node easy to use?
+      - What rewards can I get from WAL Mobile Node?
+      - Does WAL Mobile Node help secure the network?
 
   - intent: ask_who_can_join
     examples: |
       - Who can join WAL Mobile Node?
       - Do I need to be a blockchain expert to use WAL Mobile Node?
       - Is WAL Mobile Node beginner-friendly?
+      - Can anyone become a WAL Mobile Node?
+      - Are there requirements to join WAL Mobile Node?
+      - Is technical knowledge required for WAL Mobile Node?
+      - How easy is it to start with WAL Mobile Node?
+      - Can newbies participate in WAL Mobile Node?
+      - What skills do I need for WAL Mobile Node?
+      - Is WAL Mobile Node accessible for all users?
 
   - intent: ask_how_to_earn_spl
     examples: |
       - How do I earn SPL tokens?
       - What do I need to do to receive airdrops?
       - Can I earn from delegation?
+      - How can I participate in SPL mining?
+      - What activities reward SPL tokens?
+      - Is staking SPL tokens profitable?
+      - How to join the airdrop program?
+      - Can I get SPL rewards by validating?
+      - What is delegation in SPL mining?
+      - Are there bonuses for early participants?
 
   - intent: ask_phases_of_node
     examples: |
       - What are the phases of WAL Mobile Node?
       - How does WAL Mobile Node progress over time?
       - Tell me about the three stages of WAL Mobile Node
+      - What happens in each phase of WAL Mobile Node?
+      - How long does each stage last?
+      - What milestones are in WAL Mobile Node's phases?
+      - How do phases affect rewards in WAL Mobile Node?
+      - Can you explain the WAL Mobile Node roadmap?
+      - What development steps are planned for WAL Mobile Node?
+      - How does WAL Mobile Node evolve through phases?
 
   - intent: ask_why_join
     examples: |
       - Why should I join WAL Mobile Node?
       - What are the advantages of using WAL Mobile Node?
       - Is it worth becoming a Light Node?
+      - How does WAL Mobile Node benefit me?
+      - What rewards come from WAL Mobile Node?
+      - Can WAL Mobile Node increase my SPL earnings?
+      - Is WAL Mobile Node good for beginners?
+      - Why choose to run a Light Node on WAL Mobile Node?
+      - What makes WAL Mobile Node special?
+      - How does participating in WAL Mobile Node help the network?
 
   #WALX exchange
   - intent: ask_about_walx_exchange
@@ -521,14 +720,11 @@ nlu:
       - How does the WaLX Exchange work?
       - Explain the WaLX platform
       - What can I do on WaLX?
-
-  - intent: ask_about_lbr
-    examples: |
-      - What is LBR?
-      - What is Liquidity Bootstrapping Round?
-      - Explain the LBR of SuperWAL
-      - How does the LBR system work?
-      - Tell me about the LBR process
+      - Is WaLX a decentralized exchange?
+      - How do I trade on WaLX?
+      - What features does WaLX offer?
+      - Can I provide liquidity on WaLX?
+      - What tokens are supported on WaLX?
 
   - intent: ask_about_superup
     examples: |
@@ -537,6 +733,11 @@ nlu:
       - Why do I need to boost SuperUP?
       - What does boosting SuperUP do?
       - Can you explain how SuperUP works?
+      - How does SuperUP affect rewards?
+      - What benefits come from SuperUP boosting?
+      - Is SuperUP a token or mechanism?
+      - How can I increase my SuperUP level?
+      - How does SuperUP support liquidity bootstrapping?
 
   - intent: ask_about_spl_refunds
     examples: |
@@ -545,6 +746,11 @@ nlu:
       - What happens when I accelerate SuperUP?
       - Will I earn tokens for participating?
       - How are rewards distributed?
+      - Can I claim SPL refunds anytime?
+      - Is SPL refund linked to staking?
+      - How does SuperUP acceleration affect refunds?
+      - Are there conditions for SPL refunds?
+      - What is the benefit of SPL refund in SuperWAL?
 
   - intent: ask_about_lbr_benefits
     examples: |
@@ -553,6 +759,11 @@ nlu:
       - Is LBR a good opportunity?
       - What makes LBR special?
       - What's in it for me if I join LBR?
+      - How do participants benefit from LBR?
+      - Is LBR only for early adopters?
+      - Will I get better prices in LBR?
+      - Does LBR offer exclusive rewards?
+      - Is LBR worth joining?
 
   - intent: ask_about_walx_vision
     examples: |
@@ -561,6 +772,11 @@ nlu:
       - What’s next for WaLX?
       - Tell me the long-term plan for WaLX
       - Will WaLX support other blockchains?
+      - Is WaLX planning cross-chain integration?
+      - How will WaLX evolve over time?
+      - What upgrades are coming to WaLX?
+      - Will WaLX expand its trading pairs?
+      - Is there a roadmap for WaLX growth?
 
   - intent: ask_how_to_participate_in_lbr
     examples: |
@@ -569,20 +785,24 @@ nlu:
       - What do I need to join WaLX or LBR?
       - How to start with SuperWAL’s LBR?
       - Can you guide me to join LBR?
-
-  #defi to walchain
-  - intent: ask_defi_to_walchain_overview
-    examples: |
-      - What is DeFi to Walchain?
-      - Tell me about DeFi to Walchain
-      - Explain DeFi to Walchain initiative
-      - What does DeFi to Walchain aim to achieve?
+      - Is there a tutorial for LBR participation?
+      - Do I need an account to join LBR?
+      - How do I prepare for the LBR event?
+      - What wallet do I need for LBR?
+      - Are there any requirements to join LBR?
 
   - intent: ask_defi_to_walchain_benefits
     examples: |
       - Why should I use DeFi on Walchain?
       - What are the benefits of using DeFi to Walchain?
       - How is DeFi better on Walchain?
+      - Is Walchain optimized for DeFi?
+      - What makes Walchain ideal for decentralized finance?
+      - Does DeFi run faster on Walchain?
+      - Are fees lower for DeFi on Walchain?
+      - Is DeFi more secure on Walchain?
+      - Why build DeFi projects on Walchain?
+      - What advantages does Walchain offer for DeFi users?
 
   - intent: ask_defi_to_walchain_how_it_works
     examples: |
@@ -590,24 +810,53 @@ nlu:
       - How do I transfer assets to Walchain?
       - Explain how the bridge works in DeFi to Walchain
       - How do I withdraw assets from Walchain?
+      - Explain how the bridge works in DeFi to Walchain
+      - How do I withdraw assets from Walchain?
+      - What steps are needed to bridge tokens to Walchain?
+      - Is there a bridge UI for Walchain?
+      - Can I move ETH or USDT to Walchain?
+      - How fast is the cross-chain transfer?
+      - Do I need gas tokens to bridge assets?
+      - What is the process to exit Walchain back to Ethereum?
 
   - intent: ask_defi_products_on_walchain
     examples: |
       - What DeFi products are available on Walchain?
       - Tell me about WaLX, WaLGrow, and other tools
       - What platforms are part of the DeFi ecosystem?
+      - Which DeFi apps can I use on Walchain?
+      - What tools support DeFi on Walchain?
+      - Is there a DEX on Walchain?
+      - Can I use lending or farming protocols?
+      - Are there any DeFi vaults on Walchain?
+      - What protocols are built into Walchain DeFi?
+      - What’s included in Walchain’s DeFi suite?
 
   - intent: ask_defi_user_benefits
     examples: |
       - What benefits do users get on Walchain?
       - How much are the transaction fees?
       - How is it better than Ethereum?
+      - Why should I use Walchain over other blockchains?
+      - What makes Walchain more efficient?
+      - Are the fees on Walchain lower than Ethereum?
+      - What user incentives are available on Walchain?
+      - How fast are transactions on Walchain?
+      - Does Walchain offer any unique features for developers?
+      - How does Walchain improve scalability compared to Ethereum?
 
   - intent: ask_how_to_get_started_defi
     examples: |
       - How do I start using DeFi to Walchain?
       - How do I use the SuperWAL wallet?
       - What's the first step to join Walchain DeFi?
+      - How can I onboard into Walchain's DeFi ecosystem?
+      - What do I need to access DeFi on Walchain?
+      - Is there a guide to start with SuperWAL and Walchain DeFi?
+      - Do I need a SuperWAL wallet to use Walchain DeFi?
+      - How do I set up the SuperWAL wallet?
+      - How do I connect to DeFi protocols on Walchain?
+      - What should I do first to participate in Walchain’s DeFi?
 
   #spl mining
   - intent: ask_spl_mining_overview
@@ -615,129 +864,91 @@ nlu:
       - What is SPL Mining?
       - Tell me about SPL Mining on SuperWAL
       - How does SPL Mining work?
+      - Can you explain how SPL Mining operates?
+      - I want to know about SPL Mining
+      - What’s the mechanism behind SPL Mining?
+      - What does SPL Mining mean in SuperWAL?
+      - Give me an overview of SPL Mining
+      - How can I understand SPL Mining?
+      - What's the concept of SPL Mining on Walchain?
 
   - intent: ask_spl_mining_mechanism
     examples: |
       - How do I earn SPL through mining?
       - What is the SPL mining formula?
       - How does Proof of Participation work?
+      - How can I get SPL tokens from mining?
+      - What factors affect SPL mining rewards?
+      - Can you explain the SPL mining calculation?
+      - What does Proof of Participation mean in SuperWAL?
+      - How is my mining rate calculated?
+      - How does PoP determine my SPL earnings?
+      - What are the components of the SPL mining formula?
 
   - intent: ask_spl_mining_phases
     examples: |
       - What are the phases of SPL Mining?
       - Tell me about the different stages of SPL Mining
       - How is SPL Mining structured?
-
-  #- intent: ask_spl_mining_light_node
-  #  examples: |
-  #    - What is a Light Node in SPL Mining?
-  #    - How can I become a Light Node?
-  #    - Benefits of activating Light Node?
+      - What are the key milestones in SPL Mining?
+      - Can you explain the stages of SPL Mining?
+      - What’s the timeline of SPL Mining phases?
+      - How does SPL Mining progress over time?
+      - What happens in each phase of SPL Mining?
+      - Is SPL Mining divided into multiple stages?
+      - How is the SPL Mining system organized?
 
   - intent: ask_spl_mining_benefits
     examples: |
       - What are the benefits of SPL Mining?
       - Why should I join SPL Mining?
       - How does SPL Mining help the network?
+      - What do I gain from participating in SPL Mining?
+      - Are there incentives for SPL Mining?
+      - How is SPL Mining valuable to users?
+      - What’s the advantage of being part of SPL Mining?
+      - How does the network benefit from SPL Mining?
+      - Why is SPL Mining important in the ecosystem?
+      - What makes SPL Mining attractive?
 
   - intent: ask_spl_mining_how_to_join
     examples: |
       - How do I start SPL Mining?
       - What do I need to join SPL Mining?
       - Steps to earn SPL Tokens?
+      - How can I begin mining SPL?
+      - What should I do to start SPL Mining?
+      - How do I join SPL Mining on SuperWAL?
+      - Guide to start SPL Mining?
+      - What are the requirements to mine SPL?
+      - How to register for SPL Mining?
+      - What’s the process to start earning SPL through mining?
 
   - intent: ask_spl_mining_rewards_distribution
     examples: |
       - How are rewards distributed in SPL Mining?
       - Tell me about the SPL reward model
       - How does SPL handle inflation?
+      - What's the reward system in SPL Mining?
+      - How is the reward pool managed in SPL?
+      - What’s the logic behind SPL token distribution?
+      - How are mining rewards calculated and given?
+      - Does SPL have anti-inflation mechanisms?
+      - Is there a cap on SPL rewards?
+      - How sustainable is the SPL reward model?
 
   - intent: ask_spl_mining_summary
     examples: |
       - Can you summarize SPL Mining?
       - Give me a short overview of SPL Mining
-
-  #user type
-  - intent: ask_user_types
-    examples: |
-      - What are the user types in SPL Mining?
-      - How many user roles are there in SuperWAL?
-      - Can you explain different user levels?
-      - Tell me about Normal, Pioneer, Distributor, and Partner.
-
-  - intent: ask_normal_user
-    examples: |
-      - Who is a normal user?
-      - What is required to be a normal user?
-      - What are the benefits of a normal user?
-
-  - intent: ask_pioneer_user
-    examples: |
-      - How can I become a pioneer?
-      - Tell me about the pioneer role
-      - What are the requirements to become a pioneer in SPL Mining?
-
-  - intent: ask_distributor_user
-    examples: |
-      - How to become a distributor?
-      - What do I need to be a distributor?
-      - What’s the distributor badge?
-
-  - intent: ask_partner_user
-    examples: |
-      - Who can become a partner?
-      - What are the conditions to become a partner?
-      - Explain the benefits of a partner in SPL Mining.
-
-  - intent: ask_reactivation_requirement
-    examples: |
-      - Do I need to reactivate mining?
-      - How often do I need to activate mining?
-      - What happens if I don't activate mining daily?
-
-  - intent: ask_speedup_drop_effect
-    examples: |
-      - What if my SpeedUP drops below 3?
-      - Do I lose my status if SpeedUP goes down?
-      - What are the consequences of SpeedUP rate falling?
-
-  #upgrade user
-  - intent: ask_upgrade_steps_normal_to_pioneer
-    examples: |
-      - How can I upgrade from Normal User to Pioneer?
-      - What are the steps to become a Pioneer in SPL Mining?
-      - Guide me to become a Pioneer user.
-      - How do I move from Normal to Pioneer level?
-
-  - intent: ask_upgrade_steps_pioneer_to_distributor
-    examples: |
-      - What should I do to become a Distributor?
-      - Steps to upgrade from Pioneer to Distributor?
-      - How to qualify for the Distributor rank?
-      - How do I become a Distributor?
-
-  - intent: ask_upgrade_steps_distributor_to_partner
-    examples: |
-      - How to become a Partner?
-      - What are the requirements to move from Distributor to Partner?
-      - Tell me the steps to upgrade to Partner rank.
-      - How can I unlock Partner level in SPL Mining?
-
-  #Mining structure
-  - intent: ask_mining_structure_explained
-    examples: |
-      - What is the mining structure in SPL Mining?
-      - Can you explain the mining formula?
-      - How is the mining speed calculated?
-      - Tell me how SPL/h is computed.
-      - Explain the mining equation in SPL Mining.
-
-  - intent: ask_base_rate
-    examples: |
-      - What is the base rate in SPL mining?
-      - How do you calculate the base rate?
-      - What's AP in base rate?
-      - Explain base score and AP
+      - What is SPL Mining in short?
+      - Briefly explain SPL Mining
+      - Just a quick summary of SPL Mining
+      - What’s the short version of SPL Mining?
+      - SPL Mining summary?
+      - Can you give me a quick intro to SPL Mining?
+      - High-level explanation of SPL Mining?
+      - Overview of SPL Mining in a few words?
 
   #SuperUp rewards
   - intent: ask_superup_overview
@@ -745,30 +956,64 @@ nlu:
       - What is SuperUP in SuperWAL?
       - Can you explain SuperUP rewards?
       - Tell me about the sponsor mechanism in SuperWAL.
+      - What do I get from SuperUP?
+      - How are SuperUP rewards calculated?
+      - What's the purpose of the sponsor system?
+      - How does the sponsor impact my SuperUP rate?
+      - Is SuperUP linked to inviting others?
+      - Explain the sponsor and SuperUP relationship in SuperWAL.
 
   - intent: ask_superup_formula
     examples: |
       - How is SuperUP calculated?
       - What's the formula for the SuperUP rate?
       - Explain how my SuperUP score is determined.
+      - How do you compute SuperUP?
+      - What factors affect my SuperUP rate?
+      - Is there a formula for SuperUP?
+      - How is the SuperUP level decided?
+      - Tell me how SuperUP is measured.
+      - What influences SuperUP in SuperWAL?
+      - How do I increase my SuperUP score?
 
   - intent: ask_superup_purpose
     examples: |
       - What's the purpose of SuperUP?
       - Why should I contribute to SuperUP?
       - What does SuperUP sponsorship do?
+      - What’s the benefit of SuperUP in SPL Mining?
+      - How does SuperUP impact my mining performance?
+      - Why is SuperUP important in SuperWAL?
+      - What role does sponsor play in SuperUP?
+      - Is SuperUP just about inviting others?
+      - Does SuperUP help the network?
+      - How does SuperUP improve user engagement?
 
   - intent: ask_superup_mechanism
     examples: |
       - How does SuperUP work?
       - Is SuperUP mandatory?
       - Can I use the app without contributing to SuperUP?
+      - Do I have to participate in SuperUP?
+      - Can I still mine SPL without SuperUP?
+      - How exactly does the SuperUP mechanism operate?
+      - What happens if I don’t have a sponsor?
+      - Can I skip the SuperUP part?
+      - Is SuperUP optional or required?
+      - What if I don’t want to invite others?
 
   - intent: ask_superup_refund
     examples: |
       - How does the SPL refund work in SuperUP?
       - Can I get my WaLX back?
       - What's the refund mechanism in SuperWAL?
+      - How do I receive a refund in SPL tokens?
+      - Is there a way to reclaim my WaLX?
+      - Explain the SPL Refund system in SuperWAL
+      - What happens to my WaLX after SuperUP?
+      - Do I lose my WaLX permanently?
+      - Can I recover my tokens in SuperUP?
+      - What’s the process for SPL refund in the app?
 
   #Boosters Rewards
   - intent: ask_booster_overview
@@ -776,36 +1021,76 @@ nlu:
       - What is Booster?
       - How does the Booster feature work?
       - What are the benefits of Booster?
+      - Explain the Booster in SPL Mining
+      - How does Booster increase mining speed?
+      - What does Booster do in SuperWAL?
+      - Is Booster useful for earning more SPL?
+      - Tell me how the Booster feature works
+      - What’s the purpose of Booster?
 
   - intent: ask_booster_location_required
     examples: |
       - Why does the app need location access?
       - Do I need to enable GPS for Booster?
       - What permissions are required for Booster?
+      - Does Booster need my location?
+      - Is GPS mandatory for the Booster feature?
+      - Why is location access important in SuperWAL?
+      - What app permissions are needed for Booster?
+      - Can I use Booster without GPS?
+      - Is my privacy protected when using Booster?
 
   - intent: ask_booster_meeting_point
     examples: |
       - What is a Meeting Point in Booster?
       - How is a meeting point created?
       - How does the meeting point work?
+      - Explain Meeting Point in SuperWAL Booster
+      - What do users do at a meeting point?
+      - How do I create a Booster Meeting Point?
+      - What’s the purpose of a meeting point?
+      - Can anyone start a meeting point?
+      - How does location affect the meeting point?
+      - Do I need to be near others for a meeting point?
 
   - intent: ask_booster_calculation
     examples: |
       - How is the Booster calculated?
       - What's the Booster formula?
       - How do you calculate the Community Circle Rate?
+      - What affects my Booster rate?
+      - Is there a formula for Booster rewards?
+      - Explain how Booster mining speed is determined
+      - How do you compute Community Circle impact?
+      - What’s the logic behind Booster calculation?
+      - How is my mining boosted with others?
+      - What determines the Booster multiplier?
 
   - intent: ask_booster_privacy
     examples: |
       - Does Booster affect my privacy?
       - Is my location data stored?
       - What data does Booster collect?
+      - Is my GPS tracked all the time?
+      - Will the app share my location?
+      - How does Booster handle personal data?
+      - Is my privacy safe with Booster?
+      - What kind of user data does Booster use?
+      - Does SuperWAL save my location history?
+      - Am I being tracked when using Booster?
 
   - intent: ask_booster_benefits
     examples: |
       - What are the benefits of using Booster?
       - Does Booster give me more rewards?
       - How does Booster help me earn more SPL?
+      - Why should I use Booster?
+      - Can Booster increase my mining speed?
+      - How does Booster improve SPL earnings?
+      - What advantages does Booster offer?
+      - Will Booster boost my token rewards?
+      - Is Booster effective for mining?
+      - How much more can I earn with Booster?
 
   #Members Rewards
   - intent: ask_member_rewards_explanation
@@ -815,6 +1100,11 @@ nlu:
       - Tell me about the member score system.
       - How do I earn points with my team?
       - What’s the benefit of referring users?
+      - Explain the member rewards program
+      - How are member points calculated?
+      - How do referrals impact my rewards?
+      - What rewards do I get from my team?
+      - How does inviting users help me earn?
 
   - intent: ask_member_rewards_calculation
     examples: |
@@ -822,12 +1112,25 @@ nlu:
       - What’s the formula for member points?
       - How does my user type affect member rewards?
       - What’s a Verified Mining Team?
+      - Explain how member points are computed
+      - Does user level impact member rewards?
+      - What is the role of Verified Mining Team?
+      - How do Verified Mining Teams work?
+      - Are there formulas for member rewards?
+      - How is my referral team score measured?
 
   - intent: ask_member_rewards_tips
     examples: |
       - How can I increase my member rewards?
       - How to get more verified miners in my team?
       - What should I do to keep my team active?
+      - Tips to boost my member points
+      - How to invite more active miners?
+      - How do I maintain team engagement?
+      - What helps grow my Verified Mining Team?
+      - Strategies for increasing member rewards
+      - How to motivate my referral team?
+      - How to keep my mining team verified?
 
   #Get Rewards
   - intent: ask_ads_up_boost_overview
@@ -836,24 +1139,51 @@ nlu:
       - How does watching ads increase my mining speed?
       - Tell me about the ad reward feature
       - What’s the purpose of Ads Up Boost?
+      - How do ads help me mine more SPL?
+      - Explain Ads Up Boost mechanism
+      - Can watching ads boost my mining rewards?
+      - What rewards do I get from Ads Up Boost?
+      - Why should I watch ads in SuperWAL?
+      - How does the Ads Up Boost work?
 
   - intent: ask_ads_up_boost_mechanism
     examples: |
       - How does Ads Up Boost work?
       - What’s the multiplier formula with Ads Up Boost?
       - Explain the mechanism of ad rewards
+      - How is the ad boost calculated?
+      - What affects my Ads Up Boost multiplier?
+      - How do ads increase my mining speed?
+      - Can you detail Ads Up Boost formula?
+      - How are ad rewards distributed?
+      - What’s the logic behind Ads Up Boost?
+      - How do ad views impact rewards?
 
   - intent: ask_how_to_use_ads_up_boost
     examples: |
       - How do I activate Ads Up Boost?
       - Steps to watch ads for SPL rewards
       - How can I get rewards by watching ads?
+      - How to start Ads Up Boost feature?
+      - What do I need to do to watch ads?
+      - How do I earn SPL from ads?
+      - Can I get mining boost by watching ads?
+      - How to enable Ads Up Boost in app?
+      - What’s the process for ad rewards?
+      - How to claim rewards after watching ads?
 
   - intent: ask_benefits_ads_up_boost
     examples: |
       - What are the benefits of watching ads?
       - Why should I use Ads Up Boost?
       - Is watching ads worth it in SuperWAL?
+      - How do ads help increase rewards?
+      - What advantages do I get from Ads Up Boost?
+      - Does watching ads improve my mining speed?
+      - Should I spend time watching ads?
+      - What do I gain from ad rewards?
+      - Why watch ads in SuperWAL app?
+      - How effective is Ads Up Boost?
 
   #Leaderboard
   - intent: ask_leaderboard_overview
@@ -862,30 +1192,64 @@ nlu:
       - What leaderboards are available?
       - How do the leaderboards in the system work?
       - How many types of leaderboards are there?
+      - Show me the current mining rankings
+      - Where can I find leaderboards for SPL Mining?
+      - Explain the leaderboard categories
+      - What criteria determine leaderboard ranks?
+      - Are there global and regional leaderboards?
+      - How often are leaderboards updated?
 
   - intent: ask_spl_leaderboard
     examples: |
       - What is the SPL leaderboard?
       - Who is on top of the SPL leaderboard?
       - How is the ranking based on total SPL tokens?
+      - Explain the SPL Mining leaderboard
+      - How do they rank users in SPL leaderboard?
+      - Who are the top miners in SPL?
+      - What determines the leaderboard position?
+      - Is ranking based on total tokens mined?
+      - How frequently is the SPL leaderboard updated?
+      - Can I track my position on the leaderboard?
 
   - intent: ask_contributor_leaderboard
     examples: |
       - How does the Contributor leaderboard work?
       - How can I get into the Contributor top ranking?
       - How is the Rating Index calculated?
+      - Explain Contributor leaderboard mechanics
+      - What determines Contributor ranking?
+      - How to improve my Contributor rating?
+      - What factors affect the Rating Index?
+      - Can I track my position on Contributor leaderboard?
+      - Who are top Contributors?
+      - How often is the Contributor leaderboard updated?
 
   - intent: ask_referral_leaderboard
     examples: |
       - Who invited the most members?
       - What is the referral leaderboard?
       - How does the referral leaderboard work?
+      - Show me the top referrers
+      - Explain the referral leaderboard system
+      - How are referral rankings calculated?
+      - Who leads the referral leaderboard?
+      - Can I see the list of top inviters?
+      - How often is the referral leaderboard updated?
+      - What rewards come from referral ranking?
 
   - intent: ask_superup_leaderboard
     examples: |
       - What is the SuperUP leaderboard?
       - Who has the highest SuperUP multiplier?
       - What is the purpose of the SuperUP leaderboard?
+      - Explain the SuperUP leaderboard system
+      - How is ranking done on SuperUP leaderboard?
+      - Who leads the SuperUP rankings?
+      - How often is the SuperUP leaderboard updated?
+      - What benefits come from the SuperUP leaderboard?
+      - Can I track my SuperUP rank?
+      - How is SuperUP multiplier displayed in leaderboard?
 
   #WAL Growth
   - intent: ask_growth_overview
@@ -893,48 +1257,103 @@ nlu:
       - What is the WALGrowth program?
       - Tell me about the SuperWAL Growth Campaign
       - How does the referral reward system work
+      - Explain WALGrowth campaign details
+      - How do I participate in WALGrowth?
+      - What rewards are given in WALGrowth?
+      - What is the goal of the WALGrowth program?
+      - How does WALGrowth support user growth?
+      - What are the terms of the referral system?
 
   - intent: ask_eligibility
     examples: |
       - Who can join WALGrowth?
       - What are the requirements to participate?
       - Do I need to verify my account?
+      - Is there any eligibility for WALGrowth?
+      - How to qualify for WALGrowth program?
+      - What verification is needed for WALGrowth?
+      - Can anyone participate in WALGrowth?
+      - Are there restrictions to join WALGrowth?
+      - What documents are required for WALGrowth?
+      - How do I register for WALGrowth?
 
   - intent: ask_how_to_earn
     examples: |
       - How can I earn rewards?
       - How does the mining referral bonus work?
       - Explain the reward calculation in WALGrowth
+      - What are the ways to get rewards in WALGrowth?
+      - How are referral rewards calculated?
+      - Can I get bonuses from mining referrals?
+      - What is the formula for WALGrowth rewards?
+      - How often are rewards distributed?
+      - What activities earn WALGrowth rewards?s
+      - Tell me about the referral reward system
 
   - intent: ask_snapshots
     examples: |
       - What are snapshots in WALGrowth?
       - How are mining members counted?
       - How often are referrals checked?
+      - Explain the snapshot process in WALGrowth
+      - When does WALGrowth take snapshots?
+      - How does WALGrowth verify mining members?
+      - What is the snapshot schedule?
+      - How frequently are referral lists updated?
+      - How does WALGrowth confirm active members?
+      - Can I check snapshot dates?
 
   - intent: ask_reward_payment
     examples: |
       - When do I receive my rewards?
       - How are payments made?
       - How can I withdraw my earnings?
+      - What is the payout schedule?
+      - How do I claim my WALGrowth rewards?
+      - Are rewards automatically paid out?
+      - What methods are used for payment?
+      - Can I withdraw rewards to my wallet?
+      - How long does it take to get paid?
+      - Is there a minimum withdrawal amount?
 
   - intent: ask_referral_id
     examples: |
       - What is my referral ID?
       - How do I share my SuperWAL referral code?
+      - Where can I find my referral code?
+      - How to get my SuperWAL invite code?
+      - Can I copy my referral ID?
+      - How do I send my referral code to friends?
+      - What’s the format of my referral code?
+      - How to use referral code in SuperWAL?
+      - Where is the referral code in the app?
+      - How to invite others with my code?
 
   - intent: ask_terms_conditions
     examples: |
       - What are the rules for WALGrowth?
       - Can I use fake accounts?
       - Is there any restriction in the program?
+      - Are fake accounts allowed in WALGrowth?
+      - What happens if I violate the rules?
+      - What are the terms and conditions of WALGrowth?
+      - Are there any penalties for misuse?
+      - How does WALGrowth handle fraud?
+      - Is there identity verification in WALGrowth?
+      - What are the eligibility restrictions?
 
   - intent: ask_how_to_join
     examples: |
       - How do I join the WALGrowth program?
       - What are the steps to participate?
       - Where can I activate the referral campaign?   
-      - Where can I activate the referral campaign?s
+      - How to register for WALGrowth?
+      - What do I need to do to join WALGrowth?
+      - Can I join WALGrowth anytime?
+      - How to start the referral campaign?
+      - Is there a sign-up process for WALGrowth?
+      - Where do I find the WALGrowth campaign?
+      - How to activate my referral link?
 
   #Devices
   - intent: ask_supported_devices
@@ -942,8 +1361,11 @@ nlu:
       - Which devices support the SuperWAL app?
       - Is SuperWAL available on iOS and Android?
       - What platforms is SuperWAL available on?
-      - Can I use SuperWAL on iPhone?
+      - Can I use SuperWAL on iPhoneX?
       - Is there an Android version of SuperWAL?
+      - Does SuperWAL work on tablets?
+      - Can I use SuperWAL on Windows or Mac?
+      - What OS does SuperWAL support?
 
   - intent: ask_ios_features
     examples: |
@@ -951,6 +1373,12 @@ nlu:
       - What is the iOS experience like for SuperWAL?
       - Does SuperWAL support iPad?
       - Is SuperWAL optimized for iOS?
+      - Can I use SuperWAL on iPhone?
+      - Is SuperWAL available on the Apple App Store?
+      - Does SuperWAL have iOS-specific features?
+      - How stable is SuperWAL on iOS devices?
+      - Are there any iOS limitations for SuperWAL?
+      - What iOS versions are supported by SuperWAL?
 
   - intent: ask_android_features
     examples: |
@@ -958,6 +1386,13 @@ nlu:
       - What Android devices can use SuperWAL?
       - Is SuperWAL compatible with Samsung phones?
       - Is the Android version of SuperWAL optimized?
+      - Can I use SuperWAL on Google Pixel?
+      - Does SuperWAL run well on Huawei devices?
+      - What Android versions are supported by SuperWAL?
+      - Is SuperWAL available on Google Play Store?
+      - Are there any known issues on Android?
+      - How stable is SuperWAL on Android devices?
+#>>>>>>> f47ecb5 (cap nhat nlu)
 
     # Category: Key Features
   - intent: ask_superwal_components
@@ -965,48 +1400,97 @@ nlu:
       - What are the main components of the SuperWAL ecosystem?
       - Tell me about the core features of SuperWAL
       - What modules are included in SuperWAL?
+      - What are the key parts of SuperWAL?
+      - Explain the SuperWAL platform components
+      - What does SuperWAL consist of?
+      - What features make up SuperWAL?
+      - Can you list SuperWAL's main modules?
+      - How is the SuperWAL ecosystem structured?
+      - What are the primary functions of SuperWAL?
 
   - intent: ask_walfinance_services
     examples: |
       - What services does WaLFinance offer?
       - Tell me about DeFi features in SuperWAL
       - What can I do with WaLFinance?
+      - What DeFi options are available in WaLFinance?
+      - How does WaLFinance support DeFi?
+      - What financial services are in WaLFinance?
+      - Can I lend or borrow on WaLFinance?
+      - What kind of trading can I do with WaLFinance?
+      - Does WaLFinance support staking or farming?
+      - What protocols are integrated into WaLFinance?
 
   - intent: ask_nft_marketplace
     examples: |
       - How can I mint NFTs on SuperWAL?
       - Does SuperWAL support NFT trading?
       - What is the NFT Marketplace like?
+      - Can I create NFTs on SuperWAL?
+      - How to list NFTs for sale on SuperWAL?
+      - Is there an NFT auction platform?
+      - What NFT standards are supported?
+      - How do I buy NFTs on SuperWAL?
+      - Can I transfer NFTs in SuperWAL?
+      - Are NFT royalties supported in SuperWAL?
 
   - intent: ask_identity_ai
     examples: |
       - What is WaLIdentity?
       - How does SuperWAL use AI for identity and security?
       - Tell me about AI-powered DID in SuperWAL
+      - Explain WaLIdentity in SuperWAL
+      - What is Decentralized Identity in SuperWAL?
+      - How does AI enhance security in SuperWAL?
+      - What role does DID play in SuperWAL?
+      - How is identity managed in SuperWAL?
+      - What makes WaLIdentity different?
+      - How does SuperWAL protect user identity?
 
   - intent: ask_socialfi_gamefi
     examples: |
       - How does SuperWAL support SocialFi and GameFi?
       - Can I build a decentralized game on SuperWAL?
       - Is there a social platform in the ecosystem?
+      - What SocialFi features are in SuperWAL?
+      - How do games work on SuperWAL?
+      - Does SuperWAL have gaming dApps?
+      - Can I integrate social features in my app?
+      - Is there a community platform on SuperWAL?
+      - How to use SocialFi on SuperWAL?
+      - What gaming tools does SuperWAL offer?
 
   - intent: ask_rwa_tokenization
     examples: |
       - How does SuperWAL tokenize real-world assets?
       - What is RWA in SuperWAL?
       - Can I tokenize real estate or art?
+      - Explain Real-World Asset tokenization in SuperWAL
+      - What types of RWAs can be tokenized?
+      - How secure is RWA tokenization on SuperWAL?
+      - Can I trade RWAs on SuperWAL?
+      - What benefits do RWAs bring to SuperWAL?
+      - How does RWA integrate with DeFi in SuperWAL?
+      - What is the process to tokenize assets on SuperWAL?
 
   - intent: ask_multichain_bridge
     examples: |
       - What blockchains are supported by the Multi-Chain Bridge?
       - Can I transfer tokens between chains?
       - Does SuperWAL support cross-chain transfers?
+      - How does the Multi-Chain Bridge work?
+      - Which networks connect with SuperWAL?
+      - Is token transfer seamless across chains?
+      - Can I bridge SPL tokens to other blockchains?
+      - What chains are integrated in the bridge?
+      - How secure is the cross-chain transfer?
+      - Can I swap tokens cross-chain on SuperWAL?
 
-  - intent: ask_spl_token
-    examples: |
-      - What is the SPL token?
-      - Can you explain SPL?
-      - Tell me about the SPL token in SuperWAL
+#  - intent: ask_spl_token
+#    examples: |
+#      - What is the SPL token?
+#      - Can you explain SPL?
+#      - Tell me about the SPL token in SuperWAL
 
   - intent: ask_spl_use_cases
     examples: |
@@ -1015,6 +1499,13 @@ nlu:
       - What is SPL used for in Walchain?
       - Tell me the real-world applications of SPL.
       - How does SPL work in the ecosystem?
+      - Can you explain the functions of SPL token?
+      - What can I do with SPL tokens?
+      - What are the benefits of SPL token?
+      - How is SPL utilized in SuperWAL?
+      - What roles does SPL play in Walchain?
+      - What are some common use cases for SPL?
+      - How do users use SPL tokens?
 
   - intent: ask_spl_payment
     examples: |
@@ -1022,6 +1513,18 @@ nlu:
       - How can I send money with SPL?
       - How does SPL support peer-to-peer transactions?
       - Is SPL suitable for microtransactions?
+      - Can I use SPL tokens to pay for things?
+      - How do I make payments using SPL?
+      - Is SPL token accepted for transactions?
+      - Can SPL be used to transfer money instantly?
+      - How do peer-to-peer payments work with SPL?
+      - Does SPL support fast payment transfers?
+      - Can I send SPL tokens to friends?
+      - Are SPL tokens good for small payments?
+      - How secure are payments made with SPL?
+      - What types of payments can I do with SPL?
+      - Is it easy to pay with SPL tokens?
+      - Can SPL tokens be used for online payments?
 
   - intent: ask_spl_governance
     examples: |
@@ -1029,6 +1532,18 @@ nlu:
       - How do I vote with SPL?
       - How does the Walchain DAO work?
       - What role does SPL play in decision-making?
+      - How can SPL token holders participate in governance?
+      - What is the governance process with SPL?
+      - Can SPL tokens be used to propose changes?
+      - How do I join Walchain DAO using SPL?
+      - What decisions can be made with SPL voting?
+      - Is SPL required to take part in governance?
+      - How secure is the voting process with SPL?
+      - How often do SPL holders vote on proposals?
+      - What powers do SPL holders have in Walchain governance?
+      - Can I delegate my voting power with SPL?
+      - How is SPL governance different from traditional voting?
+      - What is the role of SPL in community governance?
 
   - intent: ask_spl_verification
     examples: |
@@ -1036,6 +1551,14 @@ nlu:
       - How does document verification work with SPL and DID?
       - Is SPL used for identity verification?
       - Can I authenticate files on Walchain?
+      - How secure is document verification with SPL?
+      - What is the process for verifying documents on Walchain?
+      - Can SPL tokens help in digital identity management?
+      - How does DID integration work with SPL?
+      - Can I use SPL to prove ownership of a document?
+      - Does Walchain support document authentication using SPL?
+      - How reliable is the verification system on Walchain?
+      - What role does SPL play in document security?
 
   - intent: ask_spl_storage
     examples: |
@@ -1043,12 +1566,29 @@ nlu:
       - How is SPL used for decentralized storage?
       - What's the relation between IPFS and SPL?
       - How does Walchain support file storage?
+      - Can SPL tokens be used to pay for storage?
+      - How secure is file storage on Walchain?
+      - What technology does Walchain use for file storage?
+      - Can I upload documents to Walchain with SPL?
+      - Does SPL enable decentralized data storage?
+      - How does IPFS integrate with SPL tokens?
+      - Can I retrieve files stored on Walchain?
+      - What are the benefits of decentralized storage with SPL?
 
   - intent: ask_spl_validator_rewards
     examples: |
       - How do validators earn SPL?
       - Tell me about SPL rewards for validators
       - Validator incentives in SPL?
+      - What rewards do validators get with SPL?
+      - How is SPL distributed to validators?
+      - Can validators increase earnings with SPL?
+      - What is the role of SPL in validator rewards?
+      - How often do validators receive SPL rewards?
+      - Are there bonuses for active validators with SPL?
+      - How does staking affect validator rewards in SPL?
+      - What activities earn SPL for validators?
+      - How do validators benefit from SPL mining?
 
   - intent: ask_spl_staking
     examples: |
@@ -1056,18 +1596,44 @@ nlu:
       - Can I earn rewards by staking SPL?
       - What's the benefit of staking SPL tokens?
       - How do I become a Light Validator?
+      - What are the requirements for staking SPL?
+      - How long do I need to stake SPL tokens?
+      - Can staking SPL increase my mining rewards?
+      - Is staking SPL safe?
+      - How do Light Validators contribute to the network?
+      - What rewards do Light Validators get?
+      - Can I unstake my SPL tokens anytime?
+      - How does delegation work in SPL staking?
 
   - intent: ask_spl_inflation_deflation
     examples: |
       - Does SPL have a fixed supply?
       - How is SPL deflation controlled?
       - What are the inflation mechanisms for SPL?
+      - What is the total supply of SPL tokens?
+      - Is SPL token supply limited?
+      - How often are new SPL tokens minted?
+      - Does SPL have token burning?
+      - How does SPL maintain its value?
+      - What controls SPL token inflation?
+      - Are there mechanisms to reduce SPL supply?
+      - How does tokenomics affect SPL price?
+      - Is SPL inflation rate predictable?
 
   - intent: ask_staking_mining
     examples: |
       - How can I earn rewards from staking?
       - Does SuperWAL support mining?
       - What are the staking incentives?
+      - How much can I earn by staking SPL?
+      - What types of rewards are available for staking?
+      - How often are staking rewards paid out?
+      - Can I combine staking with mining rewards?
+      - What is the minimum amount to stake for rewards?
+      - Are staking rewards fixed or variable?
+      - Can staking rewards increase over time?
+      - How do I claim my staking rewards?
+      - What risks are associated with staking?
 
     # Category: Walchain Infrastructure
   - intent: ask_tps_performance
@@ -1075,30 +1641,74 @@ nlu:
       - How many TPS can Walchain handle?
       - Is Walchain fast?
       - What's the transaction speed?
+      - How quickly are transactions confirmed on Walchain?
+      - What is the average transaction time on Walchain?
+      - Does Walchain support high throughput?
+      - How does Walchain compare to other blockchains in speed?
+      - Can Walchain process many transactions simultaneously?
+      - What technology helps Walchain be fast?
+      - How efficient is Walchain's consensus mechanism?
+      - Is Walchain suitable for real-time payments?
+      - What is Walchain's latency for transactions?
 
   - intent: ask_low_fees
     examples: |
       - Why are SuperWAL's fees so low?
-      - Are there transaction costs?
       - How does Walchain keep fees near zero?
+      - What is the typical fee for transactions on SuperWAL?
+      - Does SuperWAL charge gas fees?
+      - How does SuperWAL minimize transaction fees?
+      - Are there hidden fees on Walchain?
+      - Why is SuperWAL cheaper than other blockchains?
+      - What technology helps reduce fees on SuperWAL?
+      - Can I do free transactions on Walchain?
+      - How does low fees affect network security?
+      - Are fees fixed or dynamic on SuperWAL?
 
   - intent: ask_solidity_support
     examples: |
       - Can I build with Solidity on Walchain?
       - Is SuperWAL compatible with Ethereum tools?
       - Does it support zkEVM?
+      - What programming languages are supported on Walchain?
+      - Can I deploy smart contracts on Walchain?
+      - Is Walchain EVM-compatible?
+      - How do I start developing on SuperWAL?
+      - Are Ethereum dApps compatible with Walchain?
+      - What development tools does Walchain support?
+      - Can I use MetaMask with Walchain?
+      - Does Walchain support Layer 2 solutions?
+      - How secure is smart contract deployment on Walchain?
 
   - intent: ask_energy_efficiency
     examples: |
       - Is Walchain energy-efficient?
       - What consensus does it use?
       - Does it use Proof-of-Work?
+      - How eco-friendly is Walchain?
+      - What consensus algorithm powers Walchain?
+      - Is Walchain a Proof-of-Stake chain?
+      - How does Walchain achieve consensus?
+      - Does Walchain consume a lot of electricity?
+      - What makes Walchain energy-efficient?
+      - Is Walchain suitable for green blockchain projects?
+      - How does Walchain compare energy-wise to Bitcoin?
+      - Does Walchain use any layer-2 solutions to save energy?
 
   - intent: ask_scalability
     examples: |
       - How scalable is SuperWAL?
       - Can it handle a high volume of transactions?
       - Is it suitable for large dApps?
+      - What is SuperWAL's transaction capacity?
+      - How does SuperWAL manage network load?
+      - Can SuperWAL support enterprise-level applications?
+      - What technologies enable SuperWAL scalability?
+      - Does SuperWAL have congestion issues?
+      - How quickly can SuperWAL process transactions under heavy load?
+      - Is SuperWAL scalable compared to other blockchains?
+      - Can SuperWAL support millions of users?
+      - How does SuperWAL scale with increasing demand?
 
     # Category: Solving Blockchain Problems
   - intent: ask_high_fee_solution
@@ -1106,30 +1716,74 @@ nlu:
       - How does SuperWAL solve high gas fees?
       - Are microtransactions possible?
       - Is it affordable to use?
+      - What makes SuperWAL transactions cheap?
+      - Can I send small payments with low fees?
+      - How does SuperWAL reduce transaction costs?
+      - Are gas fees fixed or dynamic on SuperWAL?
+      - Does SuperWAL support fee subsidies?
+      - How does SuperWAL compare to Ethereum gas fees?
+      - Is SuperWAL good for frequent small transactions?
+      - What technology enables low fees on SuperWAL?
+      - Can I avoid high gas fees using SuperWAL?
 
   - intent: ask_transaction_speed
     examples: |
       - Are transactions fast on SuperWAL?
       - What’s the finality time?
       - How fast are confirmations?
+      - How quickly do transactions get confirmed on SuperWAL?
+      - What is the average block time?
+      - How long does a transaction take to complete?
+      - Does SuperWAL support instant transactions?
+      - What is the latency for SuperWAL transactions?
+      - How does SuperWAL achieve fast transaction speed?
+      - Is there any delay in transaction processing?
+      - How reliable is transaction finality on SuperWAL?
+      - How does SuperWAL compare to other chains in speed?
 
   - intent: ask_interoperability
     examples: |
       - Does SuperWAL support cross-chain features?
       - Can it connect to other blockchains?
       - What interoperability features does it have?
+      - How does SuperWAL enable cross-chain transfers?
+      - Which blockchains is SuperWAL compatible with?
+      - Can I move assets between Walchain and Ethereum?
+      - Does SuperWAL support bridges?
+      - How secure are SuperWAL’s cross-chain operations?
+      - What protocols does SuperWAL use for interoperability?
+      - Can SuperWAL interact with Binance Smart Chain?
+      - Is cross-chain swapping possible on SuperWAL?
+      - How does SuperWAL handle cross-chain data?
 
   - intent: ask_security_ai
     examples: |
       - How secure is SuperWAL?
       - How does it detect fraud?
       - Does AI protect the ecosystem?
+      - What security measures does SuperWAL have?
+      - How does SuperWAL prevent hacks?
+      - Is user data safe on SuperWAL?
+      - What role does AI play in security?
+      - How does SuperWAL detect suspicious activities?
+      - Are transactions on SuperWAL tamper-proof?
+      - Does SuperWAL have fraud detection systems?
+      - How is privacy ensured on SuperWAL?
+      - What technology protects SuperWAL from attacks?
 
   - intent: ask_rwa_challenges
     examples: |
       - How does SuperWAL simplify RWA tokenization?
       - What legal framework does it use?
       - Is RWA tokenization easy?
+      - How can I tokenize real-world assets on SuperWAL?
+      - What types of RWAs are supported?
+      - Does SuperWAL handle regulatory compliance for RWAs?
+      - What are the benefits of tokenizing assets on SuperWAL?
+      - Can I trade tokenized RWAs on SuperWAL?
+      - How fast is the RWA tokenization process?
+      - What technology underpins RWA tokenization on SuperWAL?
+      - Are there any fees for tokenizing RWAs on SuperWAL?
 
     # Category: Why SuperWAL Stands Out
   - intent: ask_why_superwal
@@ -1137,67 +1791,73 @@ nlu:
       - What makes SuperWAL different?
       - Why should I choose SuperWAL?
       - How is SuperWAL better than others?
+      - What sets SuperWAL apart from other blockchains?
+      - Why is SuperWAL innovative?
+      - What are SuperWAL’s unique features?
+      - How does SuperWAL stand out?
+      - What advantages does SuperWAL offer?
+      - What’s special about the SuperWAL ecosystem?
+      - Why is SuperWAL better for users?
+      - How is SuperWAL more efficient than other chains?
+      - What makes SuperWAL a next-gen blockchain?
 
   - intent: ask_scalability_support
     examples: |
       - Can SuperWAL support large-scale dApps?
       - Is it scalable for Web3?
       - How does SuperWAL ensure performance?
+      - Can it handle millions of users?
+      - Is SuperWAL suitable for high-throughput applications?
+      - What makes SuperWAL scalable?
+      - How does it manage heavy network load?
+      - Is SuperWAL built for enterprise-scale use cases?
+      - Can SuperWAL handle real-time dApps?
+      - How does SuperWAL prevent congestion?
+      - What’s the infrastructure behind SuperWAL's scalability?
 
   - intent: ask_fee_accessibility
     examples: |
       - Is SuperWAL affordable to use?
       - Do users need to pay a lot in fees?
       - Is it cost-effective?
+      - Why are SuperWAL’s fees so low?
+      - Are there transaction costs?
+      - Is SuperWAL cheaper than Ethereum?
+      - Can I make microtransactions without high gas?
+      - How does SuperWAL reduce gas fees?
+      - Does SuperWAL charge gas for smart contracts?
+      - Is SuperWAL suitable for small-value transfers?
+      - How do users benefit from low costs on SuperWAL?
 
   - intent: ask_cross_chain_integration
     examples: |
       - Does SuperWAL integrate with major chains?
       - Can I use it with BNB, Solana, or Polygon?
       - What blockchains does it support?
+      - Does SuperWAL have cross-chain capabilities?
+      - Is SuperWAL compatible with Ethereum?
+      - Can I bridge assets to and from SuperWAL?
+      - What cross-chain bridges are available for SuperWAL?
+      - Does it support multi-chain transactions?
+      - Can I transfer SPL tokens across different chains?
+      - How does SuperWAL handle interoperability?
+      - Is there support for Cosmos or Polkadot?
+      - What ecosystems can connect to SuperWAL?
 
   - intent: ask_developer_support
     examples: |
       - What support is available for developers?
       - Are there tools or SDKs?
       - Can I build easily on SuperWAL?
-
-    #roadmap
-  - intent: ask_superwal_roadmap
-    examples: |
-      - What is the roadmap of SuperWAL?
-      - Tell me about SuperWAL's development plan.
-      - How does SuperWAL plan its ecosystem?
-
-  - intent: ask_phase1
-    examples: |
-      - What is Phase 1 of SuperWAL?
-      - Tell me about the first phase of the roadmap.
-      - What happens in Q1 to Q3 2025?
-
-  - intent: ask_phase2
-    examples: |
-      - What is Phase 2 about?
-      - What are the developments in Q4 2025 to Q1 2026?
-      - What DeFi features are being built?
-
-  - intent: ask_phase3
-    examples: |
-      - What is Phase 3 of the roadmap?
-      - What is being planned from Q2 2026 to Q4 2026?
-      - How will SuperWAL achieve cross-chain trading?
-
-  - intent: ask_phase4
-    examples: |
-      - What is Phase 4 in the roadmap?
-      - What's coming in Q1 to Q2 2027?
-      - Tell me about yield optimization and staking.
-
-  - intent: ask_phase5
-    examples: |
-      - What is Phase 5 of the roadmap?
-      - What will happen after Q3 2027?
-      - How is SuperWAL using AI in Web3?
+      - Is there a developer portal for SuperWAL?
+      - What APIs does SuperWAL provide?
+      - Does SuperWAL support smart contract deployment?
+      - Are there tutorials for building on SuperWAL?
+      - What programming languages can I use?
+      - Is Solidity supported on SuperWAL?
+      - Does SuperWAL provide testnet access?
+      - Can developers get grants or funding?
+      - Is there a community or forum for developers?
 
     #token distribution
   - intent: ask_token_distribution
@@ -1211,6 +1871,7 @@ nlu:
       - Explain the SPL tokenomics distribution.
       - Who gets how much in SPL token allocation?
       - How is the 1 billion SPL token supply divided?
+
 
     #WAL mobile
   - intent: ask_about_wal_mobile_node
@@ -1389,6 +2050,8 @@ nlu:
       - Can you summarize SPL Mining?
       - Give me a short overview of SPL Mining
 
+#=======
+#>>>>>>> f47ecb5 (cap nhat nlu)
     #user type
   - intent: ask_user_types
     examples: |
@@ -1396,42 +2059,102 @@ nlu:
       - How many user roles are there in SuperWAL?
       - Can you explain different user levels?
       - Tell me about Normal, Pioneer, Distributor, and Partner.
+      - What roles can users have in SPL Mining?
+      - What’s the difference between user types in SuperWAL?
+      - How do user levels affect mining in SPL?
+      - What’s the hierarchy of users in SPL Mining?
+      - Are there any special user tiers in SPL Mining?
+      - Explain the roles of each user type in SuperWAL.
 
   - intent: ask_normal_user
     examples: |
       - Who is a normal user?
       - What is required to be a normal user?
       - What are the benefits of a normal user?
+      - How do I become a normal user?
+      - Is normal user the default status?
+      - Do I need to verify to be a normal user?
+      - What can a normal user do?
+      - Can normal users earn SPL?
+      - Do normal users have mining rights?
+      - Are there limitations for normal users?
+      - What activities can normal users participate in?
+      - Is there a cost to becoming a normal user?
 
   - intent: ask_pioneer_user
     examples: |
       - How can I become a pioneer?
       - Tell me about the pioneer role
       - What are the requirements to become a pioneer in SPL Mining?
+      - Who qualifies as a pioneer?
+      - What benefits do pioneers get?
+      - Is there a verification step for pioneers?
+      - Do I need referrals to become a pioneer?
+      - How is a pioneer different from a normal user?
+      - Can pioneers earn more SPL?
+      - Are pioneers part of the mining team?
+      - What activities are exclusive to pioneers?
+      - Is being a pioneer permanent or renewable?
 
   - intent: ask_distributor_user
     examples: |
       - How to become a distributor?
       - What do I need to be a distributor?
       - What’s the distributor badge?
+      - Who qualifies as a distributor?
+      - What are the requirements for distributor level?
+      - Can I earn SPL by being a distributor?
+      - What does a distributor do in SPL Mining?
+      - Are there rewards for distributors?
+      - How is a distributor different from a pioneer?
+      - Is the distributor badge permanent?
+      - How many members do I need to be a distributor?
+      - Do distributors lead verified mining teams?
 
   - intent: ask_partner_user
     examples: |
       - Who can become a partner?
       - What are the conditions to become a partner?
       - Explain the benefits of a partner in SPL Mining.
+      - What is the partner level in SPL Mining?
+      - How do I qualify as a partner?
+      - Is the partner role for organizations or individuals?
+      - Do I need to run a community to be a partner?
+      - Can a partner earn extra SPL?
+      - What are the responsibilities of a partner?
+      - Are partners part of the mining ecosystem?
+      - Is there a minimum requirement for members to become a partner?
+      - What privileges come with the partner badge?
 
   - intent: ask_reactivation_requirement
     examples: |
       - Do I need to reactivate mining?
       - How often do I need to activate mining?
       - What happens if I don't activate mining daily?
+      - Is daily mining activation required?
+      - Can I miss a day of mining?
+      - Will my mining stop if I forget to activate?
+      - Do I lose rewards if I don’t reactivate mining?
+      - How long does a mining session last?
+      - What is the mining reactivation period?
+      - Is mining automatic or manual?
+      - Do I need to open the app to mine every day?
+      - How do I keep mining active consistently?
 
   - intent: ask_speedup_drop_effect
     examples: |
       - What if my SpeedUP drops below 3?
       - Do I lose my status if SpeedUP goes down?
       - What are the consequences of SpeedUP rate falling?
+      - Will my mining rewards decrease if SpeedUP is low?
+      - How does SpeedUP affect my mining level?
+      - Can SpeedUP loss cause me to lose privileges?
+      - What happens if my SpeedUP is less than 3?
+      - Is there a penalty for low SpeedUP?
+      - How can I recover if SpeedUP drops?
+      - Does SpeedUP affect my booster rate?
+      - Will my account status change if SpeedUP decreases?
+      - How important is maintaining SpeedUP above 3?
 
     #upgrade user
   - intent: ask_upgrade_steps_normal_to_pioneer
@@ -1440,6 +2163,14 @@ nlu:
       - What are the steps to become a Pioneer in SPL Mining?
       - Guide me to become a Pioneer user.
       - How do I move from Normal to Pioneer level?
+      - What requirements must I meet to upgrade to Pioneer?
+      - Do I need referrals to become a Pioneer?
+      - Is verification needed to upgrade to Pioneer?
+      - How long does it take to become a Pioneer?
+      - Are there rewards for upgrading to Pioneer?
+      - Can I upgrade automatically to Pioneer?
+      - What activities increase my chances to become a Pioneer?
+      - Is there a cost to upgrade from Normal User to Pioneer?
 
   - intent: ask_upgrade_steps_pioneer_to_distributor
     examples: |
@@ -1447,6 +2178,16 @@ nlu:
       - Steps to upgrade from Pioneer to Distributor?
       - How to qualify for the Distributor rank?
       - How do I become a Distributor?
+      - How to qualify for the Distributor rank?
+      - How do I become a Distributor?
+      - What are the requirements to become a Distributor?
+      - Do I need a minimum number of referrals to be a Distributor?
+      - How long does it take to upgrade to Distributor?
+      - Is verification required for Distributor status?
+      - Are there any fees to become a Distributor?
+      - What benefits come with the Distributor rank?
+      - Can I lose Distributor status?
+      - How to maintain my Distributor position?
 
   - intent: ask_upgrade_steps_distributor_to_partner
     examples: |
@@ -1454,6 +2195,14 @@ nlu:
       - What are the requirements to move from Distributor to Partner?
       - Tell me the steps to upgrade to Partner rank.
       - How can I unlock Partner level in SPL Mining?
+      - What criteria do I need to meet to become a Partner?
+      - Is there a referral threshold to become a Partner?
+      - How long does it take to upgrade to Partner?
+      - Do I need verification to become a Partner?
+      - What privileges come with the Partner rank?
+      - Are there any fees involved in becoming a Partner?
+      - How do I maintain my Partner status?
+      - Can a Partner lose their rank?
 
     #Mining structure
   - intent: ask_mining_structure_explained
@@ -1463,6 +2212,13 @@ nlu:
       - How is the mining speed calculated?
       - Tell me how SPL/h is computed.
       - Explain the mining equation in SPL Mining.
+      - What factors affect the mining rate?
+      - How do boosters influence mining speed?
+      - What role does SuperUP play in mining speed?
+      - How is the base mining rate defined?
+      - Is there a formula for calculating mining rewards?
+      - Can mining speed change over time?
+      - How do member rewards impact SPL mining speed?
 
   - intent: ask_base_rate
     examples: |
@@ -1470,7 +2226,19 @@ nlu:
       - How do you calculate the base rate?
       - What's AP in base rate?
       - Explain base score and AP
+      - How is the base rate determined?
+      - What does AP stand for in mining?
+      - How does base score affect mining rewards?
+      - Can you break down the base rate formula?
+      - What factors influence the base rate?
+      - Is AP related to user activity?
+      - How is AP earned or calculated?
+      - Does base rate change over time?
 
+#<<<<<<< HEAD
+#=======
+#khong train them thong tin tư day tro xuong
+#>>>>>>> f47ecb5 (cap nhat nlu)
   #=================  SUPERWAL ECOSYSTEM  ==================
   #WalFlux ————
 
