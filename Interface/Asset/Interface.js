@@ -57,16 +57,72 @@ async function sendMessage() {
         })
     });
 
+    // const data = await response.json();
+    // if (data.length === 0) {
+    //     typeMessage("bot", "🤔 I'm not sure I understand what you mean. \nCould you please rephrase or ask about a SuperWAL service?");
+    //     return;
+    // }
+
     const data = await response.json();
+
     if (data.length === 0) {
-        typeMessage("bot", "🤔 I'm not sure I understand what you mean. \nCould you please rephrase or ask about a SuperWAL service?");
+        // 1. Danh sách các câu trả lời ngẫu nhiên khi bot không hiểu
+        const fallbackMessages = [
+            "🤔 I'm not sure I understand what you mean. Could you please rephrase or ask about a **SuperWAL service**?",
+            "Oops! My circuits are a little confused. Could you try asking that in a different way, perhaps about **SuperWAL**?",
+            "My apologies! I'm still learning. Could you clarify what you mean, or ask about our **SuperWAL services**?",
+            "Pardon me, I didn't quite catch that! Would you mind rephrasing or asking about a **SuperWAL feature**?",
+            "🚫 Sorry, that doesn’t seem related to anything I can help with. \nTry asking about services like **WaLPay**, **WaLTrust**, or **WaLID**!",
+            "🤖 That input isn’t recognized. But I’m here to help with all things SuperWAL — let’s try again!"
+        ];
+
+        // 2. Danh sách các gợi ý về dịch vụ/câu hỏi khác (có in đậm bằng Markdown)
+        const serviceSuggestions = [
+            "**WaLSynx**,",
+            "how **SuperWAL** plans its **ecosystem**,",
+            "the **ad reward feature**,",
+            "or perhaps **SuperWAL's support email**."
+        ];
+
+        // Chọn ngẫu nhiên một câu trả lời gốc
+        const randomFallbackMessage = fallbackMessages[Math.floor(Math.random() * fallbackMessages.length)];
+
+        // Chọn ngẫu nhiên 2 hoặc 3 gợi ý dịch vụ
+        const selectedServiceSuggestions = [];
+        const numSuggestionsToShow = Math.floor(Math.random() * 2) + 2; // Chọn 2 hoặc 3
+        const tempServiceSuggestions = [...serviceSuggestions]; 
+
+        while (selectedServiceSuggestions.length < numSuggestionsToShow && tempServiceSuggestions.length > 0) {
+            const randomIndex = Math.floor(Math.random() * tempServiceSuggestions.length);
+            selectedServiceSuggestions.push(tempServiceSuggestions.splice(randomIndex, 1)[0]);
+        }
+
+        // 3. Kết hợp tin nhắn gốc và các gợi ý
+        let combinedMessageText = randomFallbackMessage; // Đặt tên khác để dễ phân biệt
+        if (selectedServiceSuggestions.length > 0) {
+            combinedMessageText += "\n\nPerhaps you could ask about: " + selectedServiceSuggestions.join(" ") + "";
+        }
+        
+
+        const finalHtmlMessage = marked.parse(combinedMessageText);
+
+
+        await typeMessage("bot", finalHtmlMessage); // Truyền HTML đã parse
         return;
     }
 
+    let botResponseText = "";
     for (const msg of data) {
         if (msg.text) {
-            await typeMessage("bot", marked.parse(msg.text));
+            botResponseText += msg.text + "\n";
         }
+    }
+    botResponseText = botResponseText.trim();
+
+    // Parse Markdown TẠI ĐÂY cho phản hồi từ Rasa
+    if (botResponseText) {
+        const finalRasaHtmlMessage = marked.parse(botResponseText); // Parse ở đây
+        await typeMessage("bot", finalRasaHtmlMessage); // Truyền HTML đã parse
     }
 }
 
@@ -93,6 +149,8 @@ function appendMessage(sender, text, isHTML = false) {
     msgWrapper.appendChild(bubble);
     container.appendChild(msgWrapper);
     container.scrollTop = container.scrollHeight;
+
+    
 }
 
 async function typeMessage(sender, htmlText) {
@@ -112,17 +170,24 @@ async function typeMessage(sender, htmlText) {
     msgWrapper.appendChild(bubble);
     container.appendChild(msgWrapper);
     container.scrollTop = container.scrollHeight;
-
     const tempDiv = document.createElement("div");
-    tempDiv.innerHTML = htmlText;
-    const fullText = tempDiv.innerText;
+    tempDiv.innerHTML = htmlText; // Gán HTML vào một div tạm thời
+    const fullPlainText = tempDiv.innerText; // Lấy toàn bộ văn bản thuần túy từ HTML đó
 
-    for (let i = 0; i <= fullText.length; i++) {
-        bubble.innerText = fullText.substring(0, i);
+    for (let i = 0; i <= fullPlainText.length; i++) {
+        // Tạo một div tạm thời khác để chuyển đổi phần văn bản thuần túy đã gõ thành HTML
+        const partDiv = document.createElement("div");
+        partDiv.innerText = fullPlainText.substring(0, i); // Gán văn bản thuần túy đã gõ
+        
+        // Sau đó, chuyển đổi phần văn bản đó sang Markdown nếu nó có chứa Markdown
+        // (Đây là cách đơn giản để đảm bảo các dấu ** vẫn hoạt động)
+        bubble.innerHTML = marked.parse(partDiv.innerText); // Chuyển đổi và gán vào bubble
+        
         container.scrollTop = container.scrollHeight;
         await new Promise(r => setTimeout(r, 15));
     }
 
+    // Đảm bảo nội dung cuối cùng là HTML đã được parse hoàn chỉnh
     bubble.innerHTML = htmlText;
 }
 

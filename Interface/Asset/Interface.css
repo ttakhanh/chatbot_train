@@ -2,7 +2,8 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background: #000;
+    background-size: cover;
+    background-image: url(Screenshot\ 2025-05-14\ at\ 09.33.27.png);
 }
 
 p {
@@ -117,11 +118,13 @@ p {
     border-radius: 16px;
     line-height: 1.4;
     word-break: break-word;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
 
 .message.user .bubble {
     background: #d0eaff;
     color: #000;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
 
 .chat-input {
@@ -162,21 +165,25 @@ p {
 }
 
 .suggestions button {
-    background: #f0f0f0;
-    border: 1px solid #ccc;
+    background: #ffffff;
     border-radius: 20px;
+    border: none;
     padding: 6px 12px;
     font-size: 13px;
     cursor: pointer;
+    color: #3686ff;
     transition: background 0.2s, color 0.2s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .suggestions button:hover {
-    background: #e0e0e0;
+    /* background: #e0e0e0; */
+    box-shadow: rgba(50, 50, 93, 0.05) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
 }
 
-.suggestions button:active {
-    color: #ffd934;
-    background: #ff683a;
-    border-color: #ff683a;
-}
+/* .suggestions button:active {
+    color: #ffd934; */
+    /* background: #ff683a;  */
+    /* border-color: #ff683a;
+} */

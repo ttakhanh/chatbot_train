@@ -2,6 +2,8 @@ version: "3.1"
 
 intents:
   - greet
+  - affirm
+  - deny
   - ask_superwal_components
   - ask_walfinance_services
   - ask_nft_marketplace
@@ -114,6 +116,18 @@ intents:
   - ask_android_features
 
   #SUPERWAL ECOSYSTEM
+  # - ask_walvault
+  # - ask_walsynx
+  # - ask_walauth
+  # - ask_walbig
+  # - ask_wallink
+  # - ask_walgrow
+  # - ask_waldata
+  # - ask_walpay
+  # - ask_waltrust
+  # - ask_walx
+  # - ask_walid
+  # - ask_walflux
   - ask_walflux_features
   - ask_walflux_usecases
   - ask_walvault_features
@@ -772,7 +786,7 @@ responses:
         Member Rewards are calculated using the formula:
 
         Rewards = (User Type + Verified Mining Team \times 25\%)
-        
+
         - User Type Score:
           - Normal = 1
           - Pioneer = 3
@@ -916,6 +930,114 @@ responses:
         On Android, SuperWAL supports a wide variety of devices from different manufacturers. It runs smoothly on Android 8.0 and above, ensuring flexibility, performance, and security.
 
   #================================  SUPERWAL ECOSYSTEM  =============================
+  utter_clarify_services:
+    - text: "What would you like to know about WalChain's services? You can try asking about:
+        - **WaLPay**: for secure and flexible payments.
+        - **WaLTrust**: for enhanced security and trust.
+        - **WaLID**: for decentralized identity management.
+        - **WaLFlux**: for cross-chain data integration.
+        - **WaLVault**: for decentralized data storage.
+        - **WaLSynx**: for seamless data synchronization.
+        - **WaLAuth**: for robust authentication solutions.
+        - **WaLBig**: for decentralized big data processing.
+        - **WaLLink**: for secure data linking.
+        - **WaLGrow**: for user growth and engagement.
+        - **WaLData**: for comprehensive data solutions.
+        - **WaLX**: for advanced Web3 experiences."
+    - text: "I can help you with a wide range of WalChain services. For instance, you could ask about:
+        - **Payments**: like WaLPay.
+        - **Identity**: with WaLID.
+        - **Data Integration**: through WaLFlux.
+        - **Storage**: using WaLVault.
+        - Or other services such as WaLSynx, WaLAuth, WaLBig, WaLLink, WaLGrow, WaLData, and WaLX. What interests you?"
+    - text: "No problem! WalChain offers many services. Which one are you curious about? For example, you can ask about:
+        - **WaLPay** (payments)
+        - **WaLTrust** (trust & security)
+        - **WaLID** (identity)
+        - **WaLFlux** (data integration)
+        - **WaLVault** (storage)
+        - **WaLSynx** (data sync)
+        - **WaLAuth** (authentication)
+        - **WaLBig** (big data)
+        - **WaLLink** (data linking)
+        - **WaLGrow** (user growth)
+        - **WaLData** (data solutions)
+        - **WaLX** (Web3 experiences).
+        What's on your mind?"
+    - text: "Alright, my apologies. Could you tell me more about what you're looking for regarding WalChain's offerings? Perhaps one of these:
+        - **WaLPay**
+        - **WaLTrust**
+        - **WaLID**
+        - **WaLFlux**
+        - **WaLVault**
+        - **WaLSynx**
+        - **WaLAuth**
+        - **WaLBig**
+        - **WaLLink**
+        - **WaLGrow**
+        - **WaLData**
+        - **WaLX**
+        Feel free to be specific, or just mention the service name!"
+
+  utter_confirm_walflux:
+    - text: Are you asking about WaLFlux?
+    - text: Did you mean WaLFlux?
+    - text: Just to confirm, are you interested in WaLFlux?
+
+  utter_confirm_walvault:
+    - text: Are you asking about WaLVault?
+    - text: Did you mean WaLVault?
+    - text: Just to confirm, are you interested in WaLVault?
+
+  utter_confirm_walsynx:
+    - text: Are you asking about WaLSynx?
+    - text: Did you mean WaLSynx?
+    - text: Just to confirm, are you interested in WaLSynx?
+
+  utter_confirm_walauth:
+    - text: Are you asking about WaLAuth?
+    - text: Did you mean WaLAuth?
+    - text: Just to confirm, are you interested in WaLAuth?
+
+  utter_confirm_walbig:
+    - text: Are you asking about WaLBig?
+    - text: Did you mean WaLBig?
+    - text: Just to confirm, are you interested in WaLBig?
+
+  utter_confirm_wallink:
+    - text: Are you asking about WaLLink?
+    - text: Did you mean WaLLink?
+    - text: Just to confirm, are you interested in WaLLink?
+
+  utter_confirm_walgrow:
+    - text: Are you asking about WaLGrow?
+    - text: Did you mean WaLGrow?
+    - text: Just to confirm, are you interested in WaLGrow?
+
+  utter_confirm_waldata:
+    - text: Are you asking about WaLData?
+    - text: Did you mean WaLData?
+    - text: Just to confirm, are you interested in WaLData?
+
+  utter_confirm_walpay:
+    - text: Are you asking about WaLPay?
+    - text: Did you mean WaLPay?
+    - text: Just to confirm, are you interested in WaLPay?
+
+  utter_confirm_waltrust:
+    - text: Are you asking about WaLTrust?
+    - text: Did you mean WaLTrust?
+    - text: Just to confirm, are you interested in WaLTrust?
+
+  utter_confirm_walx:
+    - text: Are you asking about WaLX?
+    - text: Did you mean WaLX?
+    - text: Just to confirm, are you interested in WaLX?
+
+  utter_confirm_walid:
+    - text: Are you asking about WaLID?
+    - text: Did you mean WaLID?
+    - text: Just to confirm, are you interested in WaLID?
 
   #WalFlux —————
   utter_walflux_features:
@@ -1609,12 +1731,12 @@ responses:
         🤔 I'm not sure I understand what you mean.  
         Could you please rephrase or ask about a SuperWAL service?
 
-#    - text: |
-#        🚫 Sorry, that doesn’t seem related to anything I can help with.
-#        Try asking about services like **WaLPay**, **WaLTrust**, or **WaLID**!
-#
-#    - text: |
-#        🤖 That input isn’t recognized. But I’m here to help with all things SuperWAL — let’s try again!
+    - text: |
+        🚫 Sorry, that doesn’t seem related to anything I can help with.
+        Try asking about services like **WaLPay**, **WaLTrust**, or **WaLID**!
+
+    - text: |
+        🤖 That input isn’t recognized. But I’m here to help with all things SuperWAL — let’s try again!
 
 actions:
   - action_out_of_scope

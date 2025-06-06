@@ -63,7 +63,6 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    confidence_threshold: 0.4 # Ngưỡng hiểu ý định
     epochs: 70
     embedding_dimension: 64 # mặc định là 128
     # epochs: 80
@@ -74,19 +73,20 @@ pipeline:
     confidence_threshold: 0.7
   - name: EntitySynonymMapper
   - name: FallbackClassifier
-    threshold: 0.4
+    threshold: 0.7
     ambiguity_threshold: 0.1
   - name: EntitySynonymMapper
   - name: ResponseSelector
-  - name: FallbackClassifier
-    threshold: 0.4
 
 policies:
   - name: MemoizationPolicy
   - name: RulePolicy
-    core_fallback_action_name: "action_out_of_scope"
-    core_fallback_threshold: 0.3
+    # core_fallback_action_name: "action_out_of_scope"
+    # core_fallback_threshold: 0.3
     enable_fallback_prediction: True
   - name: UnexpecTEDIntentPolicy
     max_history: 5
     epochs: 100
+    # Cấu hình ngưỡng NLU thấp để kích hoạt fallback
+    fallback_action_name: "action_out_of_scope"
+    core_fallback_threshold: 0.3 # Ngưỡng NLU thấp (ví dụ: < 30% confidence)

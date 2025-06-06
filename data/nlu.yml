@@ -1,6 +1,88 @@
 version: "3.1"
 
 nlu:
+  - intent: affirm
+    examples: |
+      - yes
+      - yeah
+      - yup
+      - indeed
+      - that's right
+      - correct
+      - absolutely
+      - exactly
+      - sure
+      - of course
+      - you got it
+      - that's correct
+      - definitely
+      - affirmative
+      - right
+      - yep
+      - for sure
+      - okay
+      - sounds good
+      - go ahead
+      - please do
+      - by all means
+      - that is correct
+      - precisely
+      - you are right
+      - I agree
+      - totally
+      - sure thing
+      - no problem
+      - sure why not
+      - I do
+      - I am
+      - I will
+      - I can
+      - I would
+      - that's it
+      - that's what I meant
+      - this is it
+      - confirm
+      - proceed
+      - continue
+      - next
+
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - nah
+      - no way
+      - absolutely not
+      - definitely not
+      - incorrect
+      - wrong
+      - not right
+      - that's not it
+      - don't
+      - please don't
+      - I don't think so
+      - not really
+      - I don't want to
+      - cancel
+      - abort
+      - stop
+      - disregard
+      - nevermind
+      - no thanks
+      - I disagree
+      - that's wrong
+      - false
+      - negative
+      - no, thanks
+      - no, that's not what I meant
+      - not this
+      - not that
+      - don't do that
+      - no, I don't
+      - no, I'm not
+      - no, I won't
+      - no, I can't
+
   - intent: greet
     examples: |
       - hey
@@ -176,7 +258,6 @@ nlu:
       - Is SPL the main currency in SuperWAL?
       - What are the benefits of holding SPL tokens?
       - Can I stake SPL tokens?
-      - How do I earn SPL tokens?
       - Where can I trade SPL tokens?
       - Is SPL a utility or governance token?
       - How is SPL different from other crypto tokens?
@@ -230,7 +311,6 @@ nlu:
       - How is SPL used for decentralized storage?
       - What's the relation between IPFS and SPL?
       - How does Walchain support file storage?
-
 
   - intent: ask_spl_validator_rewards
     examples: |
@@ -878,7 +958,6 @@ nlu:
       - What Android devices can use SuperWAL?
       - Is SuperWAL compatible with Samsung phones?
       - Is the Android version of SuperWAL optimized?
-    
 
     # Category: Key Features
   - intent: ask_superwal_components
@@ -1223,7 +1302,7 @@ nlu:
       - How to start with SuperWAL’s LBR?
       - Can you guide me to join LBR?
 
-#defi to walchain
+  #defi to walchain
   - intent: ask_defi_to_walchain_overview
     examples: |
       - What is DeFi to Walchain?
@@ -1392,12 +1471,13 @@ nlu:
       - What's AP in base rate?
       - Explain base score and AP
 
-    #=================  SUPERWAL ECOSYSTEM  ==================
-    #WalFlux ————
-    #OK
-
   #=================  SUPERWAL ECOSYSTEM  ==================
   #WalFlux ————
+
+  # - intent: ask_walflux
+  #   examples: |
+  #     - walflux
+  #     - flux
 
   - intent: ask_walflux_features
     examples: |
@@ -1406,6 +1486,19 @@ nlu:
       - What makes WaLFlux special?
       - Why should I use WaLFlux?
       - Explain the key benefits of WaLFlux.
+      - What does WaLFlux do?
+      - What are the main functionalities of WaLFlux?
+      - How does WaLFlux work?
+      - Describe WaLFlux's advantages.
+      - What are the distinguishing characteristics of WaLFlux?
+      - Tell me about WaLFlux's functions.
+      - What's unique about WaLFlux?
+      - List the features of WaLFlux.
+      - WaLFlux features?
+      - WaLFlux capabilities?
+      - WaLFlux functions?
+      - WaLFlux core features
+      - Flux features
 
   - intent: ask_walflux_usecases
     examples: |
@@ -1414,57 +1507,162 @@ nlu:
       - How does WaLFlux help in Web3?
       - Is WaLFlux useful for cross-chain data?
       - Any examples of how WaLFlux works?
+      - Where is WaLFlux applied?
+      - Practical applications of WaLFlux?
+      - How can I apply WaLFlux?
+      - What are some scenarios where WaLFlux is useful?
+      - Show me examples of WaLFlux in action.
+      - WaLFlux applications?
+      - How is WaLFlux utilized?
+      - WaLFlux use cases?
+      - WaLFlux uses
+      - WaLFlux examples
+      - WaLFlux scenarios
+      - Flux use cases
 
-    #WalVault ———
+  #WalVault ———
+  # - intent: ask_walvault
+  #   examples: |
+  #     - walvault
+  #     - vault
+  #     - about vault
+
   - intent: ask_walvault_features
     examples: |
       - What is WaLVault used for?
       - Can you explain the main purpose of WaLVault?
       - How does WaLVault protect my assets?
+      - What are the core functions of WaLVault?
+      - Describe WaLVault's capabilities.
+      - What features does WaLVault offer?
+      - How does WaLVault work to secure data?
+      - Tell me about WaLVault's security features.
+      - What makes WaLVault secure?
+      - WaLVault features?
+      - WaLVault capabilities
+      - WaLVault protection
+      - WaLVault functions
+      - walvault
 
-    #OK
+  #OK
   - intent: ask_walvault_benefits
     examples: |
       - Why is decentralized storage important?
       - What are the benefits of using WaLVault instead of centralized platforms?
       - How does WaLVault give users more control?
+      - What advantages does WaLVault provide?
+      - Why choose WaLVault?
+      - How does WaLVault improve asset management?
+      - What are the pros of WaLVault?
+      - How does WaLVault empower users?
+      - Benefits of WaLVault?
+      - WaLVault advantages?
+      - WaLVault benefits
+      - Why WaLVault?
+      - Benefits of WaLVault
 
-    #WalSynx ——-
+  #WalSynx ——-
+  # - intent: ask_walsynx
+  #   examples: |
+  #     - walsynx
+  #     - synx
+  #     - about synx
+
   - intent: ask_walsynx_intro
     examples: |
       - What is WaLSynx?
       - Can you tell me more about WaLSynx?
       - What's the role of WaLSynx in SuperWAL?
+      - Explain WaLSynx to me.
+      - Give me an overview of WaLSynx.
+      - Introduce WaLSynx.
+      - What does WaLSynx mean?
+      - What's the concept behind WaLSynx?
+      - WaLSynx definition?
+      - Tell me about the WaLSynx module.
+      - WaLSynx
+      - About WaLSynx
+      - Synx overview
+      - What is Synx?
 
   - intent: ask_walsynx_usecases
     examples: |
       - What are some real-world applications of WaLSynx?
       - How is WaLSynx used in SuperWAL?
-      - Give me examples of what WaLSynx can do
+      - Give me examples of what WaLSynx can do.
+      - Practical uses for WaLSynx?
+      - Where can I see WaLSynx in action?
+      - Scenarios for WaLSynx?
+      - How is WaLSynx implemented?
+      - WaLSynx applications?
+      - What problems does WaLSynx solve?
+      - WaLSynx uses
+      - WaLSynx examples
+      - Synx use cases
+      - Synx applications
 
-    #WalAuth
+  #WalAuth
+  # - intent: ask_walauth
+  #   examples: |
+  #     - walauth
+  #     - auth
+  #     - about auth
+
   - intent: ask_walauth_features
     examples: |
       - What are the main features of WaLAuth?
       - Can you explain how WaLAuth ensures secure authentication?
       - How does WaLAuth differ from traditional login systems?
       - Is WaLAuth suitable for Web3 apps?
+      - Describe WaLAuth's functionalities.
+      - What security aspects does WaLAuth cover?
+      - How does WaLAuth provide secure login?
+      - WaLAuth's unique features?
+      - What makes WaLAuth secure for dApps?
+      - WaLAuth features?
+      - WaLAuth security
+      - Auth features
+      - Auth security features
 
-    #OK
+  #OK
   - intent: ask_walauth_use_cases
     examples: |
       - How can WaLAuth be used in real-world apps?
       - What are the use cases for WaLAuth?
       - Can WaLAuth be integrated with other SuperWAL services?
       - What platforms benefit from using WaLAuth?
+      - Practical applications of WaLAuth?
+      - Where is WaLAuth deployed?
+      - Examples of WaLAuth implementation?
+      - How is WaLAuth utilized in live apps?
+      - WaLAuth integration possibilities?
+      - Use cases for WaLAuth in Web3.
+      - WaLAuth uses
+      - WaLAuth examples
+      - Auth use cases
+      - Auth applications
 
-    #WalBig
+  #WalBig
+  # - intent: ask_walbig
+  #   examples: |
+  #     - walbig
+  #     - big
+  #     - about big
+
   - intent: ask_walbig_features
     examples: |
       - What are the core features of WaLBig?
-      - Tell me what WaLBig can do
+      - Tell me what WaLBig can do.
       - How does WaLBig handle decentralized big data?
       - Can WaLBig process real-time analytics?
+      - What are the main capabilities of WaLBig?
+      - Describe WaLBig's functionalities for large datasets.
+      - How does WaLBig manage big data in a decentralized way?
+      - What kind of data processing does WaLBig support?
+      - WaLBig features?
+      - WaLBig capabilities
+      - WaLBig functions
+      - Big data features
 
   - intent: ask_walbig_use_cases
     examples: |
@@ -1472,14 +1670,38 @@ nlu:
       - What are some use cases of WaLBig?
       - How can businesses benefit from WaLBig?
       - Is WaLBig suitable for DeFi analytics?
+      - Practical applications for WaLBig?
+      - Real-world scenarios for WaLBig?
+      - How can WaLBig be leveraged in enterprises?
+      - Examples of WaLBig's impact on data processing.
+      - WaLBig applications?
+      - WaLBig uses
+      - WaLBig examples
+      - Big data use cases
+      - Big data applications
 
-    #WalLink OK
+  #WalLink OK
+  # - intent: ask_wallink
+  #   examples: |
+  #     - wallink
+  #     - link
+  #     - about link
+
   - intent: ask_wallink_overview
     examples: |
       - What is WaLLink?
-      - Explain WaLLink to me
+      - Explain WaLLink to me.
       - How does WaLLink work?
-      - Tell me about the data integration service
+      - Tell me about the data integration service.
+      - Give me an introduction to WaLLink.
+      - Describe the WaLLink platform.
+      - What's the main function of WaLLink?
+      - How does WaLLink facilitate data connections?
+      - WaLLink overview?
+      - What is WaLLink and its purpose?
+      - WaLLink
+      - About WaLLink
+      - Link overview
 
   - intent: ask_wallink_use_cases
     examples: |
@@ -1487,14 +1709,38 @@ nlu:
       - Where is WaLLink applied?
       - Use cases of WaLLink?
       - Is WaLLink good for Web3 data pipelines?
+      - Practical applications for WaLLink?
+      - How is WaLLink used in data integration?
+      - Examples of WaLLink's usage?
+      - What are the scenarios for WaLLink?
+      - WaLLink applications in blockchain data.
+      - WaLLink uses
+      - WaLLink examples
+      - Link use cases
+      - Link applications
 
-#WalGrow
+  #WalGrow
+  # - intent: ask_walgrow
+  #   examples: |
+  #     - walgrow
+  #     - grow
+  #     - about grow
+
   - intent: ask_walgrow_overview
     examples: |
-        - What is WaLGrow?
-        - Explain WaLGrow
-        - Tell me about the WaLGrow module
-        - How does WaLGrow help with growth?
+      - What is WaLGrow?
+      - Explain WaLGrow.
+      - Tell me about the WaLGrow module.
+      - How does WaLGrow help with growth?
+      - Give me an introduction to WaLGrow.
+      - Describe the WaLGrow platform.
+      - What's the purpose of WaLGrow?
+      - How does WaLGrow support user engagement?
+      - WaLGrow overview?
+      - What is WaLGrow's function?
+      - WaLGrow
+      - About WaLGrow
+      - Grow overview
 
   - intent: ask_walgrow_features
     examples: |
@@ -1502,64 +1748,159 @@ nlu:
       - WaLGrow functions?
       - What tools are in WaLGrow?
       - How can WaLGrow support Web3 user growth?
+      - Describe WaLGrow's functionalities.
+      - What capabilities does WaLGrow offer?
+      - List the tools available in WaLGrow.
+      - How does WaLGrow enhance user acquisition?
+      - Key features of WaLGrow?
+      - WaLGrow's capabilities for user retention.
+      - WaLGrow features
+      - WaLGrow functions
+      - Grow features
+      - Grow tools
 
-    #WalData
+  #WalData
+  # - intent: ask_waldata
+  #   examples: |
+  #     - waldata
+  #     - data
+  #     - about data
   - intent: ask_waldata_overview
     examples: |
       - What is WaLData?
-      - Tell me about WaLData
-      - Explain WaLData to me
+      - Tell me about WaLData.
+      - Explain WaLData to me.
       - How does WaLData work?
+      - Give me an introduction to WaLData.
+      - Describe the WaLData service.
+      - What's the main purpose of WaLData?
+      - WaLData overview?
+      - What does WaLData do?
+      - Explain the concept of WaLData.
+      - WaLData
+      - About WaLData
+      - Data overview
 
-    # OK
+  # OK
   - intent: ask_waldata_usecases
     examples: |
       - What can I do with WaLData?
       - WaLData use cases?
       - How is WaLData useful?
-      - Give me examples of WaLData applications
+      - Give me examples of WaLData applications.
+      - Practical applications for WaLData?
+      - Where can WaLData be utilized?
+      - Scenarios for WaLData?
+      - How is WaLData applied in real-world situations?
+      - WaLData's practical uses.
+      - Examples of WaLData in action.
+      - WaLData uses
+      - WaLData examples
+      - Data use cases
+      - Data applications
 
-    #WalPay
-    #OK
+  #WalPay
+  #OK
+  # - intent: ask_walpay
+  #   examples: |
+  #     - walpay
+  #     - pay
+  #     - about pay
   - intent: ask_walpay_overview
     examples: |
       - What is WaLPay?
-      - Tell me about WaLPay
+      - Tell me about WaLPay.
       - Can you give an overview of WaLPay?
-      - I want to know about WaLPay
+      - I want to know about WaLPay.
+      - Explain WaLPay to me.
+      - Introduce WaLPay.
+      - What's the purpose of WaLPay?
+      - WaLPay explanation.
+      - What does WaLPay aim to do?
+      - Describe WaLPay's service.
+      - WaLPay
+      - About WaLPay
+      - Pay overview
 
-    #OK
+  #OK
   - intent: ask_walpay_features
     examples: |
       - What are the features of WaLPay?
       - What can WaLPay do?
       - Key functionalities of WaLPay?
-      - List WaLPay's core features
+      - List WaLPay's core features.
+      - Describe WaLPay's capabilities.
+      - What functions does WaLPay have?
+      - What are the main characteristics of WaLPay?
+      - WaLPay's functionalities?
+      - Features of WaLPay's payment system.
+      - WaLPay features
+      - WaLPay functions
+      - Pay features
+      - Pay capabilities
 
-    #WaLTrust
-    #OK
+  #WaLTrust
+  #OK
+  # - intent: ask_waltrust
+  #   examples: |
+  #     - waltrust
+  #     - trust
+  #     - about trust
   - intent: ask_waltrust_concept
     examples: |
       - What is WaLTrust?
-      - Tell me what WaLTrust is about
-      - Explain WaLTrust
+      - Tell me what WaLTrust is about.
+      - Explain WaLTrust.
       - What's the idea behind WaLTrust?
+      - Give me an overview of WaLTrust.
+      - Introduce WaLTrust.
+      - What does WaLTrust mean?
+      - WaLTrust definition?
+      - Describe the concept of WaLTrust.
+      - What is the core idea of WaLTrust?
+      - WaLTrust
+      - About WaLTrust
+      - Trust concept
 
-    #OK
+  #OK
   - intent: ask_waltrust_utilities
     examples: |
       - What can WaLTrust be used for?
       - Use cases of WaLTrust?
       - WaLTrust application examples?
       - In what situations is WaLTrust useful?
+      - Practical applications for WaLTrust?
+      - Where can WaLTrust be applied?
+      - Scenarios for WaLTrust?
+      - How is WaLTrust utilized?
+      - WaLTrust's practical uses.
+      - Examples of WaLTrust in action.
+      - WaLTrust uses
+      - WaLTrust applications
+      - Trust use cases
+      - Trust utilities
 
-    #WaLX
+  #WaLX
+  # - intent: ask_walx
+  #   examples: |
+  #     - walx
+  #     - lx
+  #     - about lx
   - intent: ask_walx_overview
     examples: |
       - What is WaLX?
-      - Give me an overview of WaLX
-      - Tell me about the WaLX service
-      - Explain WaLX in short
+      - Give me an overview of WaLX.
+      - Tell me about the WaLX service.
+      - Explain WaLX in short.
+      - Introduce WaLX.
+      - Describe WaLX's function.
+      - What's the purpose of WaLX?
+      - WaLX overview?
+      - What does WaLX aim to do?
+      - Explain the WaLX concept.
+      - WaLX
+      - About WaLX
+      - LX overview
 
   - intent: ask_walx_benefits
     examples: |
@@ -1567,22 +1908,57 @@ nlu:
       - Advantages of WaLX?
       - How does WaLX help users?
       - Why should I use WaLX?
+      - What are the pros of WaLX?
+      - How does WaLX improve user experience?
+      - WaLX's advantages?
+      - What makes WaLX beneficial?
+      - Benefits of WaLX for users.
+      - Why choose WaLX?
+      - WaLX benefits
+      - WaLX advantages
+      - Why WaLX?
+      - LX benefits
 
-    #WaLID
+  #WaLID
+  # - intent: ask_walid
+  #   examples: |
+  #     - walid
+  #     - id
+  #     - about id
   - intent: ask_walid_concept
     examples: |
       - What is WaLID?
-      - Tell me about WaLID
-      - Explain WaLID
-      - Give me an overview of WaLID
+      - Tell me about WaLID.
+      - Explain WaLID.
+      - Give me an overview of WaLID.
+      - Introduce WaLID.
+      - What does WaLID mean?
+      - Describe the WaLID concept.
+      - WaLID definition?
+      - What is the core idea of WaLID?
+      - Explain the identity system.
+      - WaLID
+      - About WaLID
+      - ID concept
+      - What is ID?
 
-    #OK
+  #OK
   - intent: ask_walid_usage
     examples: |
       - How is WaLID used?
       - What can I use WaLID for?
       - WaLID usage scenarios?
       - When do I need WaLID?
+      - Practical uses for WaLID?
+      - How is WaLID applied in real-world situations?
+      - Examples of WaLID's usage?
+      - What are the applications for WaLID?
+      - WaLID's practical uses.
+      - How does WaLID work in practice?
+      - WaLID uses
+      - WaLID applications
+      - ID usage
+      - ID scenarios
 
     #=================  /SUPERWAL ECOSYSTEM  ==================
     #Fallback
@@ -1593,42 +1969,78 @@ nlu:
       - What is SuperWAL's Privacy Policy?
       - Can you explain the privacy policy?
       - How does SuperWAL handle my data?
+      - Privacy Policy
+      - SuperWAL privacy
+      - Policy
+      - Privacy rules
+      - Data handling policy
 
   - intent: ask_data_collection
     examples: |
       - What information does SuperWAL collect?
       - Does SuperWAL track my activities?
       - What data is gathered when I use SuperWAL?
+      - Data collected
+      - Information collected
+      - SuperWAL tracking
+      - Data gathering
+      - Collect data
 
   - intent: ask_data_usage
     examples: |
       - How is my information used?
       - What does SuperWAL do with my data?
       - Why does SuperWAL need my personal information?
+      - Data usage
+      - How data is used
+      - My data use
+      - Data purpose
+      - Info usage
 
   - intent: ask_data_sharing
     examples: |
       - Does SuperWAL share my data with others?
       - Who can access my information?
       - Is my data shared with third parties?
+      - Data sharing
+      - Share data
+      - Third party data
+      - Data access
+      - Information shared
 
   - intent: ask_user_rights
     examples: |
       - What rights do I have over my data?
       - Can I delete my information?
       - How can I manage my privacy settings?
+      - User rights
+      - My data rights
+      - Delete data
+      - Manage privacy
+      - Data control
 
   - intent: ask_data_security
     examples: |
       - How does SuperWAL protect my data?
       - What security measures are in place?
       - Is my information safe with SuperWAL?
+      - Data security
+      - Data protection
+      - Security measures
+      - Is my data safe?
+      - Secure data
 
   - intent: ask_contact_info
     examples: |
       - How can I contact SuperWAL?
       - Who do I reach out to for privacy concerns?
       - What is SuperWAL's support email?
+      - Contact SuperWAL
+      - Support email
+      - Contact info
+      - Get in touch
+      - Privacy contact
+
   #/POLICY
   #Term & condition
   - intent: ask_terms_overview
@@ -1636,30 +2048,55 @@ nlu:
       - What are the terms and conditions of SuperWAL?
       - Can you summarize the SuperWAL Terms?
       - Tell me about your terms of use.
+      - Terms and conditions
+      - Terms of use
+      - SuperWAL terms
+      - Terms summary
+      - T&C
 
   - intent: ask_user_obligations
     examples: |
       - What are my responsibilities as a user?
       - What do I need to follow when using SuperWAL?
       - What am I obligated to do?
+      - User obligations
+      - My responsibilities
+      - User duties
+      - What to follow
+      - Obligations
 
   - intent: ask_prohibited_activities
     examples: |
       - What actions are not allowed?
       - Can I use SuperWAL for crypto trading?
       - Are there any restricted behaviors?
+      - Prohibited activities
+      - Not allowed actions
+      - Restricted behaviors
+      - What not to do
+      - Forbidden actions
 
   - intent: ask_termination_policy
     examples: |
       - When can my account be terminated?
       - What is the termination policy?
       - Can SuperWAL block my access?
+      - Termination policy
+      - Account termination
+      - Block access
+      - End account
+      - Access termination
 
   - intent: ask_modifications_terms
     examples: |
       - Can the terms be changed?
       - What happens if the terms are updated?
       - How often do you update your policies?
+      - Terms changes
+      - Terms updates
+      - Policy updates
+      - Terms modifications
+      - Can terms change?
   #/Term & condition
   #GG Authentication
   - intent: ask_google_authenticator_overview
@@ -1680,6 +2117,7 @@ nlu:
       - what is google authenticator used for
       - how does GA provide security
       - what is the purpose of google authenticator
+      - GA
 
   - intent: ask_ga_setup_steps
     examples: |
@@ -2067,7 +2505,7 @@ nlu:
       - How to unlock all app features?
       - What does "unlimited app functionality" mean?
       - Is KYC related to app functions?
-      
+
   #/Verify
   #Fallback
   - intent: out_of_scope
@@ -2112,4 +2550,14 @@ nlu:
       - xcvbhxznmv
       - xyzajdvf
       - abvcksjdak
-
+      - xyz
+      - abc
+      - bla
+      - blabla
+      - bla bla
+      - xyzm
+      - abcs
+      - mnl
+      -...
+      -..
+      -.

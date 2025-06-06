@@ -605,7 +605,6 @@ rules:
       - intent: ask_android_features
       - action: utter_android_features
 
-
   - rule: Say hello
     steps:
       - intent: greet
@@ -615,7 +614,6 @@ rules:
     steps:
       - intent: goodbye
       - action: utter_goodbye
-
 
   - rule: Answer SuperWAL components
     steps:
@@ -655,8 +653,8 @@ rules:
   - rule: Answer SPL token
     steps:
       - intent: ask_spl_token
-      - action: utter_ask_spl_token
-
+      - action:
+          utter_ask_spl_token
 
           #- rule: Explain SPL token use cases
           #  steps:
@@ -678,12 +676,11 @@ rules:
   #    - intent: ask_spl_governance
   #    - action: utter_ask_spl_governance
 
-
   - rule: Explain SPL validator rewards
     steps:
       - intent: ask_spl_validator_rewards
-      - action: utter_ask_spl_validator_rewards
-
+      - action:
+          utter_ask_spl_validator_rewards
 
           #- rule: Explain SPL staking and yield
           #  steps:
@@ -780,7 +777,7 @@ rules:
       - intent: ask_developer_support
       - action: utter_ask_developer_support
 
-#roadmap
+  #roadmap
 
   - rule: Respond to roadmap question
     steps:
@@ -1049,6 +1046,28 @@ rules:
       - action: utter_base_rate
 
   #===================================  SUPERWAL ECOSYSTEM  ===============================
+  # rules.yml
+
+  # - rule: User denies a specific service confirmation, bot suggests general services
+  #   steps:
+  #     - or: # Điều kiện: Action trước đó của bot là MỘT TRONG CÁC action xác nhận này
+  #         - action: utter_confirm_walflux
+  #         - action: utter_confirm_walvault
+  #         - action: utter_confirm_walsynx
+  #         - action: utter_confirm_walauth
+  #         - action: utter_confirm_walbig
+  #         - action: utter_confirm_WaLLink
+  #         - action: utter_confirm_WaLGrow
+  #         - action: utter_confirm_WaLData
+  #         - action: utter_confirm_WaLPay
+  #         - action: utter_confirm_WaLTrust
+  #         - action: utter_confirm_WaLX
+  #         - action: utter_confirm_WaLID
+  #       # Thêm TẤT CẢ các tên action xác nhận dịch vụ của bạn vào đây
+
+  #     - intent: deny # Nếu người dùng phản hồi là 'deny'
+  #     - action: utter_clarify_services # Bot sẽ trả lời bằng cách gợi ý các dịch vụ chung
+
   #WalFlux
   - rule: explain WaLFlux features
     steps:
@@ -1336,11 +1355,8 @@ rules:
       - action: utter_kyc_app_functionality
   #/Verify
 
-
   #Fallback
   - rule: Handle fallback
     steps:
       - intent: out_of_scope
       - action: action_out_of_scope
-
-

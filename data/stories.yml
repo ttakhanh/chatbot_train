@@ -29,7 +29,6 @@ version: "3.1"
 #      - intent: ask_identity_ai
 #      - action: utter_ask_identity_ai
 stories:
-
   - story: Greet and ask about SuperWAL components
     steps:
       - intent: greet
@@ -630,7 +629,6 @@ stories:
       - intent: ask_android_features
       - action: utter_android_features
 
-
   - story: Say goodbye
     steps:
       - intent: goodbye
@@ -1055,7 +1053,15 @@ stories:
       - action: utter_base_rate
 
   #===================================  SUPERWAL ECOSYSTEM  ===============================
+
   #WalFlux
+  # - story: confirm_walflux
+  #   steps:
+  #     - intent: ask_walflux
+  #     - action: utter_confirm_walflux
+  #     - intent: affirm
+  #     - action: utter_walflux_features
+
   - story: explain WaLFlux features
     steps:
       - intent: ask_walflux_features
@@ -1067,6 +1073,13 @@ stories:
       - action: utter_walflux_usecases
 
   #WalVault
+  # - story: confirm_walvault
+  #   steps:
+  #     - intent: ask_walvault
+  #     - action: utter_confirm_walvault
+  #     - intent: affirm
+  #     - action: utter_walvault_features
+
   - story: explain walvault features
     steps:
       - intent: ask_walvault_features
@@ -1078,6 +1091,13 @@ stories:
       - action: utter_walvault_benefits
 
   #WalSynx
+  # - story: confirm_walsynx
+  #   steps:
+  #     - intent: ask_walsynx
+  #     - action: utter_confirm_walsynx
+  #     - intent: affirm
+  #     - action: utter_walsynx_intro
+
   - story: explain walsynx intro
     steps:
       - intent: ask_walsynx_intro
@@ -1089,6 +1109,13 @@ stories:
       - action: utter_walsynx_usecases
 
   #WalAuth
+  # - story: confirm_walauth
+  #   steps:
+  #     - intent: ask_walauth
+  #     - action: utter_confirm_walauth
+  #     - intent: affirm
+  #     - action: utter_ask_walauth_features
+
   - story: explain walauth features
     steps:
       - intent: ask_walauth_features
@@ -1100,6 +1127,13 @@ stories:
       - action: utter_ask_walauth_use_cases
 
   #WalBig
+  # - story: confirm_walbig
+  #   steps:
+  #     - intent: ask_walbig
+  #     - action: utter_confirm_walbig
+  #     - intent: affirm
+  #     - action: utter_ask_walbig_features
+
   - story: explain walbig features
     steps:
       - intent: ask_walbig_features
@@ -1111,6 +1145,13 @@ stories:
       - action: utter_ask_walbig_use_cases
 
   #WalLink
+  # - story: confirm_wallink
+  #   steps:
+  #     - intent: ask_wallink
+  #     - action: utter_confirm_wallink
+  #     - intent: affirm
+  #     - action: utter_ask_wallink_overview
+
   - story: explain wallink overview
     steps:
       - intent: ask_wallink_overview
@@ -1122,6 +1163,13 @@ stories:
       - action: utter_ask_wallink_use_cases
 
   #WalGrow
+  # - story: confirm_walgrow
+  #   steps:
+  #     - intent: ask_walgrow
+  #     - action: utter_confirm_walgrow
+  #     - intent: affirm
+  #     - action: utter_ask_walgrow_overview
+
   - story: explain walgrow overview
     steps:
       - intent: ask_walgrow_overview
@@ -1133,6 +1181,13 @@ stories:
       - action: utter_ask_walgrow_features
 
   #WalData
+  # - story: confirm_waldata
+  #   steps:
+  #     - intent: ask_waldata
+  #     - action: utter_confirm_waldata
+  #     - intent: affirm
+  #     - action: utter_ask_waldata_overview
+
   - story: explain waldata overview
     steps:
       - intent: ask_waldata_overview
@@ -1144,6 +1199,13 @@ stories:
       - action: utter_ask_waldata_usecases
 
   #WalPay
+  # - story: confirm_walpay
+  #   steps:
+  #     - intent: ask_walpay
+  #     - action: utter_confirm_walpay
+  #     - intent: affirm
+  #     - action: utter_ask_walpay_overview
+
   - story: explain walpay overview
     steps:
       - intent: ask_walpay_overview
@@ -1155,6 +1217,13 @@ stories:
       - action: utter_ask_walpay_features
 
   #WaLTrust
+  # - story: confirm_waltrust
+  #   steps:
+  #     - intent: ask_waltrust
+  #     - action: utter_confirm_waltrust
+  #     - intent: affirm
+  #     - action: utter_ask_waltrust_concept
+
   - story: explain waltrust concept
     steps:
       - intent: ask_waltrust_concept
@@ -1166,6 +1235,13 @@ stories:
       - action: utter_ask_waltrust_utilities
 
   #WaLX
+  # - story: confirm_walx
+  #   steps:
+  #     - intent: ask_walx
+  #     - action: utter_confirm_walx
+  #     - intent: affirm
+  #     - action: utter_ask_walx_overview
+
   - story: explain walx overview
     steps:
       - intent: ask_walx_overview
@@ -1177,6 +1253,13 @@ stories:
       - action: utter_ask_walx_benefits
 
   #WaLID
+  # - story: confirm_walid
+  #   steps:
+  #     - intent: ask_walid
+  #     - action: utter_confirm_walid
+  #     - intent: affirm
+  #     - action: utter_ask_walid_concept
+
   - story: explain walid concept
     steps:
       - intent: ask_walid_concept
